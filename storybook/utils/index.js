@@ -26,11 +26,6 @@ export function toKebab(value) {
 
 export function cssVarName(path, options = {}) {
   const parts = path.map(toKebab).filter(Boolean);
-
-  if (options.type === 'color' && parts[0] !== 'color') {
-    parts.unshift('color');
-  }
-
   return `--${parts.join('-')}`;
 }
 

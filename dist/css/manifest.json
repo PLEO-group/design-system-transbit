@@ -1,10 +1,10 @@
 {
   "files": [
-    "ds.kolor-bazowy.wartosc.css",
+    "ds.kolor-bazowy.value.css",
     "ds.kolor.ciemny.css",
     "ds.kolor.jasny.css",
-    "ds.odstepy.wartosc.css",
-    "ds.typografia-bazowa.wartosc.css",
+    "ds.odstepy.value.css",
+    "ds.typografia-bazowa.value.css",
     "ds.typografia.desktop.css",
     "ds.typografia.laptop.css",
     "ds.typografia.mobile.css",
