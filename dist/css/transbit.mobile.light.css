@@ -1,0 +1,24 @@
+/* Generated from tokens/Transbit/Mobile/Light.json. Do not edit directly. */
+:root, :root[data-transbit-mobile-theme="light"] {
+  --bg-page: #eaeaea;
+  --bg-white: #ffffff;
+  --bg-dark: #2e2e2e;
+  --bg-card: #383838;
+  --text-primary: #404040;
+  --text-muted: #6a6a6a;
+  --text-inverse: #f4f4f4;
+  --text-subtle: #bababa;
+  --text-on-accent: #000000;
+  --border-light: #d0d0d0;
+  --border-dark: #565656;
+  --space-0: 0px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+}

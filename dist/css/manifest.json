@@ -1,0 +1,19 @@
+{
+  "files": [
+    "ds.kolor-bazowy.wartosc.css",
+    "ds.kolor.ciemny.css",
+    "ds.kolor.jasny.css",
+    "ds.odstepy.wartosc.css",
+    "ds.typografia-bazowa.wartosc.css",
+    "ds.typografia.desktop.css",
+    "ds.typografia.laptop.css",
+    "ds.typografia.mobile.css",
+    "ds.typografia.tablet.css",
+    "transbit.facts-interaction.value.css",
+    "transbit.metka-prasowa.value.css",
+    "transbit.mobile.dark.css",
+    "transbit.mobile.light.css",
+    "transbit.press-links.value.css",
+    "transbit.text-links.value.css"
+  ]
+}
