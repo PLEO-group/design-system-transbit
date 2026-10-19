@@ -1,0 +1,286 @@
+{
+  "odstep": {
+    "2": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-2)"
+        }
+      },
+      "$type": "number",
+      "$value": 2
+    },
+    "4": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-4)"
+        }
+      },
+      "$type": "number",
+      "$value": 4
+    },
+    "5": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-5)"
+        }
+      },
+      "$type": "number",
+      "$value": 5
+    },
+    "6": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-6)"
+        }
+      },
+      "$type": "number",
+      "$value": 6
+    },
+    "8": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-8)"
+        }
+      },
+      "$type": "number",
+      "$value": 8
+    },
+    "10": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-10)"
+        }
+      },
+      "$type": "number",
+      "$value": 10
+    },
+    "12": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-12)"
+        }
+      },
+      "$type": "number",
+      "$value": 12
+    },
+    "14": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-14)"
+        }
+      },
+      "$type": "number",
+      "$value": 14
+    },
+    "16": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-16)"
+        }
+      },
+      "$type": "number",
+      "$value": 16
+    },
+    "20": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-20)"
+        }
+      },
+      "$type": "number",
+      "$value": 20
+    },
+    "24": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-24)"
+        }
+      },
+      "$type": "number",
+      "$value": 24
+    },
+    "32": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-32)"
+        }
+      },
+      "$type": "number",
+      "$value": 32
+    },
+    "40": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-40)"
+        }
+      },
+      "$type": "number",
+      "$value": 40
+    },
+    "64": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-64)"
+        }
+      },
+      "$type": "number",
+      "$value": 64
+    }
+  },
+  "przycisk": {
+    "wysokosc": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-wysokosc)"
+        }
+      },
+      "$type": "number",
+      "$value": 39
+    },
+    "padding-poziomy": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-padding-poziomy)"
+        }
+      },
+      "$type": "number",
+      "$value": 24
+    },
+    "padding-gora": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-padding-gora)"
+        }
+      },
+      "$type": "number",
+      "$value": 10
+    },
+    "padding-dol": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-padding-dol)"
+        }
+      },
+      "$type": "number",
+      "$value": 11
+    },
+    "gniazdo-strzalki": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-gniazdo-strzalki)"
+        }
+      },
+      "$type": "number",
+      "$value": 22
+    },
+    "odsuniecie-strzalki": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-odsuniecie-strzalki)"
+        }
+      },
+      "$type": "number",
+      "$value": 13
+    }
+  }
+}

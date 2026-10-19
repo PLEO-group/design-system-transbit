@@ -1,0 +1,814 @@
+{
+  "marka": {
+    "czerwien": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--marka-czerwien)"
+        }
+      },
+      "$type": "color",
+      "$value": "{marka.czerwien}",
+      "$description": "Firmowa czerwień z księgi znaku, Pantone 186 C. Znak i elementy marki."
+    },
+    "czern": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--marka-czern)"
+        }
+      },
+      "$type": "color",
+      "$value": "{marka.czern}",
+      "$description": "Firmowa czerń z księgi znaku."
+    },
+    "szary-10": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--marka-szary-10)"
+        }
+      },
+      "$type": "color",
+      "$value": "{marka.szary-10}",
+      "$description": "Pantone Cool Gray 1 C."
+    },
+    "szary-30": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--marka-szary-30)"
+        }
+      },
+      "$type": "color",
+      "$value": "{marka.szary-30}",
+      "$description": "Pantone Cool Gray 4 C."
+    },
+    "szary-50": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--marka-szary-50)"
+        }
+      },
+      "$type": "color",
+      "$value": "{marka.szary-50}",
+      "$description": "Pantone Cool Gray 7 C."
+    }
+  },
+  "powierzchnia": {
+    "strona": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--powierzchnia-strona)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.92}",
+      "$description": "Tło widoku."
+    },
+    "sekcja": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--powierzchnia-sekcja)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.100}",
+      "$description": "Jasny pas sekcji na tle strony."
+    },
+    "karta": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--powierzchnia-karta)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.100}",
+      "$description": "Karta, kafel, wiersz listy."
+    },
+    "karta-najechanie": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--powierzchnia-karta-najechanie)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.96}",
+      "$description": "Karta po najechaniu."
+    },
+    "ciemna": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--powierzchnia-ciemna)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.18}",
+      "$description": "Moduł o ciemnym tle w obu motywach (systemy, fakty, stopka)."
+    }
+  },
+  "tekst": {
+    "mocny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--tekst-mocny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.18}",
+      "$description": "Nagłówki i liczby."
+    },
+    "glowny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--tekst-glowny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.25}",
+      "$description": "Tekst podstawowy."
+    },
+    "drugorzedny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--tekst-drugorzedny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.42}",
+      "$description": "Opis, metadana."
+    },
+    "wyciszony": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--tekst-wyciszony)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.61}",
+      "$description": "Tekst pomocniczy, podpis."
+    },
+    "etykieta": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--tekst-etykieta)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.70}",
+      "$description": "Drobna etykieta na module."
+    },
+    "na-ciemnym": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--tekst-na-ciemnym)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.84}",
+      "$description": "Tekst na powierzchni ciemnej."
+    },
+    "na-ciemnym-mocny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--tekst-na-ciemnym-mocny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.100}",
+      "$description": "Nagłówek na powierzchni ciemnej."
+    },
+    "na-ciemnym-wyciszony": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.61}",
+      "$description": "Wyciszony tekst na powierzchni ciemnej (menu)."
+    },
+    "na-ciemnym-drugorzedny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.70}",
+      "$description": "Tekst drugorzędny na powierzchni ciemnej."
+    }
+  },
+  "linia": {
+    "podzial": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--linia-podzial)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.84}",
+      "$description": "Linia między wierszami, podział w karcie."
+    },
+    "obrys": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--linia-obrys)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.80}",
+      "$description": "Obrys karty i elementu."
+    },
+    "na-ciemnym": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.34}",
+      "$description": "Linia podziału na ciemnej powierzchni (moduły ciemne w obu motywach), szary/34."
+    }
+  },
+  "akcent": {
+    "sygnal": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--akcent-sygnal)"
+        }
+      },
+      "$type": "color",
+      "$value": "{czerwien.sygnal}",
+      "$description": "Czerwień interfejsu: numer, strzałka linku, linie mapy."
+    },
+    "ciemny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--akcent-ciemny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{czerwien.ciemna}",
+      "$description": "Czerwień w stanie aktywnym, liczby porządkowe."
+    },
+    "blady": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{czerwien.blada}",
+      "$description": "Blada czerwień kart systemów."
+    }
+  },
+  "przycisk": {
+    "glowny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-glowny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.18}",
+      "$description": "Przycisk Główny."
+    },
+    "glowny-aktywny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-glowny-aktywny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.0}",
+      "$description": "Przycisk Główny i Na ciemnym po najechaniu."
+    },
+    "na-ciemnym": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-na-ciemnym)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.18}",
+      "$description": "Przycisk Na ciemnym."
+    },
+    "akcent": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-akcent)"
+        }
+      },
+      "$type": "color",
+      "$value": "{czerwien.sygnal}",
+      "$description": "Przycisk Akcent."
+    },
+    "akcent-aktywny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-akcent-aktywny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{czerwien.ciemna}",
+      "$description": "Przycisk Akcent po najechaniu."
+    },
+    "tlo-drugorzedny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-tlo-drugorzedny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.100}",
+      "$description": "Tło przycisku Drugorzędny."
+    },
+    "obrys": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-obrys)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.80}",
+      "$description": "Obrys przycisku Drugorzędny."
+    },
+    "obrys-aktywny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-obrys-aktywny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.25}",
+      "$description": "Obrys Drugorzędnego po najechaniu."
+    },
+    "obrys-na-ciemnym": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-obrys-na-ciemnym)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.61}",
+      "$description": "Obrys przycisku Obrys na ciemnym."
+    },
+    "obrys-na-ciemnym-aktywny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-obrys-na-ciemnym-aktywny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.100}",
+      "$description": "Obrys na ciemnym po najechaniu."
+    },
+    "obrys-na-ciemnym-wylaczony": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-obrys-na-ciemnym-wylaczony)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.34}",
+      "$description": "Obrys na ciemnym, stan wyłączony."
+    },
+    "wylaczony": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-wylaczony)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.80}",
+      "$description": "Tło wyłączonego Głównego i Akcentu."
+    },
+    "tekst-jasny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-tekst-jasny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.100}",
+      "$description": "Etykieta na Głównym, Akcencie, Obrysie na ciemnym."
+    },
+    "tekst-na-ciemnym": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-tekst-na-ciemnym)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.96}",
+      "$description": "Etykieta na przycisku Na ciemnym."
+    },
+    "tekst-ciemny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-tekst-ciemny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.25}",
+      "$description": "Etykieta Drugorzędnego."
+    },
+    "tekst-wylaczony": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-tekst-wylaczony)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.42}",
+      "$description": "Etykieta wyłączonego przycisku."
+    },
+    "tekst-wylaczony-jasny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-tekst-wylaczony-jasny)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.70}",
+      "$description": "Etykieta wyłączonego Drugorzędnego."
+    }
+  },
+  "grafika": {
+    "warstwice": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.42}",
+      "$description": "Warstwice map (systemy, cykl życia, Mission)."
+    },
+    "siatka": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.80}",
+      "$description": "Linie grafu w banerze i stopce."
+    },
+    "ilustracja-kreska": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.0}",
+      "$description": "Kreska ilustracji zastosowań; krycie zostaje na warstwie."
+    },
+    "ilustracja-wypelnienie": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.29}",
+      "$description": "Wypełnienie ilustracji zastosowań."
+    },
+    "tlo-mapy": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.25}",
+      "$description": "Tło i podpisy map w modułach ciemnych."
+    },
+    "punkt": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.34}",
+      "$description": "Punkty i połączenia na mapach."
+    }
+  },
+  "system": {
+    "zolty": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{system.zolty}",
+      "$description": "Kolor systemu w menu i na mapie."
+    },
+    "zielony": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{system.zielony}",
+      "$description": "Kolor systemu w menu i na mapie."
+    },
+    "pomaranczowy": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{system.pomaranczowy}",
+      "$description": "Kolor systemu w menu i na mapie."
+    },
+    "niebieski": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{system.niebieski}",
+      "$description": "Kolor systemu w menu i na mapie."
+    },
+    "morski": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{system.morski}",
+      "$description": "Kolor systemu w menu i na mapie."
+    }
+  },
+  "stale": {
+    "linia": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.80}",
+      "$description": "Linia i drobny tekst w modułach, które nie zmieniają się z motywem."
+    },
+    "tlo": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.96}",
+      "$description": "Jasne tło w modułach, które nie zmieniają się z motywem."
+    },
+    "szary": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.61}",
+      "$description": "Szary w modułach, które nie zmieniają się z motywem."
+    },
+    "ikona": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.42}",
+      "$description": "Ikona w menu, ta sama w obu motywach."
+    },
+    "czern": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{szary.0}",
+      "$description": "Czerń w obu motywach (tekst w menu, cień obrysu z kryciem)."
+    }
+  }
+}

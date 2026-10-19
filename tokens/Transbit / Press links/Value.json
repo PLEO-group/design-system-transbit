@@ -1,0 +1,36 @@
+{
+  "color": {
+    "text": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#404040"
+    }
+  },
+  "spacing": {
+    "gap": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 21
+    },
+    "zero": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 0
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "metka": {
+    "stan": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "text",
+      "$value": "Brak",
+      "$description": "Stan bocznej metki centrum prasowego w prototypie listy Aktualności."
+    }
+  }
+}
