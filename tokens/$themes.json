@@ -1,10 +1,10 @@
 [
   {
-    "id": "transbit / facts interaction-value",
+    "id": "transbit/facts-interaction-value",
     "name": "Value",
-    "group": "Transbit / Facts interaction",
+    "group": "Transbit/Facts-interaction",
     "selectedTokenSets": {
-      "Transbit / Facts interaction/Value": "enabled"
+      "Transbit/Facts-interaction/Value": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -26,11 +26,11 @@
     "$figmaCollectionId": "VariableCollectionId:1047:11061"
   },
   {
-    "id": "transbit / press links-value",
+    "id": "transbit/press-links-value",
     "name": "Value",
-    "group": "Transbit / Press links",
+    "group": "Transbit/Press-links",
     "selectedTokenSets": {
-      "Transbit / Press links/Value": "enabled"
+      "Transbit/Press-links/Value": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -42,11 +42,11 @@
     "$figmaCollectionId": "VariableCollectionId:1054:11087"
   },
   {
-    "id": "transbit / text links-value",
+    "id": "transbit/text-links-value",
     "name": "Value",
-    "group": "Transbit / Text links",
+    "group": "Transbit/Text-links",
     "selectedTokenSets": {
-      "Transbit / Text links/Value": "enabled"
+      "Transbit/Text-links/Value": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -56,11 +56,11 @@
     "$figmaCollectionId": "VariableCollectionId:1063:11094"
   },
   {
-    "id": "transbit / mobile-light",
+    "id": "transbit/mobile-light",
     "name": "Light",
-    "group": "Transbit / Mobile",
+    "group": "Transbit/Mobile",
     "selectedTokenSets": {
-      "Transbit / Mobile/Light": "enabled"
+      "Transbit/Mobile/Light": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -90,11 +90,11 @@
     "$figmaCollectionId": "VariableCollectionId:1207:9894"
   },
   {
-    "id": "transbit / mobile-dark",
+    "id": "transbit/mobile-dark",
     "name": "Dark",
-    "group": "Transbit / Mobile",
+    "group": "Transbit/Mobile",
     "selectedTokenSets": {
-      "Transbit / Mobile/Dark": "enabled"
+      "Transbit/Mobile/Dark": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -124,11 +124,11 @@
     "$figmaCollectionId": "VariableCollectionId:1207:9894"
   },
   {
-    "id": "ds / kolor-jasny",
+    "id": "ds/kolor-jasny",
     "name": "Jasny",
-    "group": "DS / Kolor",
+    "group": "DS/Kolor",
     "selectedTokenSets": {
-      "DS / Kolor/Jasny": "enabled"
+      "DS/Kolor/Jasny": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -195,11 +195,11 @@
     "$figmaCollectionId": "VariableCollectionId:1467:13077"
   },
   {
-    "id": "ds / kolor-ciemny",
+    "id": "ds/kolor-ciemny",
     "name": "Ciemny",
-    "group": "DS / Kolor",
+    "group": "DS/Kolor",
     "selectedTokenSets": {
-      "DS / Kolor/Ciemny": "enabled"
+      "DS/Kolor/Ciemny": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -266,11 +266,11 @@
     "$figmaCollectionId": "VariableCollectionId:1467:13077"
   },
   {
-    "id": "ds / odstępy-wartość",
+    "id": "ds/odstępy-wartość",
     "name": "Wartość",
-    "group": "DS / Odstępy",
+    "group": "DS/Odstępy",
     "selectedTokenSets": {
-      "DS / Odstępy/Wartość": "enabled"
+      "DS/Odstępy/Wartość": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -299,11 +299,11 @@
     "$figmaCollectionId": "VariableCollectionId:1467:13116"
   },
   {
-    "id": "ds / kolor bazowy-wartość",
+    "id": "ds/kolor-bazowy-wartość",
     "name": "Wartość",
-    "group": "DS / Kolor bazowy",
+    "group": "DS/Kolor-bazowy",
     "selectedTokenSets": {
-      "DS / Kolor bazowy/Wartość": "enabled"
+      "DS/Kolor-bazowy/Wartość": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -338,11 +338,11 @@
     "$figmaCollectionId": "VariableCollectionId:1572:13559"
   },
   {
-    "id": "ds / typografia bazowa-wartość",
+    "id": "ds/typografia-bazowa-wartość",
     "name": "Wartość",
-    "group": "DS / Typografia bazowa",
+    "group": "DS/Typografia-bazowa",
     "selectedTokenSets": {
-      "DS / Typografia bazowa/Wartość": "enabled"
+      "DS/Typografia-bazowa/Wartość": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -447,11 +447,11 @@
     "$figmaCollectionId": "VariableCollectionId:1639:10594"
   },
   {
-    "id": "ds / typografia-desktop",
+    "id": "ds/typografia-desktop",
     "name": "Desktop",
-    "group": "DS / Typografia",
+    "group": "DS/Typografia",
     "selectedTokenSets": {
-      "DS / Typografia/Desktop": "enabled"
+      "DS/Typografia/Desktop": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -615,11 +615,11 @@
     "$figmaCollectionId": "VariableCollectionId:1639:10649"
   },
   {
-    "id": "ds / typografia-laptop",
+    "id": "ds/typografia-laptop",
     "name": "Laptop",
-    "group": "DS / Typografia",
+    "group": "DS/Typografia",
     "selectedTokenSets": {
-      "DS / Typografia/Laptop": "enabled"
+      "DS/Typografia/Laptop": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -783,11 +783,11 @@
     "$figmaCollectionId": "VariableCollectionId:1639:10649"
   },
   {
-    "id": "ds / typografia-tablet",
+    "id": "ds/typografia-tablet",
     "name": "Tablet",
-    "group": "DS / Typografia",
+    "group": "DS/Typografia",
     "selectedTokenSets": {
-      "DS / Typografia/Tablet": "enabled"
+      "DS/Typografia/Tablet": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -951,11 +951,11 @@
     "$figmaCollectionId": "VariableCollectionId:1639:10649"
   },
   {
-    "id": "ds / typografia-mobile",
+    "id": "ds/typografia-mobile",
     "name": "Mobile",
-    "group": "DS / Typografia",
+    "group": "DS/Typografia",
     "selectedTokenSets": {
-      "DS / Typografia/Mobile": "enabled"
+      "DS/Typografia/Mobile": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -1119,11 +1119,11 @@
     "$figmaCollectionId": "VariableCollectionId:1639:10649"
   },
   {
-    "id": "transbit / metka prasowa-value",
+    "id": "transbit/metka-prasowa-value",
     "name": "Value",
-    "group": "Transbit / Metka prasowa",
+    "group": "Transbit/Metka-prasowa",
     "selectedTokenSets": {
-      "Transbit / Metka prasowa/Value": "enabled"
+      "Transbit/Metka-prasowa/Value": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
