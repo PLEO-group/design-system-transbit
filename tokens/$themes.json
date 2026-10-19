@@ -266,11 +266,11 @@
     "$figmaCollectionId": "VariableCollectionId:1467:13077"
   },
   {
-    "id": "ds/odstępy-wartość",
-    "name": "Wartość",
-    "group": "DS/Odstępy",
+    "id": "ds/odstepy-value",
+    "name": "Value",
+    "group": "DS/Odstepy",
     "selectedTokenSets": {
-      "DS/Odstępy/Wartość": "enabled"
+      "DS/Odstepy/Value": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -299,11 +299,11 @@
     "$figmaCollectionId": "VariableCollectionId:1467:13116"
   },
   {
-    "id": "ds/kolor-bazowy-wartość",
-    "name": "Wartość",
+    "id": "ds/kolor-bazowy-value",
+    "name": "Value",
     "group": "DS/Kolor-bazowy",
     "selectedTokenSets": {
-      "DS/Kolor-bazowy/Wartość": "enabled"
+      "DS/Kolor-bazowy/Value": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -338,11 +338,11 @@
     "$figmaCollectionId": "VariableCollectionId:1572:13559"
   },
   {
-    "id": "ds/typografia-bazowa-wartość",
-    "name": "Wartość",
+    "id": "ds/typografia-bazowa-value",
+    "name": "Value",
     "group": "DS/Typografia-bazowa",
     "selectedTokenSets": {
-      "DS/Typografia-bazowa/Wartość": "enabled"
+      "DS/Typografia-bazowa/Value": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {

@@ -7,13 +7,13 @@
     "Transbit/Mobile/Dark",
     "DS/Kolor/Jasny",
     "DS/Kolor/Ciemny",
-    "DS/Kolor-bazowy/Wartość",
-    "DS/Typografia-bazowa/Wartość",
+    "DS/Kolor-bazowy/Value",
+    "DS/Typografia-bazowa/Value",
     "DS/Typografia/Desktop",
     "DS/Typografia/Laptop",
     "DS/Typografia/Tablet",
     "DS/Typografia/Mobile",
     "Transbit/Metka-prasowa/Value",
-    "DS/Odstępy/Wartość"
+    "DS/Odstepy/Value"
   ]
 }
