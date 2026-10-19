@@ -50,7 +50,7 @@ const ThemePreview = ({ token, mode }) => {
   if (mode === 'text') {
     return (
       <div style={previewStyle}>
-        <p style={{ margin: 0, color, fontSize: 20, lineHeight: '28px' }}>Flience design tokens preview</p>
+        <p style={{ margin: 0, color, fontSize: 20, lineHeight: '28px' }}>Transbit design tokens preview</p>
         <p
           style={{
             margin: '12px 0 0',

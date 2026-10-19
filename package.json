@@ -19,7 +19,9 @@
   "license": "ISC",
   "scripts": {
     "build:tokens": "node build-style-dictionary.js",
-    "build": "npm run build:tokens",
+    "transform:icons": "npx @svgr/cli assets/icons --out-dir dist/assets/react/icons --jsx-runtime classic --typescript --config-file .svgrrc-icons.json",
+    "transform:illustrations": "npx @svgr/cli assets/illustrations --out-dir dist/assets/react/illustrations --jsx-runtime classic --typescript --config-file .svgrrc-illustrations.json",
+    "build": "npm run build:tokens && npm run transform:icons && npm run transform:illustrations",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "npm run build && storybook build"
   },

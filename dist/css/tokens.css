@@ -158,14 +158,14 @@
 
 /* Generated from tokens/DS/Typografia-bazowa/Value.json. Do not edit directly. */
 :root {
-  --font-weight-100: Thin;
-  --font-weight-200: ExtraLight;
-  --font-weight-300: Light;
-  --font-weight-400: Regular;
-  --font-weight-500: Medium;
-  --font-weight-600: SemiBold;
-  --font-weight-700: Bold;
-  --font-weight-900: Black;
+  --font-weight-100: 100;
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-900: 900;
   --font-family-geist: Geist;
   --font-family-geist-mono: Geist Mono;
   --font-size-9: 9px;
