@@ -5,7 +5,7 @@ addons.setConfig({
   theme: create({
     base: 'light',
     brandTitle: 'Flience Design System',
-    brandImage: './logo_flience.svg',
+    brandImage: './icon_transbit_logo.svg',
     brandUrl: './',
     brandTarget: '_self',
   }),
