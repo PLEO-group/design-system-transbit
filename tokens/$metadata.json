@@ -1,19 +1,19 @@
 {
   "tokenSetOrder": [
-    "Transbit / Facts interaction/Value",
-    "Transbit / Press links/Value",
-    "Transbit / Text links/Value",
-    "Transbit / Mobile/Light",
-    "Transbit / Mobile/Dark",
-    "DS / Kolor/Jasny",
-    "DS / Kolor/Ciemny",
-    "DS / Kolor bazowy/Wartość",
-    "DS / Typografia bazowa/Wartość",
-    "DS / Typografia/Desktop",
-    "DS / Typografia/Laptop",
-    "DS / Typografia/Tablet",
-    "DS / Typografia/Mobile",
-    "Transbit / Metka prasowa/Value",
-    "DS / Odstępy/Wartość"
+    "Transbit/Facts-interaction/Value",
+    "Transbit/Press-links/Value",
+    "Transbit/Text-links/Value",
+    "Transbit/Mobile/Light",
+    "Transbit/Mobile/Dark",
+    "DS/Kolor/Jasny",
+    "DS/Kolor/Ciemny",
+    "DS/Kolor-bazowy/Wartość",
+    "DS/Typografia-bazowa/Wartość",
+    "DS/Typografia/Desktop",
+    "DS/Typografia/Laptop",
+    "DS/Typografia/Tablet",
+    "DS/Typografia/Mobile",
+    "Transbit/Metka-prasowa/Value",
+    "DS/Odstępy/Wartość"
   ]
 }
