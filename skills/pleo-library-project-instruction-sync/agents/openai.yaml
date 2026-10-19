@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pleo Sync Instrukcji"
+  short_description: "Synchronizacja AGENTS/CLAUDE/GEMINI"
+  default_prompt: "Użyj $pleo-library-project-instruction-sync tylko przy jawnej prośbie o check, pull albo publish AGENTS.md, CLAUDE.md lub GEMINI.md. Nie traktuj go jako pre-response."

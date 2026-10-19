@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pleo Sync Shared Skilli"
+  short_description: "Sprawdza, porównuje i pobiera shared skille"
+  default_prompt: "Użyj pleo-library-shared-skill-sync, gdy użytkownik chce sprawdzić, porównać wersje albo pobrać shared skille albo gdy triage wskaże ten skill. Wynik check pokazuje missing, needsPull i needsPublish. Nie raportuj tego skilla w telemetryce."

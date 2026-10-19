@@ -1,0 +1,49 @@
+interface:
+  display_name: "Pleo Library Prompt Model Triage"
+  short_description: "Routing modelu i effort dla Claude"
+  default_prompt: "Użyj $pleo-library-prompt-model-triage, aby dobrać najtańszy sensowny model Claude, effort i kolejny skill; nie rozpoczynaj wykonania, gdy brakuje decyzji zmieniającej scope, środowisko lub rezultat."
+
+provider:
+  name: "claude"
+  catalog_verified_on: "2026-08-24"
+  reference: "references/claude.md"
+  default_tier: "balanced"
+  default_model: "claude-sonnet-5"
+  default_reasoning: "medium"
+  reasoning_levels: ["low", "medium", "high", "xhigh", "max"]
+  model_status:
+    claude-fable-5: "ga"
+    claude-opus-5: "ga"
+    claude-sonnet-5: "ga"
+    claude-haiku-4-5: "ga"
+  aliases: {}
+  notes:
+    - "Fable 5, Opus 5 i Sonnet 5 wspierają xhigh i max."
+    - "Haiku 4.5 nie ma udokumentowanego parametru effort."
+    - "Thinking tokens są rozliczane stawką output."
+  tier_map:
+    cheap: ["claude-haiku-4-5"]
+    balanced: ["claude-sonnet-5"]
+    deep: ["claude-sonnet-5", "claude-opus-5"]
+    max: ["claude-fable-5", "claude-opus-5"]
+  pricing_metadata:
+    currency: "USD"
+    unit: "per_1m_tokens"
+    reasoning_billing: "output_rate"
+  pricing_estimates:
+    claude-fable-5:
+      input_per_1m: 10.00
+      output_per_1m: 50.00
+      reasoning_per_1m: 50.00
+    claude-opus-5:
+      input_per_1m: 5.00
+      output_per_1m: 25.00
+      reasoning_per_1m: 25.00
+    claude-sonnet-5:
+      input_per_1m: 2.00
+      output_per_1m: 10.00
+      reasoning_per_1m: 10.00
+    claude-haiku-4-5:
+      input_per_1m: 1.00
+      output_per_1m: 5.00
+      reasoning_per_1m: 5.00

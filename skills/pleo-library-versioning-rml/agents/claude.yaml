@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pleo Library Versioning RML"
+  short_description: "Dobiera wersję R.M.L po zmianie artefaktu"
+  default_prompt: "Użyj $pleo-library-versioning-rml dopiero po decyzji, że lokalny skill albo specyfikacja faktycznie są zmieniane lub publikowane. Nie traktuj go jako pre-response."
