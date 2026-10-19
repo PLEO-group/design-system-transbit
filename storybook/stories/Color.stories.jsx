@@ -1,5 +1,5 @@
 import React from 'react';
-import sourceTokens from '../../tokens/DS/Kolor-bazowy/Wartość.json';
+import sourceTokens from '../../tokens/DS/Kolor-bazowy/Value.json';
 import { TokenSwatch } from '../components/TokenSwatch';
 import { flattenTokens, groupByFirstSegment, sortTokens } from '../utils';
 
