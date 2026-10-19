@@ -1,0 +1,218 @@
+{
+  "szary": {
+    "0": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#000000",
+      "$description": "Jasność 0%. #000000"
+    },
+    "18": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#2e2e2e",
+      "$description": "Jasność 18%. #2E2E2E"
+    },
+    "25": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#404040",
+      "$description": "Jasność 25%. #404040"
+    },
+    "29": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#4a4a4a",
+      "$description": "Jasność 29%. #4A4A4A"
+    },
+    "34": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#575757",
+      "$description": "Jasność 34%. #575757"
+    },
+    "42": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#6b6b6b",
+      "$description": "Jasność 42%. #6B6B6B"
+    },
+    "61": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#9b9b9b",
+      "$description": "Jasność 61%. #9B9B9B"
+    },
+    "70": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#b2b2b2",
+      "$description": "Jasność 70%. #B2B2B2"
+    },
+    "80": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#cbcbcb",
+      "$description": "Jasność 80%. #CBCBCB"
+    },
+    "84": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#d7d7d7",
+      "$description": "Jasność 84%. #D7D7D7"
+    },
+    "92": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#eaeaea",
+      "$description": "Jasność 92%. #EAEAEA"
+    },
+    "96": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$description": "Jasność 96%. #F4F4F4"
+    },
+    "100": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#ffffff",
+      "$description": "Jasność 100%. #FFFFFF"
+    }
+  },
+  "czerwien": {
+    "sygnal": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#d14958",
+      "$description": "Czerwień interfejsu."
+    },
+    "ciemna": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#a10000",
+      "$description": "Czerwień w stanie aktywnym."
+    },
+    "blada": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#da8e8e",
+      "$description": "#DA8E8E"
+    }
+  },
+  "marka": {
+    "czerwien": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#d2091e",
+      "$description": "Kolor z księgi znaku."
+    },
+    "czern": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#1d1d1b",
+      "$description": "Kolor z księgi znaku."
+    },
+    "szary-10": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#ededed",
+      "$description": "Kolor z księgi znaku."
+    },
+    "szary-30": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#c6c6c6",
+      "$description": "Kolor z księgi znaku."
+    },
+    "szary-50": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#9d9d9c",
+      "$description": "Kolor z księgi znaku."
+    }
+  },
+  "system": {
+    "zolty": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#d8b032",
+      "$description": "#D8B032"
+    },
+    "zielony": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#9dbe7b",
+      "$description": "#9DBE7B"
+    },
+    "pomaranczowy": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#ff8800",
+      "$description": "#FF8800"
+    },
+    "niebieski": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#41809d",
+      "$description": "#41809D"
+    },
+    "morski": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#2d8a7b",
+      "$description": "#2D8A7B"
+    }
+  }
+}

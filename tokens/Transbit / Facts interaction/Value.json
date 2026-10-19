@@ -1,0 +1,126 @@
+{
+  "primitive": {
+    "white": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#ffffff"
+    },
+    "deep-red": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#a10000"
+    },
+    "clear-red": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#a1000000"
+    },
+    "hover-red": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#a1000024"
+    }
+  },
+  "color": {
+    "label": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{primitive.white}"
+    },
+    "number": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{primitive.deep-red}"
+    },
+    "layer-default": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{primitive.clear-red}"
+    },
+    "layer-hover": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{primitive.hover-red}"
+    }
+  },
+  "spacing": {
+    "zero": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 0
+    },
+    "inset": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 22
+    },
+    "bottom": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 4
+    },
+    "gap-default": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 16
+    },
+    "gap-hover": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 20
+    }
+  }
+}

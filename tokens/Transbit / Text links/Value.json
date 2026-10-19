@@ -1,0 +1,15 @@
+{
+  "color": {
+    "red": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#d14958"
+    }
+  }
+}
