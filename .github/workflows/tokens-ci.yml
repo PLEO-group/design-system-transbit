@@ -9,6 +9,8 @@ on:
       - 'style-dictionary.config.js'
       - 'package.json'
       - 'package-lock.json'
+      - '.storybook/**'
+      - 'storybook/**'
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
@@ -17,6 +19,8 @@ on:
       - 'style-dictionary.config.js'
       - 'package.json'
       - 'package-lock.json'
+      - '.storybook/**'
+      - 'storybook/**'
       - '.github/workflows/tokens-ci.yml'
 
 permissions:
@@ -40,6 +44,9 @@ jobs:
 
       - name: Build design tokens
         run: npm run build
+
+      - name: Build Storybook
+        run: npm run build-storybook
 
       - name: Verify package contents
         run: npm pack --dry-run
