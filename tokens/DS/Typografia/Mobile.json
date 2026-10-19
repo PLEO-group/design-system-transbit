@@ -4,11 +4,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.500}"
       },
       "family": {
@@ -56,11 +56,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.500}"
       },
       "family": {
@@ -108,11 +108,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.600}"
       },
       "family": {
@@ -160,11 +160,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -212,11 +212,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.500}"
       },
       "family": {
@@ -264,11 +264,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.500}"
       },
       "family": {
@@ -316,11 +316,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.300}"
       },
       "family": {
@@ -368,11 +368,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.300}"
       },
       "family": {
@@ -420,11 +420,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -472,11 +472,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -524,11 +524,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.700}"
       },
       "family": {
@@ -576,11 +576,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -628,11 +628,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -680,11 +680,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -732,11 +732,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -784,11 +784,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -836,11 +836,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.900}"
       },
       "family": {
@@ -888,11 +888,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -940,11 +940,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -992,11 +992,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -1044,11 +1044,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -1096,11 +1096,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -1148,11 +1148,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.700}"
       },
       "family": {
@@ -1200,11 +1200,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.300}"
       },
       "family": {
@@ -1252,11 +1252,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -1304,11 +1304,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.600}"
       },
       "family": {
@@ -1356,11 +1356,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -1408,11 +1408,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -1460,11 +1460,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {
@@ -1512,11 +1512,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.700}"
       },
       "family": {
@@ -1564,11 +1564,11 @@
       "weight": {
         "$extensions": {
           "com.figma.scopes": [
-            "FONT_STYLE"
+            "FONT_WEIGHT"
           ],
           "com.figma.hiddenFromPublishing": false
         },
-        "$type": "text",
+        "$type": "number",
         "$value": "{font-weight.400}"
       },
       "family": {

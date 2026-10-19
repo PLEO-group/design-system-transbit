@@ -4,57 +4,57 @@
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "Thin"
+      "$type": "number",
+      "$value": 100
     },
     "200": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "ExtraLight"
+      "$type": "number",
+      "$value": 200
     },
     "300": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "Light"
+      "$type": "number",
+      "$value": 300
     },
     "400": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "Regular"
+      "$type": "number",
+      "$value": 400
     },
     "500": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "Medium"
+      "$type": "number",
+      "$value": 500
     },
     "600": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "SemiBold"
+      "$type": "number",
+      "$value": 600
     },
     "700": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "Bold"
+      "$type": "number",
+      "$value": 700
     },
     "900": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "Black"
+      "$type": "number",
+      "$value": 900
     }
   },
   "font-family": {
