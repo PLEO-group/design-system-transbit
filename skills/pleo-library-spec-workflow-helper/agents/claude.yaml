@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pleo Spec Workflow Helper"
+  short_description: "Obsługuje storage, spec-review i prespecki"
+  default_prompt: "Użyj $pleo-library-spec-workflow-helper, aby sprawdzić docs/sdd/versioning.md względem DO Spaces, po zgodzie użytkownika pobrać nowszą wersję ze storage, zrobić jednorazowy bootstrap storage z specification.md i story-*.md, opublikować lub zaktualizować workflow przez specification.md, story-<jira>.md i affectedSpecifications albo pobrać kontekst prespecki i po potwierdzeniu ją uruchomić."

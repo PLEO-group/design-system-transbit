@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pleo Publisher Skilli"
+  short_description: "Publikuje, audytuje i migruje skill w bibliotece"
+  default_prompt: "Użyj pleo-library-skill-publisher tylko przy jawnej prośbie o publish, audit, migrację scope, rename albo delete skilla w Pleo Library. Przy PROJECT -> SHARED użyj migrate-project-to-shared. Przy sprawdzaniu stanu użyj audit. Nie traktuj go jako pre-response."

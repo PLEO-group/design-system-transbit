@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pleo Bootstrap Skilli"
+  short_description: "Bootstrap skilli i instrukcji projektu"
+  default_prompt: "Użyj $pleo-library-project-skill-bootstrap tylko przy jawnej prośbie o onboarding repo, naprawę struktury skills, .agent-library.yaml albo sekcji skilli w instrukcjach. Pilnuj flow: version guard sprawdza target i status manifestu, robi pełny sync tylko gdy potrzebny oraz automatycznie aktualizuje wykryte outdated skille z czystymi katalogami Git. Zachowaj brak telemetryki dla pleo-library-* i telemetrykę tylko dla pozostałych skilli."

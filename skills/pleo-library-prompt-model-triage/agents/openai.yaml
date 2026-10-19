@@ -1,0 +1,49 @@
+interface:
+  display_name: "Pleo Library Prompt Model Triage"
+  short_description: "Routing modelu i reasoning dla OpenAI"
+  default_prompt: "Użyj $pleo-library-prompt-model-triage, aby dobrać najtańszy sensowny model OpenAI, reasoning i kolejny skill; nie rozpoczynaj wykonania, gdy brakuje decyzji zmieniającej scope, środowisko lub rezultat."
+
+provider:
+  name: "openai"
+  catalog_verified_on: "2026-08-24"
+  reference: "references/codex-openai.md"
+  default_tier: "balanced"
+  default_model: "gpt-5.6-terra"
+  default_reasoning: "medium"
+  reasoning_levels: ["none", "low", "medium", "high", "xhigh", "max"]
+  execution_modes: ["standard", "pro"]
+  model_status:
+    gpt-5.6-sol: "ga"
+    gpt-5.6-terra: "ga"
+    gpt-5.6-luna: "ga"
+  aliases:
+    gpt-5.6: "gpt-5.6-sol"
+  notes:
+    - "Alias gpt-5.6 wskazuje gpt-5.6-sol."
+    - "Pro jest trybem wykonania niezależnym od reasoning effort."
+    - "Nie mapuj runtime'owego ultra na API max bez potwierdzenia runtime."
+  tier_map:
+    cheap: ["gpt-5.6-luna"]
+    balanced: ["gpt-5.6-terra"]
+    deep: ["gpt-5.6-sol"]
+    max: ["gpt-5.6-sol"]
+  pricing_metadata:
+    currency: "USD"
+    unit: "per_1m_tokens"
+    reasoning_billing: "output_rate"
+    long_context_threshold_tokens: 272000
+    long_context_input_multiplier: 2.0
+    long_context_output_multiplier: 1.5
+  pricing_estimates:
+    gpt-5.6-sol:
+      input_per_1m: 4.00
+      output_per_1m: 20.00
+      reasoning_per_1m: 20.00
+    gpt-5.6-terra:
+      input_per_1m: 2.00
+      output_per_1m: 12.00
+      reasoning_per_1m: 12.00
+    gpt-5.6-luna:
+      input_per_1m: 0.20
+      output_per_1m: 1.20
+      reasoning_per_1m: 1.20

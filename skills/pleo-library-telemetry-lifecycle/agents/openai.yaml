@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pleo Telemetry Lifecycle"
+  short_description: "Raportuje lifecycle skilli do API"
+  default_prompt: "Użyj $pleo-library-telemetry-lifecycle tylko dla skilli docelowych spoza pleo-library-*. Po target-only version preflight telemetryki raportuj start, progress tylko przy realnej zmianie etapu, a potem finish albo interrupt. Nie wysyłaj heartbeatów; aktywna sesja bez terminalnej wiadomości zostanie automatycznie uznana za przerwaną po 30 minutach bez nowych eventów. Nie raportuj skilli pleo-library-*, version preflightu ani samej telemetryki."
