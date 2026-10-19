@@ -4,57 +4,57 @@
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "100"
+      "$type": "number",
+      "$value": 100
     },
     "200": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "200"
+      "$type": "number",
+      "$value": 200
     },
     "300": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "300"
+      "$type": "number",
+      "$value": 300
     },
     "400": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "400"
+      "$type": "number",
+      "$value": 400
     },
     "500": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "500"
+      "$type": "number",
+      "$value": 500
     },
     "600": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "600"
+      "$type": "number",
+      "$value": 600
     },
     "700": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "700"
+      "$type": "number",
+      "$value": 700
     },
     "900": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "text",
-      "$value": "900"
+      "$type": "number",
+      "$value": 900
     }
   },
   "font-family": {
