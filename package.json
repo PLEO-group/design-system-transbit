@@ -1,0 +1,25 @@
+{
+  "name": "@pleodigital/design-system-transbit",
+  "version": "1.0.0",
+  "description": "Design tokens for Transbit, generated from Tokens Studio exports.",
+  "style": "dist/css/tokens.css",
+  "exports": {
+    ".": "./dist/css/tokens.css",
+    "./css/tokens.css": "./dist/css/tokens.css",
+    "./css/*": "./dist/css/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:tokens": "node build-style-dictionary.js",
+    "build": "npm run build:tokens"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.9.2"
+  }
+}

@@ -1,0 +1,23 @@
+/* Generated from tokens/DS/Odstępy/Wartość.json. Do not edit directly. */
+:root {
+  --odstep-2: 2px;
+  --odstep-4: 4px;
+  --odstep-5: 5px;
+  --odstep-6: 6px;
+  --odstep-8: 8px;
+  --odstep-10: 10px;
+  --odstep-12: 12px;
+  --odstep-14: 14px;
+  --odstep-16: 16px;
+  --odstep-20: 20px;
+  --odstep-24: 24px;
+  --odstep-32: 32px;
+  --odstep-40: 40px;
+  --odstep-64: 64px;
+  --przycisk-wysokosc: 39px;
+  --przycisk-padding-poziomy: 24px;
+  --przycisk-padding-gora: 10px;
+  --przycisk-padding-dol: 11px;
+  --przycisk-gniazdo-strzalki: 22px;
+  --przycisk-odsuniecie-strzalki: 13px;
+}

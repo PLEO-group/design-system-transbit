@@ -1,0 +1,24 @@
+/* Generated from tokens/Transbit/Mobile/Dark.json. Do not edit directly. */
+:root[data-transbit-mobile-theme="dark"] {
+  --bg-page: #2e2e2e;
+  --bg-white: #383838;
+  --bg-dark: #2e2e2e;
+  --bg-card: #383838;
+  --text-primary: #f4f4f4;
+  --text-muted: #bababa;
+  --text-inverse: #f4f4f4;
+  --text-subtle: #bababa;
+  --text-on-accent: #000000;
+  --border-light: #565656;
+  --border-dark: #565656;
+  --space-0: 0px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+}

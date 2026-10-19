@@ -1,0 +1,45 @@
+name: Build design tokens
+
+on:
+  push:
+    branches: ['feature/**']
+    paths:
+      - 'tokens/**/*.json'
+      - 'build-style-dictionary.js'
+      - 'style-dictionary.config.js'
+      - 'package.json'
+      - 'package-lock.json'
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'tokens/**/*.json'
+      - 'build-style-dictionary.js'
+      - 'style-dictionary.config.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/tokens-ci.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build-tokens:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build design tokens
+        run: npm run build
+
+      - name: Verify package contents
+        run: npm pack --dry-run
