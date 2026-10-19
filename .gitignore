@@ -1,3 +1,7 @@
 node_modules
 .idea
 storybook-static
+.vercel
+.env*
+.dist
+.style-dictionary-tmp

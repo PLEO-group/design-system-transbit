@@ -1,0 +1,44 @@
+{
+  "name": "@pleodigital/design-system-transbit",
+  "version": "1.0.0",
+  "description": "Design tokens for Transbit, generated from Tokens Studio exports.",
+  "style": "dist/css/tokens.css",
+  "exports": {
+    ".": "./dist/css/tokens.css",
+    "./css/tokens.css": "./dist/css/tokens.css",
+    "./css/*": "./dist/css/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build:tokens": "node build-style-dictionary.js",
+    "build": "npm run build:tokens",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "npm run build && storybook build"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.2.0",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-interactions": "^8.0.0",
+    "@storybook/addon-links": "^8.0.0",
+    "@storybook/blocks": "^8.0.0",
+    "@storybook/manager-api": "^8.6.18",
+    "@storybook/react": "^8.0.0",
+    "@storybook/react-vite": "^8.0.0",
+    "@storybook/test": "^8.0.0",
+    "@storybook/theming": "^8.6.18",
+    "@svgr/cli": "^8.1.0",
+    "cpx": "^1.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^8.0.0",
+    "style-dictionary": "^3.9.2"
+  }
+}

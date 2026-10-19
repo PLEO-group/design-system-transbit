@@ -1,0 +1,16 @@
+/* Generated from tokens/Transbit/Facts-interaction/Value.json. Do not edit directly. */
+:root {
+  --primitive-white: #ffffff;
+  --primitive-deep-red: #a10000;
+  --primitive-clear-red: #a1000000;
+  --primitive-hover-red: #a1000024;
+  --color-label: var(--primitive-white);
+  --color-number: var(--primitive-deep-red);
+  --color-layer-default: var(--primitive-clear-red);
+  --color-layer-hover: var(--primitive-hover-red);
+  --spacing-zero: 0px;
+  --spacing-inset: 22px;
+  --spacing-bottom: 4px;
+  --spacing-gap-default: 16px;
+  --spacing-gap-hover: 20px;
+}
