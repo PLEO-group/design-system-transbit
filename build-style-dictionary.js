@@ -64,7 +64,8 @@ function formatValue(token) {
 
   const value = token.value;
   if (typeof value === 'number' || (typeof value === 'string' && /^-?\d+(\.\d+)?$/.test(value))) {
-    return token.type === 'number' ? `${value}px` : String(value);
+    const isFontWeight = token.path[0] === 'font-weight';
+    return token.type === 'number' && !isFontWeight ? `${value}px` : String(value);
   }
   if (typeof value === 'string' && token.path.at(-1).toLowerCase() === 'family' && value.includes(' ')) {
     return `"${value.replace(/"/g, '\\"')}"`;

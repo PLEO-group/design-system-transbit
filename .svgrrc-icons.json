@@ -1,0 +1,28 @@
+{
+  "svgo": true,
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "preset-default",
+        "params": {
+          "overrides": {
+            "cleanupIds": {
+              "minify": true,
+              "remove": false
+            }
+          }
+        }
+      },
+      {
+        "name": "removeDimensions",
+        "active": true
+      },
+      {
+        "name": "convertColors",
+        "params": {
+          "currentColor": true
+        }
+      }
+    ]
+  }
+}

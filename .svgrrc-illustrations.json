@@ -1,0 +1,22 @@
+{
+  "svgo": true,
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "preset-default",
+        "params": {
+          "overrides": {
+            "cleanupIds": false
+          }
+        }
+      },
+      {
+        "name": "removeDimensions",
+        "active": true
+      }
+    ]
+  },
+  "svgProps": {
+    "aria-hidden": true
+  }
+}

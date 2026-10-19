@@ -30,4 +30,4 @@ typography tokens. Use the toolbar to switch token modes. Generate the static
 site with `npm run build-storybook`.
 
 The development server runs at `http://localhost:6007`, leaving port 6006
-available for the Flience Storybook.
+available for the Transbit Storybook.
