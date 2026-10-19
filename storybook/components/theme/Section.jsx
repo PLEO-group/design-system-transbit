@@ -14,7 +14,7 @@ const gridStyle = {
 
 const titleStyle = {
   margin: '0 0 16px',
-  color: 'var(--color-text-primary)',
+  color: 'var(--tekst-glowny)',
   fontSize: 20,
   lineHeight: '28px',
 };
@@ -23,10 +23,10 @@ const previewStyle = {
   width: '100%',
   minHeight: 88,
   padding: 16,
-  border: '1px solid var(--color-border-subtle)',
+  border: '1px solid var(--linia-obrys)',
   borderRadius: 8,
-  background: 'var(--color-bg-elevated)',
-  color: 'var(--color-text-primary)',
+  background: 'var(--powierzchnia-karta)',
+  color: 'var(--tekst-glowny)',
 };
 
 function tailwindClassName(token, mode) {
@@ -54,7 +54,7 @@ const ThemePreview = ({ token, mode }) => {
         <p
           style={{
             margin: '12px 0 0',
-            color: 'var(--color-text-secondary)',
+            color: 'var(--tekst-drugorzedny)',
             fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace',
             fontSize: 12,
             lineHeight: '16px',
@@ -72,7 +72,7 @@ const ThemePreview = ({ token, mode }) => {
         <p
           style={{
             margin: 0,
-            color: 'var(--color-text-secondary)',
+            color: 'var(--tekst-drugorzedny)',
             fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace',
             fontSize: 12,
             lineHeight: '16px',
