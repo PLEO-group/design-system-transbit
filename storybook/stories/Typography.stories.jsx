@@ -93,7 +93,7 @@ export default {
   },
   argTypes: {
     scale: {
-      options: ['desktop', 'tablet', 'mobile'],
+      options: ['desktop', 'laptop', 'tablet', 'mobile'],
       control: { type: 'inline-radio' },
     },
   },
