@@ -129,6 +129,22 @@
       "$type": "color",
       "$value": "#da8e8e",
       "$description": "#DA8E8E"
+    },
+    "sygnal-ciemniejsza": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#cd4456",
+      "$description": "Czerwień sygnałowa przyciemniona o 4 stopnie na kanał, żeby biała etykieta 14 px miała kontrast 4,61:1 (WCAG AA). Używa jej przycisk Akcent (DEC-29)."
+    },
+    "sygnal-najechanie": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "#c53f4e",
+      "$description": "Czerwień wyróżnionego kafla w stanie najechania; z białym tekstem 5,0:1 (DEC-33)."
     }
   },
   "marka": {

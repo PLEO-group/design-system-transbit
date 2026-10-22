@@ -281,6 +281,36 @@
       },
       "$type": "number",
       "$value": 13
+    },
+    "padding-pion-dotyk": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-padding-pion-dotyk)"
+        }
+      },
+      "$type": "number",
+      "$value": 15,
+      "$description": "Odstęp górny i dolny przycisku dotykowego (Przycisk / Dotyk, DEC-10)."
+    },
+    "wysokosc-dotyk": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--przycisk-wysokosc-dotyk)"
+        }
+      },
+      "$type": "number",
+      "$value": 48,
+      "$description": "Wysokość przycisku dotykowego (Przycisk / Dotyk, DEC-07 i DEC-10). W Figmie wynika z odstępów i interlinii etykiety; wartość dla kodu."
     }
   }
 }

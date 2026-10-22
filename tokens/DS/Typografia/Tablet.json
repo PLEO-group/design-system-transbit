@@ -1611,6 +1611,150 @@
         "$type": "number",
         "$value": "{letter-spacing.0}"
       }
+    },
+    "haslo": {
+      "family": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_FAMILY"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-haslo-family)"
+          }
+        },
+        "$type": "text",
+        "$value": "{font-family.geist-mono}",
+        "$description": "Hasło strony głównej, nagłówek (np. „Łączność to ciągłość dowodzenia.”). Desktop 1:1 z widoku, Tablet i Mobile z makiet (DEC-33), Laptop wzorem DEC-17."
+      },
+      "size": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_SIZE"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-haslo-size)"
+          }
+        },
+        "$type": "number",
+        "$value": "{font-size.54}",
+        "$description": "Hasło strony głównej, nagłówek (np. „Łączność to ciągłość dowodzenia.”). Desktop 1:1 z widoku, Tablet i Mobile z makiet (DEC-33), Laptop wzorem DEC-17."
+      },
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-haslo-line-height)"
+          }
+        },
+        "$type": "number",
+        "$value": "{line-height.62}",
+        "$description": "Hasło strony głównej, nagłówek (np. „Łączność to ciągłość dowodzenia.”). Desktop 1:1 z widoku, Tablet i Mobile z makiet (DEC-33), Laptop wzorem DEC-17."
+      },
+      "weight": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_WEIGHT"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-haslo-weight)"
+          }
+        },
+        "$type": "number",
+        "$value": "{font-weight.500}",
+        "$description": "Hasło strony głównej, nagłówek (np. „Łączność to ciągłość dowodzenia.”). Desktop 1:1 z widoku, Tablet i Mobile z makiet (DEC-33), Laptop wzorem DEC-17."
+      },
+      "letter-spacing": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LETTER_SPACING"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-haslo-letter-spacing)"
+          }
+        },
+        "$type": "number",
+        "$value": "{letter-spacing.0}",
+        "$description": "Hasło strony głównej, nagłówek (np. „Łączność to ciągłość dowodzenia.”). Desktop 1:1 z widoku, Tablet i Mobile z makiet (DEC-33), Laptop wzorem DEC-17."
+      }
+    },
+    "haslo-opis": {
+      "family": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_FAMILY"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-haslo-opis-family)"
+          }
+        },
+        "$type": "text",
+        "$value": "{font-family.geist}",
+        "$description": "Hasło strony głównej, opis pod nagłówkiem. Desktop 1:1 z widoku (cienki, odstęp liter 13% = 2,6 px), Tablet i Mobile z makiet (zwykły, bez odstępu), Laptop wzorem DEC-17 (DEC-33)."
+      },
+      "size": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_SIZE"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-haslo-opis-size)"
+          }
+        },
+        "$type": "number",
+        "$value": "{font-size.18}",
+        "$description": "Hasło strony głównej, opis pod nagłówkiem. Desktop 1:1 z widoku (cienki, odstęp liter 13% = 2,6 px), Tablet i Mobile z makiet (zwykły, bez odstępu), Laptop wzorem DEC-17 (DEC-33)."
+      },
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-haslo-opis-line-height)"
+          }
+        },
+        "$type": "number",
+        "$value": "{line-height.28}",
+        "$description": "Hasło strony głównej, opis pod nagłówkiem. Desktop 1:1 z widoku (cienki, odstęp liter 13% = 2,6 px), Tablet i Mobile z makiet (zwykły, bez odstępu), Laptop wzorem DEC-17 (DEC-33). DEC-34 B (2026-10-20): Desktop i Laptop 28 zamiast 74 i 73, odstęp pod nagłówkiem 8 px (odstep/8)."
+      },
+      "weight": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_WEIGHT"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-haslo-opis-weight)"
+          }
+        },
+        "$type": "number",
+        "$value": "{font-weight.400}",
+        "$description": "Hasło strony głównej, opis pod nagłówkiem. Desktop 1:1 z widoku (cienki, odstęp liter 13% = 2,6 px), Tablet i Mobile z makiet (zwykły, bez odstępu), Laptop wzorem DEC-17 (DEC-33)."
+      },
+      "letter-spacing": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LETTER_SPACING"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-haslo-opis-letter-spacing)"
+          }
+        },
+        "$type": "number",
+        "$value": "{letter-spacing.0}",
+        "$description": "Hasło strony głównej, opis pod nagłówkiem. Desktop 1:1 z widoku (cienki, odstęp liter 13% = 2,6 px), Tablet i Mobile z makiet (zwykły, bez odstępu), Laptop wzorem DEC-17 (DEC-33)."
+      }
     }
   }
 }
