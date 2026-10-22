@@ -235,6 +235,13 @@
       "$type": "number",
       "$value": 33
     },
+    "34": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 34
+    },
     "36": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
@@ -524,6 +531,13 @@
       "$type": "number",
       "$value": 39
     },
+    "40": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 40
+    },
     "42": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
@@ -601,6 +615,13 @@
       "$type": "number",
       "$value": 61
     },
+    "62": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 62
+    },
     "67": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
@@ -614,6 +635,13 @@
       },
       "$type": "number",
       "$value": 69
+    },
+    "71": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 71
     },
     "72": {
       "$extensions": {
@@ -679,6 +707,13 @@
       },
       "$type": "number",
       "$value": 1.2
+    },
+    "2_6": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "number",
+      "$value": 2.6
     }
   }
 }

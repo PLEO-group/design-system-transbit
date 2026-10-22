@@ -273,6 +273,48 @@
       "$type": "color",
       "$value": "{szary.70}",
       "$description": "Tekst drugorzędny na powierzchni ciemnej."
+    },
+    "odnosnik": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--tekst-odnosnik)"
+        }
+      },
+      "$type": "color",
+      "$value": "{marka.czerwien}",
+      "$description": "Odnośnik tekstowy, np. „Czytaj wpis”: w jasnym motywie czerwień marki, w ciemnym jasna szarość, bo czerwień na ciemnej karcie ma 1,6:1. Strzałka obok zostaje na marka/czerwien (DEC-33)."
+    },
+    "wyrozniony": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--tekst-wyrozniony)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.25}",
+      "$description": "Wyróżnione słowo w dwukolorowym nagłówku (np. „Łączność” w haśle strony głównej). Jasny #404040, ciemny #FFFFFF. Para z tekst/wyciszony-staly."
+    },
+    "wyciszony-staly": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--tekst-wyciszony-staly)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.61}",
+      "$description": "Wyciszona część dwukolorowego nagłówka; ten sam szary #9B9B9B w obu motywach. Para z tekst/wyrozniony."
     }
   },
   "linia": {
@@ -364,6 +406,36 @@
       "$type": "color",
       "$value": "{czerwien.blada}",
       "$description": "Blada czerwień kart systemów."
+    },
+    "kafel": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--akcent-kafel)"
+        }
+      },
+      "$type": "color",
+      "$value": "{czerwien.sygnal-ciemniejsza}",
+      "$description": "Tło wyróżnionego kafla (czerwony kafel modułu Na bieżąco). Tekst na nim: tekst/na-ciemnym-mocny, kontrast 4,6:1 (DEC-33). Najechanie: akcent/kafel-najechanie."
+    },
+    "kafel-najechanie": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--akcent-kafel-najechanie)"
+        }
+      },
+      "$type": "color",
+      "$value": "{czerwien.sygnal-najechanie}",
+      "$description": "Tło wyróżnionego kafla w stanie najechania; z białym tekstem 5,0:1 (DEC-33)."
     }
   },
   "przycisk": {
@@ -424,8 +496,8 @@
         }
       },
       "$type": "color",
-      "$value": "{czerwien.sygnal}",
-      "$description": "Przycisk Akcent."
+      "$value": "{czerwien.sygnal-ciemniejsza}",
+      "$description": "Przycisk Akcent. Czerwień sygnałowa przyciemniona do kontrastu 4,61:1 z białą etykietą (DEC-29); najechanie: przycisk/akcent-aktywny."
     },
     "akcent-aktywny": {
       "$extensions": {
