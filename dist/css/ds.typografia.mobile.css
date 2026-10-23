@@ -155,4 +155,14 @@
   --typo-mono-xl-size: var(--font-size-23);
   --typo-mono-xl-line-height: var(--line-height-31);
   --typo-mono-xl-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-family: var(--font-family-geist-mono);
+  --typo-haslo-size: var(--font-size-34);
+  --typo-haslo-line-height: var(--line-height-40);
+  --typo-haslo-weight: var(--font-weight-500);
+  --typo-haslo-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-opis-family: var(--font-family-geist);
+  --typo-haslo-opis-size: var(--font-size-14);
+  --typo-haslo-opis-line-height: var(--line-height-20);
+  --typo-haslo-opis-weight: var(--font-weight-400);
+  --typo-haslo-opis-letter-spacing: var(--letter-spacing-0);
 }

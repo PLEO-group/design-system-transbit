@@ -116,9 +116,27 @@ function build() {
     return { relativeSource, temporaryPath };
   });
 
+  const typographyRoles = new Set();
+  const typographyProperties = {
+    'font-family': 'family',
+    'font-size': 'size',
+    'font-weight': 'weight',
+    'line-height': 'line-height',
+    'letter-spacing': 'letter-spacing',
+  };
+
   StyleDictionary.registerFormat({
     name: 'transbit/css-variables',
     formatter: ({ dictionary, options }) => {
+      const names = new Set(dictionary.allProperties.map((token) => variableName(token.path)));
+      dictionary.allProperties
+        .filter((token) => token.path[0] === 'typo' && token.path.length === 3)
+        .forEach((token) => {
+          const role = kebab(token.path[1]);
+          if (Object.values(typographyProperties).every((property) => names.has(`--typo-${role}-${property}`))) {
+            typographyRoles.add(role);
+          }
+        });
       const declarations = dictionary.allProperties
         // An alias from a themed token to the same CSS variable would become
         // self-referential. Omitting it correctly inherits the base token.
@@ -153,6 +171,13 @@ function build() {
   const files = entries.map(({ relativeSource }) => `${sourceKey(relativeSource)}.css`);
   const bundle = files.map((file) => fs.readFileSync(path.join(OUTPUT_DIR, file), 'utf8').trim()).join('\n\n');
   fs.writeFileSync(path.join(OUTPUT_DIR, 'tokens.css'), `${bundle}\n`);
+  const typography = [...typographyRoles].sort().map((role) => {
+    const declarations = Object.entries(typographyProperties)
+      .map(([property, token]) => `    ${property}: var(--typo-${role}-${token});`);
+    return `  .ds-text--${role} {\n${declarations.join('\n')}\n  }`;
+  });
+  fs.writeFileSync(path.join(OUTPUT_DIR, 'typography.css'),
+    `/* Generated from typography tokens. Do not edit directly. */\n@layer components {\n${typography.join('\n\n')}\n}\n`);
   fs.writeFileSync(path.join(OUTPUT_DIR, 'manifest.json'), `${JSON.stringify({ files }, null, 2)}\n`);
   fs.rmSync(TEMP_DIR, { recursive: true, force: true });
   console.log(`Built ${files.length} token set(s) in dist/css.`);

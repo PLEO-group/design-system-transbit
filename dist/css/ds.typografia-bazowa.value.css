@@ -33,6 +33,7 @@
   --font-size-29: 29px;
   --font-size-30: 30px;
   --font-size-33: 33px;
+  --font-size-34: 34px;
   --font-size-36: 36px;
   --font-size-38: 38px;
   --font-size-39: 39px;
@@ -74,6 +75,7 @@
   --line-height-36: 36px;
   --line-height-37: 37px;
   --line-height-39: 39px;
+  --line-height-40: 40px;
   --line-height-42: 42px;
   --line-height-44: 44px;
   --line-height-46: 46px;
@@ -85,8 +87,10 @@
   --line-height-54: 54px;
   --line-height-59: 59px;
   --line-height-61: 61px;
+  --line-height-62: 62px;
   --line-height-67: 67px;
   --line-height-69: 69px;
+  --line-height-71: 71px;
   --line-height-72: 72px;
   --line-height-73: 73px;
   --line-height-74: 74px;
@@ -96,4 +100,5 @@
   --line-height-134: 134px;
   --letter-spacing-0: 0px;
   --letter-spacing-wide: 1.2px;
+  --letter-spacing-2-6: 2.6px;
 }

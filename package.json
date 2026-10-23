@@ -6,6 +6,7 @@
   "exports": {
     ".": "./dist/css/tokens.css",
     "./css/tokens.css": "./dist/css/tokens.css",
+    "./css/typography.css": "./dist/css/typography.css",
     "./css/*": "./dist/css/*"
   },
   "publishConfig": {
@@ -18,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
+    "test": "npm run build:tokens && node --test tests/typography.test.js",
     "build:tokens": "node build-style-dictionary.js",
     "transform:icons": "npx @svgr/cli assets/icons --out-dir dist/assets/react/icons --jsx-runtime classic --typescript --config-file .svgrrc-icons.json",
     "transform:illustrations": "npx @svgr/cli assets/illustrations --out-dir dist/assets/react/illustrations --jsx-runtime classic --typescript --config-file .svgrrc-illustrations.json",
