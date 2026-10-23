@@ -63,5 +63,27 @@ the start of the application's CSS. Utilities such as `font-semibold` then
 override the role weight with 600. No scanning of this package in
 `node_modules` is needed: all role classes are already present in the CSS.
 
-Run `npm test` to check role coverage, variable references, exports and
-repeatable token output.
+## React icons and raw SVG
+
+`npm run transform:icons` generates TypeScript React components and `index.ts`
+from `assets/icons/*.svg` in `dist/assets/react/icons/`. SVGO removes fixed
+dimensions and converts icon colors to `currentColor`; set size and color through props.
+
+```tsx
+import { IconUiSearch } from '@pleodigital/design-system-transbit/icons';
+// Alternatively:
+// import IconUiSearch from '@pleodigital/design-system-transbit/dist/assets/react/icons/IconUiSearch.tsx';
+
+<IconUiSearch width={24} height={24} style={{ color: 'green' }} />
+```
+
+The package ships source TSX. Configure your application's bundler to transpile
+this dependency and provide React in the consuming application.
+
+`npm run build` also copies the original SVG files unchanged to
+`dist/assets/angular/svg-raw/icons/`. These are framework-independent SVG assets,
+not Angular components; they retain their original colors and dimensions.
+All `dist/` files are included in the npm package. CI builds before publishing;
+`prepublishOnly` also rebuilds for manual `npm publish`.
+
+Run `npm test` to check typography, generated icons, raw SVG copies and package exports.

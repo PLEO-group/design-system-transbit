@@ -5,6 +5,8 @@ on:
     branches: ['feature/**']
     paths:
       - 'tokens/**/*.json'
+      - 'assets/**'
+      - '.svgrrc-*.json'
       - 'build-style-dictionary.js'
       - 'tests/**'
       - 'style-dictionary.config.js'
@@ -16,6 +18,8 @@ on:
     types: [opened, synchronize, reopened]
     paths:
       - 'tokens/**/*.json'
+      - 'assets/**'
+      - '.svgrrc-*.json'
       - 'build-style-dictionary.js'
       - 'tests/**'
       - 'style-dictionary.config.js'
@@ -47,7 +51,7 @@ jobs:
       - name: Build design tokens
         run: npm run build
 
-      - name: Test typography CSS
+      - name: Test typography CSS and icon package
         run: npm test
 
       - name: Build Storybook
