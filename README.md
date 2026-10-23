@@ -87,3 +87,41 @@ All `dist/` files are included in the npm package. CI builds before publishing;
 `prepublishOnly` also rebuilds for manual `npm publish`.
 
 Run `npm test` to check typography, generated icons, raw SVG copies and package exports.
+
+## Responsive typography
+
+Use the same CSS imports as above. Add the base class to opt into responsive
+font size and line height:
+
+```html
+<html>
+  <body>
+    <h1 class="ds-text ds-text--display">Responsive heading</h1>
+    <p class="ds-text ds-text--body font-semibold">Responsive body text</p>
+  </body>
+</html>
+```
+
+Without `data-typography-scale`, responsive elements select Mobile tokens below
+`36rem`, Tablet tokens from `36rem`, and Desktop tokens from `64rem`. The design
+widths are respectively 402px, 768px and 1728px. Each dimension is computed as
+`min(token × viewport width / design width, token × 1px)` using generated
+unitless `-n` tokens. Values come from the existing token sources, including
+aliases; no separate role values are maintained.
+
+Breakpoint changes can cause jumps, including a smaller size on entering the
+Desktop scale. This is capped scaling within each range, not continuous
+interpolation between design values. Existing classes without `.ds-text`
+retain their static behavior. `.ds-text` also resets margin to zero.
+
+Remove `data-typography-scale` from `<html>` for automatic breakpoint selection.
+An explicit `mobile`, `tablet` or `desktop` attribute locks the selected token
+set and design width regardless of viewport. The existing `laptop` mode keeps
+its static dimensions because this responsive model defines no Laptop design
+width.
+
+Applications can override `--rpx` (default `1px`) and `--rvw` (responsive pixel).
+If no responsive pixel is available, the base class uses the regular pixel.
+Static size and line-height declarations remain outside the `@supports`
+block; browsers without `min()` use these values. All typography rules stay
+in `components`, so Tailwind utilities can override them.

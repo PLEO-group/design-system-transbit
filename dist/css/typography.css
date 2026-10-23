@@ -1,5 +1,725 @@
 /* Generated from typography tokens. Do not edit directly. */
 @layer components {
+:root:not([data-typography-scale]) .ds-text {
+  --ds-text-auto-rvw: calc(100vw / 402);
+--typo-stat-weight: var(--font-weight-500);
+  --typo-stat-family: var(--font-family-geist-mono);
+  --typo-stat-size: var(--font-size-52);
+  --typo-stat-size-n: var(--font-size-52-n);
+  --typo-stat-line-height: var(--line-height-67);
+  --typo-stat-line-height-n: var(--line-height-67-n);
+  --typo-stat-letter-spacing: var(--letter-spacing-0);
+  --typo-display-weight: var(--font-weight-500);
+  --typo-display-family: var(--font-family-geist-mono);
+  --typo-display-size: var(--font-size-40);
+  --typo-display-size-n: var(--font-size-40-n);
+  --typo-display-line-height: var(--line-height-36);
+  --typo-display-line-height-n: var(--line-height-36-n);
+  --typo-display-letter-spacing: var(--letter-spacing-0);
+  --typo-h1-weight: var(--font-weight-600);
+  --typo-h1-family: var(--font-family-geist-mono);
+  --typo-h1-size: var(--font-size-39);
+  --typo-h1-size-n: var(--font-size-39-n);
+  --typo-h1-line-height: var(--line-height-32);
+  --typo-h1-line-height-n: var(--line-height-32-n);
+  --typo-h1-letter-spacing: var(--letter-spacing-0);
+  --typo-h2-weight: var(--font-weight-400);
+  --typo-h2-family: var(--font-family-geist-mono);
+  --typo-h2-size: var(--font-size-33);
+  --typo-h2-size-n: var(--font-size-33-n);
+  --typo-h2-line-height: var(--line-height-42);
+  --typo-h2-line-height-n: var(--line-height-42-n);
+  --typo-h2-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-weight: var(--font-weight-500);
+  --typo-h3-family: var(--font-family-geist-mono);
+  --typo-h3-size: var(--font-size-27);
+  --typo-h3-size-n: var(--font-size-27-n);
+  --typo-h3-line-height: var(--line-height-32);
+  --typo-h3-line-height-n: var(--line-height-32-n);
+  --typo-h3-letter-spacing: var(--letter-spacing-0);
+  --typo-h4-weight: var(--font-weight-500);
+  --typo-h4-family: var(--font-family-geist-mono);
+  --typo-h4-size: var(--font-size-19);
+  --typo-h4-size-n: var(--font-size-19-n);
+  --typo-h4-line-height: var(--line-height-23);
+  --typo-h4-line-height-n: var(--line-height-23-n);
+  --typo-h4-letter-spacing: var(--letter-spacing-0);
+  --typo-lead-weight: var(--font-weight-300);
+  --typo-lead-family: var(--font-family-geist);
+  --typo-lead-size: var(--font-size-18);
+  --typo-lead-size-n: var(--font-size-18-n);
+  --typo-lead-line-height: var(--line-height-22);
+  --typo-lead-line-height-n: var(--line-height-22-n);
+  --typo-lead-letter-spacing: var(--letter-spacing-0);
+  --typo-body-weight: var(--font-weight-300);
+  --typo-body-family: var(--font-family-geist);
+  --typo-body-size: var(--font-size-16);
+  --typo-body-size-n: var(--font-size-16-n);
+  --typo-body-line-height: var(--line-height-22);
+  --typo-body-line-height-n: var(--line-height-22-n);
+  --typo-body-letter-spacing: var(--letter-spacing-0);
+  --typo-body-sm-weight: var(--font-weight-400);
+  --typo-body-sm-family: var(--font-family-geist);
+  --typo-body-sm-size: var(--font-size-14);
+  --typo-body-sm-size-n: var(--font-size-14-n);
+  --typo-body-sm-line-height: var(--line-height-20);
+  --typo-body-sm-line-height-n: var(--line-height-20-n);
+  --typo-body-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-weight: var(--font-weight-400);
+  --typo-caption-family: var(--font-family-geist);
+  --typo-caption-size: var(--font-size-12);
+  --typo-caption-size-n: var(--font-size-12-n);
+  --typo-caption-line-height: var(--line-height-16);
+  --typo-caption-line-height-n: var(--line-height-16-n);
+  --typo-caption-letter-spacing: var(--letter-spacing-0);
+  --typo-overline-weight: var(--font-weight-700);
+  --typo-overline-family: var(--font-family-geist);
+  --typo-overline-size: var(--font-size-11);
+  --typo-overline-size-n: var(--font-size-11-n);
+  --typo-overline-line-height: var(--line-height-14);
+  --typo-overline-line-height-n: var(--line-height-14-n);
+  --typo-overline-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-lg-weight: var(--font-weight-400);
+  --typo-mono-lg-family: var(--font-family-geist-mono);
+  --typo-mono-lg-size: var(--font-size-17);
+  --typo-mono-lg-size-n: var(--font-size-17-n);
+  --typo-mono-lg-line-height: var(--line-height-22);
+  --typo-mono-lg-line-height-n: var(--line-height-22-n);
+  --typo-mono-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-md-weight: var(--font-weight-400);
+  --typo-mono-md-family: var(--font-family-geist-mono);
+  --typo-mono-md-size: var(--font-size-14);
+  --typo-mono-md-size-n: var(--font-size-14-n);
+  --typo-mono-md-line-height: var(--line-height-18);
+  --typo-mono-md-line-height-n: var(--line-height-18-n);
+  --typo-mono-md-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-sm-weight: var(--font-weight-400);
+  --typo-mono-sm-family: var(--font-family-geist-mono);
+  --typo-mono-sm-size: var(--font-size-12);
+  --typo-mono-sm-size-n: var(--font-size-12-n);
+  --typo-mono-sm-line-height: var(--line-height-16);
+  --typo-mono-sm-line-height-n: var(--line-height-16-n);
+  --typo-mono-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-xs-weight: var(--font-weight-400);
+  --typo-mono-xs-family: var(--font-family-geist-mono);
+  --typo-mono-xs-size: var(--font-size-10);
+  --typo-mono-xs-size-n: var(--font-size-10-n);
+  --typo-mono-xs-line-height: var(--line-height-13);
+  --typo-mono-xs-line-height-n: var(--line-height-13-n);
+  --typo-mono-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-display-sm-weight: var(--font-weight-400);
+  --typo-display-sm-family: var(--font-family-geist-mono);
+  --typo-display-sm-size: var(--font-size-40);
+  --typo-display-sm-size-n: var(--font-size-40-n);
+  --typo-display-sm-line-height: var(--line-height-37);
+  --typo-display-sm-line-height-n: var(--line-height-37-n);
+  --typo-display-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-sm-weight: var(--font-weight-900);
+  --typo-h3-sm-family: var(--font-family-geist-mono);
+  --typo-h3-sm-size: var(--font-size-26);
+  --typo-h3-sm-size-n: var(--font-size-26-n);
+  --typo-h3-sm-line-height: var(--line-height-31);
+  --typo-h3-sm-line-height-n: var(--line-height-31-n);
+  --typo-h3-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-ikona-weight: var(--font-weight-400);
+  --typo-ikona-family: var(--font-family-geist-mono);
+  --typo-ikona-size: var(--font-size-21);
+  --typo-ikona-size-n: var(--font-size-21-n);
+  --typo-ikona-line-height: var(--line-height-11);
+  --typo-ikona-line-height-n: var(--line-height-11-n);
+  --typo-ikona-letter-spacing: var(--letter-spacing-0);
+  --typo-nav-weight: var(--font-weight-400);
+  --typo-nav-family: var(--font-family-geist-mono);
+  --typo-nav-size: var(--font-size-15);
+  --typo-nav-size-n: var(--font-size-15-n);
+  --typo-nav-line-height: var(--line-height-20);
+  --typo-nav-line-height-n: var(--line-height-20-n);
+  --typo-nav-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-13-weight: var(--font-weight-400);
+  --typo-mono-13-family: var(--font-family-geist-mono);
+  --typo-mono-13-size: var(--font-size-13);
+  --typo-mono-13-size-n: var(--font-size-13-n);
+  --typo-mono-13-line-height: var(--line-height-17);
+  --typo-mono-13-line-height-n: var(--line-height-17-n);
+  --typo-mono-13-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-11-weight: var(--font-weight-400);
+  --typo-mono-11-family: var(--font-family-geist-mono);
+  --typo-mono-11-size: var(--font-size-11);
+  --typo-mono-11-size-n: var(--font-size-11-n);
+  --typo-mono-11-line-height: var(--line-height-14);
+  --typo-mono-11-line-height-n: var(--line-height-14-n);
+  --typo-mono-11-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-2xs-weight: var(--font-weight-400);
+  --typo-mono-2xs-family: var(--font-family-geist-mono);
+  --typo-mono-2xs-size: var(--font-size-9);
+  --typo-mono-2xs-size-n: var(--font-size-9-n);
+  --typo-mono-2xs-line-height: var(--line-height-12);
+  --typo-mono-2xs-line-height-n: var(--line-height-12-n);
+  --typo-mono-2xs-letter-spacing: var(--letter-spacing-0);
+  --typo-h2-geist-weight: var(--font-weight-700);
+  --typo-h2-geist-family: var(--font-family-geist);
+  --typo-h2-geist-size: var(--font-size-33);
+  --typo-h2-geist-size-n: var(--font-size-33-n);
+  --typo-h2-geist-line-height: var(--line-height-44);
+  --typo-h2-geist-line-height-n: var(--line-height-44-n);
+  --typo-h2-geist-letter-spacing: var(--letter-spacing-0);
+  --typo-lead-lg-weight: var(--font-weight-300);
+  --typo-lead-lg-family: var(--font-family-geist);
+  --typo-lead-lg-size: var(--font-size-19);
+  --typo-lead-lg-size-n: var(--font-size-19-n);
+  --typo-lead-lg-line-height: var(--line-height-72);
+  --typo-lead-lg-line-height-n: var(--line-height-72-n);
+  --typo-lead-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-body-lg-weight: var(--font-weight-400);
+  --typo-body-lg-family: var(--font-family-geist);
+  --typo-body-lg-size: var(--font-size-17);
+  --typo-body-lg-size-n: var(--font-size-17-n);
+  --typo-body-lg-line-height: var(--line-height-22);
+  --typo-body-lg-line-height-n: var(--line-height-22-n);
+  --typo-body-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-body-md-weight: var(--font-weight-600);
+  --typo-body-md-family: var(--font-family-geist);
+  --typo-body-md-size: var(--font-size-15);
+  --typo-body-md-size-n: var(--font-size-15-n);
+  --typo-body-md-line-height: var(--line-height-20);
+  --typo-body-md-line-height-n: var(--line-height-20-n);
+  --typo-body-md-letter-spacing: var(--letter-spacing-0);
+  --typo-body-xs-weight: var(--font-weight-400);
+  --typo-body-xs-family: var(--font-family-geist);
+  --typo-body-xs-size: var(--font-size-13);
+  --typo-body-xs-size-n: var(--font-size-13-n);
+  --typo-body-xs-line-height: var(--line-height-17);
+  --typo-body-xs-line-height-n: var(--line-height-17-n);
+  --typo-body-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-sm-weight: var(--font-weight-400);
+  --typo-caption-sm-family: var(--font-family-geist);
+  --typo-caption-sm-size: var(--font-size-11);
+  --typo-caption-sm-size-n: var(--font-size-11-n);
+  --typo-caption-sm-line-height: var(--line-height-15);
+  --typo-caption-sm-line-height-n: var(--line-height-15-n);
+  --typo-caption-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-xs-weight: var(--font-weight-400);
+  --typo-caption-xs-family: var(--font-family-geist);
+  --typo-caption-xs-size: var(--font-size-9);
+  --typo-caption-xs-size-n: var(--font-size-9-n);
+  --typo-caption-xs-line-height: var(--line-height-12);
+  --typo-caption-xs-line-height-n: var(--line-height-12-n);
+  --typo-caption-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-geist-weight: var(--font-weight-700);
+  --typo-h3-geist-family: var(--font-family-geist);
+  --typo-h3-geist-size: var(--font-size-23);
+  --typo-h3-geist-size-n: var(--font-size-23-n);
+  --typo-h3-geist-line-height: var(--line-height-29);
+  --typo-h3-geist-line-height-n: var(--line-height-29-n);
+  --typo-h3-geist-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-xl-weight: var(--font-weight-400);
+  --typo-mono-xl-family: var(--font-family-geist-mono);
+  --typo-mono-xl-size: var(--font-size-23);
+  --typo-mono-xl-size-n: var(--font-size-23-n);
+  --typo-mono-xl-line-height: var(--line-height-31);
+  --typo-mono-xl-line-height-n: var(--line-height-31-n);
+  --typo-mono-xl-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-family: var(--font-family-geist-mono);
+  --typo-haslo-size: var(--font-size-34);
+  --typo-haslo-size-n: var(--font-size-34-n);
+  --typo-haslo-line-height: var(--line-height-40);
+  --typo-haslo-line-height-n: var(--line-height-40-n);
+  --typo-haslo-weight: var(--font-weight-500);
+  --typo-haslo-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-opis-family: var(--font-family-geist);
+  --typo-haslo-opis-size: var(--font-size-14);
+  --typo-haslo-opis-size-n: var(--font-size-14-n);
+  --typo-haslo-opis-line-height: var(--line-height-20);
+  --typo-haslo-opis-line-height-n: var(--line-height-20-n);
+  --typo-haslo-opis-weight: var(--font-weight-400);
+  --typo-haslo-opis-letter-spacing: var(--letter-spacing-0);
+}
+@media (width >= 36rem) {
+:root:not([data-typography-scale]) .ds-text {
+  --ds-text-auto-rvw: calc(100vw / 768);
+--typo-stat-weight: var(--font-weight-500);
+  --typo-stat-family: var(--font-family-geist-mono);
+  --typo-stat-size: var(--font-size-72);
+  --typo-stat-size-n: var(--font-size-72-n);
+  --typo-stat-line-height: var(--line-height-94);
+  --typo-stat-line-height-n: var(--line-height-94-n);
+  --typo-stat-letter-spacing: var(--letter-spacing-0);
+  --typo-display-weight: var(--font-weight-500);
+  --typo-display-family: var(--font-family-geist-mono);
+  --typo-display-size: var(--font-size-56);
+  --typo-display-size-n: var(--font-size-56-n);
+  --typo-display-line-height: var(--line-height-50);
+  --typo-display-line-height-n: var(--line-height-50-n);
+  --typo-display-letter-spacing: var(--letter-spacing-0);
+  --typo-h1-weight: var(--font-weight-600);
+  --typo-h1-family: var(--font-family-geist-mono);
+  --typo-h1-size: var(--font-size-48);
+  --typo-h1-size-n: var(--font-size-48-n);
+  --typo-h1-line-height: var(--line-height-39);
+  --typo-h1-line-height-n: var(--line-height-39-n);
+  --typo-h1-letter-spacing: var(--letter-spacing-0);
+  --typo-h2-weight: var(--font-weight-400);
+  --typo-h2-family: var(--font-family-geist-mono);
+  --typo-h2-size: var(--font-size-36);
+  --typo-h2-size-n: var(--font-size-36-n);
+  --typo-h2-line-height: var(--line-height-46);
+  --typo-h2-line-height-n: var(--line-height-46-n);
+  --typo-h2-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-weight: var(--font-weight-500);
+  --typo-h3-family: var(--font-family-geist-mono);
+  --typo-h3-size: var(--font-size-28);
+  --typo-h3-size-n: var(--font-size-28-n);
+  --typo-h3-line-height: var(--line-height-34);
+  --typo-h3-line-height-n: var(--line-height-34-n);
+  --typo-h3-letter-spacing: var(--letter-spacing-0);
+  --typo-h4-weight: var(--font-weight-500);
+  --typo-h4-family: var(--font-family-geist-mono);
+  --typo-h4-size: var(--font-size-20);
+  --typo-h4-size-n: var(--font-size-20-n);
+  --typo-h4-line-height: var(--line-height-24);
+  --typo-h4-line-height-n: var(--line-height-24-n);
+  --typo-h4-letter-spacing: var(--letter-spacing-0);
+  --typo-lead-weight: var(--font-weight-300);
+  --typo-lead-family: var(--font-family-geist);
+  --typo-lead-size: var(--font-size-18);
+  --typo-lead-size-n: var(--font-size-18-n);
+  --typo-lead-line-height: var(--line-height-22);
+  --typo-lead-line-height-n: var(--line-height-22-n);
+  --typo-lead-letter-spacing: var(--letter-spacing-0);
+  --typo-body-weight: var(--font-weight-300);
+  --typo-body-family: var(--font-family-geist);
+  --typo-body-size: var(--font-size-16);
+  --typo-body-size-n: var(--font-size-16-n);
+  --typo-body-line-height: var(--line-height-22);
+  --typo-body-line-height-n: var(--line-height-22-n);
+  --typo-body-letter-spacing: var(--letter-spacing-0);
+  --typo-body-sm-weight: var(--font-weight-400);
+  --typo-body-sm-family: var(--font-family-geist);
+  --typo-body-sm-size: var(--font-size-14);
+  --typo-body-sm-size-n: var(--font-size-14-n);
+  --typo-body-sm-line-height: var(--line-height-20);
+  --typo-body-sm-line-height-n: var(--line-height-20-n);
+  --typo-body-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-weight: var(--font-weight-400);
+  --typo-caption-family: var(--font-family-geist);
+  --typo-caption-size: var(--font-size-12);
+  --typo-caption-size-n: var(--font-size-12-n);
+  --typo-caption-line-height: var(--line-height-16);
+  --typo-caption-line-height-n: var(--line-height-16-n);
+  --typo-caption-letter-spacing: var(--letter-spacing-0);
+  --typo-overline-weight: var(--font-weight-700);
+  --typo-overline-family: var(--font-family-geist);
+  --typo-overline-size: var(--font-size-11);
+  --typo-overline-size-n: var(--font-size-11-n);
+  --typo-overline-line-height: var(--line-height-14);
+  --typo-overline-line-height-n: var(--line-height-14-n);
+  --typo-overline-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-lg-weight: var(--font-weight-400);
+  --typo-mono-lg-family: var(--font-family-geist-mono);
+  --typo-mono-lg-size: var(--font-size-17);
+  --typo-mono-lg-size-n: var(--font-size-17-n);
+  --typo-mono-lg-line-height: var(--line-height-22);
+  --typo-mono-lg-line-height-n: var(--line-height-22-n);
+  --typo-mono-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-md-weight: var(--font-weight-400);
+  --typo-mono-md-family: var(--font-family-geist-mono);
+  --typo-mono-md-size: var(--font-size-14);
+  --typo-mono-md-size-n: var(--font-size-14-n);
+  --typo-mono-md-line-height: var(--line-height-18);
+  --typo-mono-md-line-height-n: var(--line-height-18-n);
+  --typo-mono-md-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-sm-weight: var(--font-weight-400);
+  --typo-mono-sm-family: var(--font-family-geist-mono);
+  --typo-mono-sm-size: var(--font-size-12);
+  --typo-mono-sm-size-n: var(--font-size-12-n);
+  --typo-mono-sm-line-height: var(--line-height-16);
+  --typo-mono-sm-line-height-n: var(--line-height-16-n);
+  --typo-mono-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-xs-weight: var(--font-weight-400);
+  --typo-mono-xs-family: var(--font-family-geist-mono);
+  --typo-mono-xs-size: var(--font-size-10);
+  --typo-mono-xs-size-n: var(--font-size-10-n);
+  --typo-mono-xs-line-height: var(--line-height-13);
+  --typo-mono-xs-line-height-n: var(--line-height-13-n);
+  --typo-mono-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-display-sm-weight: var(--font-weight-400);
+  --typo-display-sm-family: var(--font-family-geist-mono);
+  --typo-display-sm-size: var(--font-size-55);
+  --typo-display-sm-size-n: var(--font-size-55-n);
+  --typo-display-sm-line-height: var(--line-height-50);
+  --typo-display-sm-line-height-n: var(--line-height-50-n);
+  --typo-display-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-sm-weight: var(--font-weight-900);
+  --typo-h3-sm-family: var(--font-family-geist-mono);
+  --typo-h3-sm-size: var(--font-size-27);
+  --typo-h3-sm-size-n: var(--font-size-27-n);
+  --typo-h3-sm-line-height: var(--line-height-32);
+  --typo-h3-sm-line-height-n: var(--line-height-32-n);
+  --typo-h3-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-ikona-weight: var(--font-weight-400);
+  --typo-ikona-family: var(--font-family-geist-mono);
+  --typo-ikona-size: var(--font-size-21);
+  --typo-ikona-size-n: var(--font-size-21-n);
+  --typo-ikona-line-height: var(--line-height-12);
+  --typo-ikona-line-height-n: var(--line-height-12-n);
+  --typo-ikona-letter-spacing: var(--letter-spacing-0);
+  --typo-nav-weight: var(--font-weight-400);
+  --typo-nav-family: var(--font-family-geist-mono);
+  --typo-nav-size: var(--font-size-15);
+  --typo-nav-size-n: var(--font-size-15-n);
+  --typo-nav-line-height: var(--line-height-20);
+  --typo-nav-line-height-n: var(--line-height-20-n);
+  --typo-nav-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-13-weight: var(--font-weight-400);
+  --typo-mono-13-family: var(--font-family-geist-mono);
+  --typo-mono-13-size: var(--font-size-13);
+  --typo-mono-13-size-n: var(--font-size-13-n);
+  --typo-mono-13-line-height: var(--line-height-17);
+  --typo-mono-13-line-height-n: var(--line-height-17-n);
+  --typo-mono-13-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-11-weight: var(--font-weight-400);
+  --typo-mono-11-family: var(--font-family-geist-mono);
+  --typo-mono-11-size: var(--font-size-11);
+  --typo-mono-11-size-n: var(--font-size-11-n);
+  --typo-mono-11-line-height: var(--line-height-14);
+  --typo-mono-11-line-height-n: var(--line-height-14-n);
+  --typo-mono-11-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-2xs-weight: var(--font-weight-400);
+  --typo-mono-2xs-family: var(--font-family-geist-mono);
+  --typo-mono-2xs-size: var(--font-size-9);
+  --typo-mono-2xs-size-n: var(--font-size-9-n);
+  --typo-mono-2xs-line-height: var(--line-height-12);
+  --typo-mono-2xs-line-height-n: var(--line-height-12-n);
+  --typo-mono-2xs-letter-spacing: var(--letter-spacing-0);
+  --typo-h2-geist-weight: var(--font-weight-700);
+  --typo-h2-geist-family: var(--font-family-geist);
+  --typo-h2-geist-size: var(--font-size-36);
+  --typo-h2-geist-size-n: var(--font-size-36-n);
+  --typo-h2-geist-line-height: var(--line-height-48);
+  --typo-h2-geist-line-height-n: var(--line-height-48-n);
+  --typo-h2-geist-letter-spacing: var(--letter-spacing-0);
+  --typo-lead-lg-weight: var(--font-weight-300);
+  --typo-lead-lg-family: var(--font-family-geist);
+  --typo-lead-lg-size: var(--font-size-20);
+  --typo-lead-lg-size-n: var(--font-size-20-n);
+  --typo-lead-lg-line-height: var(--line-height-73);
+  --typo-lead-lg-line-height-n: var(--line-height-73-n);
+  --typo-lead-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-body-lg-weight: var(--font-weight-400);
+  --typo-body-lg-family: var(--font-family-geist);
+  --typo-body-lg-size: var(--font-size-17);
+  --typo-body-lg-size-n: var(--font-size-17-n);
+  --typo-body-lg-line-height: var(--line-height-22);
+  --typo-body-lg-line-height-n: var(--line-height-22-n);
+  --typo-body-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-body-md-weight: var(--font-weight-600);
+  --typo-body-md-family: var(--font-family-geist);
+  --typo-body-md-size: var(--font-size-15);
+  --typo-body-md-size-n: var(--font-size-15-n);
+  --typo-body-md-line-height: var(--line-height-20);
+  --typo-body-md-line-height-n: var(--line-height-20-n);
+  --typo-body-md-letter-spacing: var(--letter-spacing-0);
+  --typo-body-xs-weight: var(--font-weight-400);
+  --typo-body-xs-family: var(--font-family-geist);
+  --typo-body-xs-size: var(--font-size-13);
+  --typo-body-xs-size-n: var(--font-size-13-n);
+  --typo-body-xs-line-height: var(--line-height-17);
+  --typo-body-xs-line-height-n: var(--line-height-17-n);
+  --typo-body-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-sm-weight: var(--font-weight-400);
+  --typo-caption-sm-family: var(--font-family-geist);
+  --typo-caption-sm-size: var(--font-size-11);
+  --typo-caption-sm-size-n: var(--font-size-11-n);
+  --typo-caption-sm-line-height: var(--line-height-15);
+  --typo-caption-sm-line-height-n: var(--line-height-15-n);
+  --typo-caption-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-xs-weight: var(--font-weight-400);
+  --typo-caption-xs-family: var(--font-family-geist);
+  --typo-caption-xs-size: var(--font-size-9);
+  --typo-caption-xs-size-n: var(--font-size-9-n);
+  --typo-caption-xs-line-height: var(--line-height-12);
+  --typo-caption-xs-line-height-n: var(--line-height-12-n);
+  --typo-caption-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-geist-weight: var(--font-weight-700);
+  --typo-h3-geist-family: var(--font-family-geist);
+  --typo-h3-geist-size: var(--font-size-23);
+  --typo-h3-geist-size-n: var(--font-size-23-n);
+  --typo-h3-geist-line-height: var(--line-height-30);
+  --typo-h3-geist-line-height-n: var(--line-height-30-n);
+  --typo-h3-geist-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-xl-weight: var(--font-weight-400);
+  --typo-mono-xl-family: var(--font-family-geist-mono);
+  --typo-mono-xl-size: var(--font-size-24);
+  --typo-mono-xl-size-n: var(--font-size-24-n);
+  --typo-mono-xl-line-height: var(--line-height-32);
+  --typo-mono-xl-line-height-n: var(--line-height-32-n);
+  --typo-mono-xl-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-family: var(--font-family-geist-mono);
+  --typo-haslo-size: var(--font-size-54);
+  --typo-haslo-size-n: var(--font-size-54-n);
+  --typo-haslo-line-height: var(--line-height-62);
+  --typo-haslo-line-height-n: var(--line-height-62-n);
+  --typo-haslo-weight: var(--font-weight-500);
+  --typo-haslo-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-opis-family: var(--font-family-geist);
+  --typo-haslo-opis-size: var(--font-size-18);
+  --typo-haslo-opis-size-n: var(--font-size-18-n);
+  --typo-haslo-opis-line-height: var(--line-height-28);
+  --typo-haslo-opis-line-height-n: var(--line-height-28-n);
+  --typo-haslo-opis-weight: var(--font-weight-400);
+  --typo-haslo-opis-letter-spacing: var(--letter-spacing-0);
+}
+}
+@media (width >= 64rem) {
+:root:not([data-typography-scale]) .ds-text {
+  --ds-text-auto-rvw: calc(100vw / 1728);
+--typo-stat-weight: var(--font-weight-500);
+  --typo-stat-family: var(--font-family-geist-mono);
+  --typo-stat-size: var(--font-size-103);
+  --typo-stat-size-n: var(--font-size-103-n);
+  --typo-stat-line-height: var(--line-height-134);
+  --typo-stat-line-height-n: var(--line-height-134-n);
+  --typo-stat-letter-spacing: var(--letter-spacing-0);
+  --typo-display-weight: var(--font-weight-500);
+  --typo-display-family: var(--font-family-geist-mono);
+  --typo-display-size: var(--font-size-80);
+  --typo-display-size-n: var(--font-size-80-n);
+  --typo-display-line-height: var(--line-height-72);
+  --typo-display-line-height-n: var(--line-height-72-n);
+  --typo-display-letter-spacing: var(--letter-spacing-0);
+  --typo-h1-weight: var(--font-weight-600);
+  --typo-h1-family: var(--font-family-geist-mono);
+  --typo-h1-size: var(--font-size-60);
+  --typo-h1-size-n: var(--font-size-60-n);
+  --typo-h1-line-height: var(--line-height-49);
+  --typo-h1-line-height-n: var(--line-height-49-n);
+  --typo-h1-letter-spacing: var(--letter-spacing-0);
+  --typo-h2-weight: var(--font-weight-400);
+  --typo-h2-family: var(--font-family-geist-mono);
+  --typo-h2-size: var(--font-size-40);
+  --typo-h2-size-n: var(--font-size-40-n);
+  --typo-h2-line-height: var(--line-height-52);
+  --typo-h2-line-height-n: var(--line-height-52-n);
+  --typo-h2-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-weight: var(--font-weight-500);
+  --typo-h3-family: var(--font-family-geist-mono);
+  --typo-h3-size: var(--font-size-30);
+  --typo-h3-size-n: var(--font-size-30-n);
+  --typo-h3-line-height: var(--line-height-36);
+  --typo-h3-line-height-n: var(--line-height-36-n);
+  --typo-h3-letter-spacing: var(--letter-spacing-0);
+  --typo-h4-weight: var(--font-weight-500);
+  --typo-h4-family: var(--font-family-geist-mono);
+  --typo-h4-size: var(--font-size-20);
+  --typo-h4-size-n: var(--font-size-20-n);
+  --typo-h4-line-height: var(--line-height-24);
+  --typo-h4-line-height-n: var(--line-height-24-n);
+  --typo-h4-letter-spacing: var(--letter-spacing-0);
+  --typo-lead-weight: var(--font-weight-300);
+  --typo-lead-family: var(--font-family-geist);
+  --typo-lead-size: var(--font-size-18);
+  --typo-lead-size-n: var(--font-size-18-n);
+  --typo-lead-line-height: var(--line-height-22);
+  --typo-lead-line-height-n: var(--line-height-22-n);
+  --typo-lead-letter-spacing: var(--letter-spacing-0);
+  --typo-body-weight: var(--font-weight-300);
+  --typo-body-family: var(--font-family-geist);
+  --typo-body-size: var(--font-size-16);
+  --typo-body-size-n: var(--font-size-16-n);
+  --typo-body-line-height: var(--line-height-22);
+  --typo-body-line-height-n: var(--line-height-22-n);
+  --typo-body-letter-spacing: var(--letter-spacing-0);
+  --typo-body-sm-weight: var(--font-weight-400);
+  --typo-body-sm-family: var(--font-family-geist);
+  --typo-body-sm-size: var(--font-size-14);
+  --typo-body-sm-size-n: var(--font-size-14-n);
+  --typo-body-sm-line-height: var(--line-height-20);
+  --typo-body-sm-line-height-n: var(--line-height-20-n);
+  --typo-body-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-weight: var(--font-weight-400);
+  --typo-caption-family: var(--font-family-geist);
+  --typo-caption-size: var(--font-size-12);
+  --typo-caption-size-n: var(--font-size-12-n);
+  --typo-caption-line-height: var(--line-height-16);
+  --typo-caption-line-height-n: var(--line-height-16-n);
+  --typo-caption-letter-spacing: var(--letter-spacing-0);
+  --typo-overline-weight: var(--font-weight-700);
+  --typo-overline-family: var(--font-family-geist);
+  --typo-overline-size: var(--font-size-11);
+  --typo-overline-size-n: var(--font-size-11-n);
+  --typo-overline-line-height: var(--line-height-14);
+  --typo-overline-line-height-n: var(--line-height-14-n);
+  --typo-overline-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-lg-weight: var(--font-weight-400);
+  --typo-mono-lg-family: var(--font-family-geist-mono);
+  --typo-mono-lg-size: var(--font-size-17);
+  --typo-mono-lg-size-n: var(--font-size-17-n);
+  --typo-mono-lg-line-height: var(--line-height-22);
+  --typo-mono-lg-line-height-n: var(--line-height-22-n);
+  --typo-mono-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-md-weight: var(--font-weight-400);
+  --typo-mono-md-family: var(--font-family-geist-mono);
+  --typo-mono-md-size: var(--font-size-14);
+  --typo-mono-md-size-n: var(--font-size-14-n);
+  --typo-mono-md-line-height: var(--line-height-18);
+  --typo-mono-md-line-height-n: var(--line-height-18-n);
+  --typo-mono-md-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-sm-weight: var(--font-weight-400);
+  --typo-mono-sm-family: var(--font-family-geist-mono);
+  --typo-mono-sm-size: var(--font-size-12);
+  --typo-mono-sm-size-n: var(--font-size-12-n);
+  --typo-mono-sm-line-height: var(--line-height-16);
+  --typo-mono-sm-line-height-n: var(--line-height-16-n);
+  --typo-mono-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-xs-weight: var(--font-weight-400);
+  --typo-mono-xs-family: var(--font-family-geist-mono);
+  --typo-mono-xs-size: var(--font-size-10);
+  --typo-mono-xs-size-n: var(--font-size-10-n);
+  --typo-mono-xs-line-height: var(--line-height-13);
+  --typo-mono-xs-line-height-n: var(--line-height-13-n);
+  --typo-mono-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-display-sm-weight: var(--font-weight-400);
+  --typo-display-sm-family: var(--font-family-geist-mono);
+  --typo-display-sm-size: var(--font-size-76);
+  --typo-display-sm-size-n: var(--font-size-76-n);
+  --typo-display-sm-line-height: var(--line-height-69);
+  --typo-display-sm-line-height-n: var(--line-height-69-n);
+  --typo-display-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-sm-weight: var(--font-weight-900);
+  --typo-h3-sm-family: var(--font-family-geist-mono);
+  --typo-h3-sm-size: var(--font-size-29);
+  --typo-h3-sm-size-n: var(--font-size-29-n);
+  --typo-h3-sm-line-height: var(--line-height-34);
+  --typo-h3-sm-line-height-n: var(--line-height-34-n);
+  --typo-h3-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-ikona-weight: var(--font-weight-400);
+  --typo-ikona-family: var(--font-family-geist-mono);
+  --typo-ikona-size: var(--font-size-22);
+  --typo-ikona-size-n: var(--font-size-22-n);
+  --typo-ikona-line-height: var(--line-height-12);
+  --typo-ikona-line-height-n: var(--line-height-12-n);
+  --typo-ikona-letter-spacing: var(--letter-spacing-0);
+  --typo-nav-weight: var(--font-weight-400);
+  --typo-nav-family: var(--font-family-geist-mono);
+  --typo-nav-size: var(--font-size-15);
+  --typo-nav-size-n: var(--font-size-15-n);
+  --typo-nav-line-height: var(--line-height-20);
+  --typo-nav-line-height-n: var(--line-height-20-n);
+  --typo-nav-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-13-weight: var(--font-weight-400);
+  --typo-mono-13-family: var(--font-family-geist-mono);
+  --typo-mono-13-size: var(--font-size-13);
+  --typo-mono-13-size-n: var(--font-size-13-n);
+  --typo-mono-13-line-height: var(--line-height-17);
+  --typo-mono-13-line-height-n: var(--line-height-17-n);
+  --typo-mono-13-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-11-weight: var(--font-weight-400);
+  --typo-mono-11-family: var(--font-family-geist-mono);
+  --typo-mono-11-size: var(--font-size-11);
+  --typo-mono-11-size-n: var(--font-size-11-n);
+  --typo-mono-11-line-height: var(--line-height-14);
+  --typo-mono-11-line-height-n: var(--line-height-14-n);
+  --typo-mono-11-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-2xs-weight: var(--font-weight-400);
+  --typo-mono-2xs-family: var(--font-family-geist-mono);
+  --typo-mono-2xs-size: var(--font-size-9);
+  --typo-mono-2xs-size-n: var(--font-size-9-n);
+  --typo-mono-2xs-line-height: var(--line-height-12);
+  --typo-mono-2xs-line-height-n: var(--line-height-12-n);
+  --typo-mono-2xs-letter-spacing: var(--letter-spacing-0);
+  --typo-h2-geist-weight: var(--font-weight-700);
+  --typo-h2-geist-family: var(--font-family-geist);
+  --typo-h2-geist-size: var(--font-size-40);
+  --typo-h2-geist-size-n: var(--font-size-40-n);
+  --typo-h2-geist-line-height: var(--line-height-54);
+  --typo-h2-geist-line-height-n: var(--line-height-54-n);
+  --typo-h2-geist-letter-spacing: var(--letter-spacing-0);
+  --typo-lead-lg-weight: var(--font-weight-300);
+  --typo-lead-lg-family: var(--font-family-geist);
+  --typo-lead-lg-size: var(--font-size-20);
+  --typo-lead-lg-size-n: var(--font-size-20-n);
+  --typo-lead-lg-line-height: var(--line-height-74);
+  --typo-lead-lg-line-height-n: var(--line-height-74-n);
+  --typo-lead-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-body-lg-weight: var(--font-weight-400);
+  --typo-body-lg-family: var(--font-family-geist);
+  --typo-body-lg-size: var(--font-size-17);
+  --typo-body-lg-size-n: var(--font-size-17-n);
+  --typo-body-lg-line-height: var(--line-height-22);
+  --typo-body-lg-line-height-n: var(--line-height-22-n);
+  --typo-body-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-body-md-weight: var(--font-weight-600);
+  --typo-body-md-family: var(--font-family-geist);
+  --typo-body-md-size: var(--font-size-15);
+  --typo-body-md-size-n: var(--font-size-15-n);
+  --typo-body-md-line-height: var(--line-height-20);
+  --typo-body-md-line-height-n: var(--line-height-20-n);
+  --typo-body-md-letter-spacing: var(--letter-spacing-0);
+  --typo-body-xs-weight: var(--font-weight-400);
+  --typo-body-xs-family: var(--font-family-geist);
+  --typo-body-xs-size: var(--font-size-13);
+  --typo-body-xs-size-n: var(--font-size-13-n);
+  --typo-body-xs-line-height: var(--line-height-17);
+  --typo-body-xs-line-height-n: var(--line-height-17-n);
+  --typo-body-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-sm-weight: var(--font-weight-400);
+  --typo-caption-sm-family: var(--font-family-geist);
+  --typo-caption-sm-size: var(--font-size-11);
+  --typo-caption-sm-size-n: var(--font-size-11-n);
+  --typo-caption-sm-line-height: var(--line-height-15);
+  --typo-caption-sm-line-height-n: var(--line-height-15-n);
+  --typo-caption-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-xs-weight: var(--font-weight-400);
+  --typo-caption-xs-family: var(--font-family-geist);
+  --typo-caption-xs-size: var(--font-size-9);
+  --typo-caption-xs-size-n: var(--font-size-9-n);
+  --typo-caption-xs-line-height: var(--line-height-12);
+  --typo-caption-xs-line-height-n: var(--line-height-12-n);
+  --typo-caption-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-geist-weight: var(--font-weight-700);
+  --typo-h3-geist-family: var(--font-family-geist);
+  --typo-h3-geist-size: var(--font-size-24);
+  --typo-h3-geist-size-n: var(--font-size-24-n);
+  --typo-h3-geist-line-height: var(--line-height-31);
+  --typo-h3-geist-line-height-n: var(--line-height-31-n);
+  --typo-h3-geist-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-xl-weight: var(--font-weight-400);
+  --typo-mono-xl-family: var(--font-family-geist-mono);
+  --typo-mono-xl-size: var(--font-size-25);
+  --typo-mono-xl-size-n: var(--font-size-25-n);
+  --typo-mono-xl-line-height: var(--line-height-33);
+  --typo-mono-xl-line-height-n: var(--line-height-33-n);
+  --typo-mono-xl-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-family: var(--font-family-geist-mono);
+  --typo-haslo-size: var(--font-size-80);
+  --typo-haslo-size-n: var(--font-size-80-n);
+  --typo-haslo-line-height: var(--line-height-84);
+  --typo-haslo-line-height-n: var(--line-height-84-n);
+  --typo-haslo-weight: var(--font-weight-500);
+  --typo-haslo-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-opis-family: var(--font-family-geist);
+  --typo-haslo-opis-size: var(--font-size-20);
+  --typo-haslo-opis-size-n: var(--font-size-20-n);
+  --typo-haslo-opis-line-height: var(--line-height-28);
+  --typo-haslo-opis-line-height-n: var(--line-height-28-n);
+  --typo-haslo-opis-weight: var(--font-weight-300);
+  --typo-haslo-opis-letter-spacing: var(--letter-spacing-2-6);
+}
+}
+:root[data-typography-scale="mobile"] {
+  --ds-text-auto-rvw: calc(100vw / 402);
+}
+:root[data-typography-scale="tablet"] {
+  --ds-text-auto-rvw: calc(100vw / 768);
+}
+:root[data-typography-scale="desktop"] {
+  --ds-text-auto-rvw: calc(100vw / 1728);
+}
+  .ds-text {
+    --ds-text-rpx: var(--rpx, 1px);
+    --ds-text-rvw: var(--rvw, var(--ds-text-auto-rvw, var(--ds-text-rpx)));
+    margin: 0;
+  }
   .ds-text--body {
     font-family: var(--typo-body-family);
     font-size: var(--typo-body-size);
@@ -263,4 +983,236 @@
     line-height: var(--typo-stat-line-height);
     letter-spacing: var(--typo-stat-letter-spacing);
   }
+@supports (font-size: min(1px, 2px)) {
+  .ds-text.ds-text--body {
+    --ds-text-size-n: var(--typo-body-size-n);
+    --ds-text-line-height-n: var(--typo-body-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--body-lg {
+    --ds-text-size-n: var(--typo-body-lg-size-n);
+    --ds-text-line-height-n: var(--typo-body-lg-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--body-md {
+    --ds-text-size-n: var(--typo-body-md-size-n);
+    --ds-text-line-height-n: var(--typo-body-md-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--body-sm {
+    --ds-text-size-n: var(--typo-body-sm-size-n);
+    --ds-text-line-height-n: var(--typo-body-sm-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--body-xs {
+    --ds-text-size-n: var(--typo-body-xs-size-n);
+    --ds-text-line-height-n: var(--typo-body-xs-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--caption {
+    --ds-text-size-n: var(--typo-caption-size-n);
+    --ds-text-line-height-n: var(--typo-caption-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--caption-sm {
+    --ds-text-size-n: var(--typo-caption-sm-size-n);
+    --ds-text-line-height-n: var(--typo-caption-sm-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--caption-xs {
+    --ds-text-size-n: var(--typo-caption-xs-size-n);
+    --ds-text-line-height-n: var(--typo-caption-xs-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--display {
+    --ds-text-size-n: var(--typo-display-size-n);
+    --ds-text-line-height-n: var(--typo-display-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--display-sm {
+    --ds-text-size-n: var(--typo-display-sm-size-n);
+    --ds-text-line-height-n: var(--typo-display-sm-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--h1 {
+    --ds-text-size-n: var(--typo-h1-size-n);
+    --ds-text-line-height-n: var(--typo-h1-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--h2 {
+    --ds-text-size-n: var(--typo-h2-size-n);
+    --ds-text-line-height-n: var(--typo-h2-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--h2-geist {
+    --ds-text-size-n: var(--typo-h2-geist-size-n);
+    --ds-text-line-height-n: var(--typo-h2-geist-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--h3 {
+    --ds-text-size-n: var(--typo-h3-size-n);
+    --ds-text-line-height-n: var(--typo-h3-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--h3-geist {
+    --ds-text-size-n: var(--typo-h3-geist-size-n);
+    --ds-text-line-height-n: var(--typo-h3-geist-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--h3-sm {
+    --ds-text-size-n: var(--typo-h3-sm-size-n);
+    --ds-text-line-height-n: var(--typo-h3-sm-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--h4 {
+    --ds-text-size-n: var(--typo-h4-size-n);
+    --ds-text-line-height-n: var(--typo-h4-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--haslo {
+    --ds-text-size-n: var(--typo-haslo-size-n);
+    --ds-text-line-height-n: var(--typo-haslo-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--haslo-opis {
+    --ds-text-size-n: var(--typo-haslo-opis-size-n);
+    --ds-text-line-height-n: var(--typo-haslo-opis-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--ikona {
+    --ds-text-size-n: var(--typo-ikona-size-n);
+    --ds-text-line-height-n: var(--typo-ikona-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--lead {
+    --ds-text-size-n: var(--typo-lead-size-n);
+    --ds-text-line-height-n: var(--typo-lead-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--lead-lg {
+    --ds-text-size-n: var(--typo-lead-lg-size-n);
+    --ds-text-line-height-n: var(--typo-lead-lg-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--mono-11 {
+    --ds-text-size-n: var(--typo-mono-11-size-n);
+    --ds-text-line-height-n: var(--typo-mono-11-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--mono-13 {
+    --ds-text-size-n: var(--typo-mono-13-size-n);
+    --ds-text-line-height-n: var(--typo-mono-13-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--mono-2xs {
+    --ds-text-size-n: var(--typo-mono-2xs-size-n);
+    --ds-text-line-height-n: var(--typo-mono-2xs-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--mono-lg {
+    --ds-text-size-n: var(--typo-mono-lg-size-n);
+    --ds-text-line-height-n: var(--typo-mono-lg-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--mono-md {
+    --ds-text-size-n: var(--typo-mono-md-size-n);
+    --ds-text-line-height-n: var(--typo-mono-md-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--mono-sm {
+    --ds-text-size-n: var(--typo-mono-sm-size-n);
+    --ds-text-line-height-n: var(--typo-mono-sm-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--mono-xl {
+    --ds-text-size-n: var(--typo-mono-xl-size-n);
+    --ds-text-line-height-n: var(--typo-mono-xl-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--mono-xs {
+    --ds-text-size-n: var(--typo-mono-xs-size-n);
+    --ds-text-line-height-n: var(--typo-mono-xs-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--nav {
+    --ds-text-size-n: var(--typo-nav-size-n);
+    --ds-text-line-height-n: var(--typo-nav-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--overline {
+    --ds-text-size-n: var(--typo-overline-size-n);
+    --ds-text-line-height-n: var(--typo-overline-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+
+  .ds-text.ds-text--stat {
+    --ds-text-size-n: var(--typo-stat-size-n);
+    --ds-text-line-height-n: var(--typo-stat-line-height-n);
+    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
+    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+}
 }
