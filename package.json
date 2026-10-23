@@ -1,6 +1,6 @@
 {
   "name": "@pleodigital/design-system-transbit",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Design tokens for Transbit, generated from Tokens Studio exports.",
   "style": "dist/css/tokens.css",
   "exports": {
