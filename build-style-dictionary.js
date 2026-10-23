@@ -144,7 +144,16 @@ function build() {
           const reference = token.original && token.original.reference;
           return !reference || variableName(token.path) !== variableName(reference.split('.'));
         })
-        .map((token) => `  ${variableName(token.path)}: ${formatValue(token)};`);
+        .flatMap((token) => {
+          const name = variableName(token.path);
+          const declarations = [`  ${name}: ${formatValue(token)};`];
+          if (['font-size', 'line-height'].includes(token.path[0]) ||
+              (token.path[0] === 'typo' && ['size', 'line-height'].includes(token.path.at(-1)))) {
+            const reference = token.original && token.original.reference;
+            declarations.push(`  ${name}-n: ${reference ? `var(${variableName(reference.split('.'))}-n)` : token.value};`);
+          }
+          return declarations;
+        });
       return `/* Generated from tokens/${options.relativeSource}. Do not edit directly. */\n${options.selector} {\n${declarations.join('\n')}\n}\n`;
     },
   });
@@ -176,8 +185,34 @@ function build() {
       .map(([property, token]) => `    ${property}: var(--typo-${role}-${token});`);
     return `  .ds-text--${role} {\n${declarations.join('\n')}\n  }`;
   });
+  const scales = [
+    { name: 'mobile', base: 402 },
+    { name: 'tablet', base: 768, breakpoint: '36rem' },
+    { name: 'desktop', base: 1728, breakpoint: '64rem' },
+  ];
+  const responsiveTokens = scales.map(({ name, base, breakpoint }) => {
+    const source = fs.readFileSync(path.join(OUTPUT_DIR, `ds.typografia.${name}.css`), 'utf8');
+    const declarations = source.slice(source.indexOf('{') + 1, source.lastIndexOf('}')).trim();
+    // Automatic scales apply only to elements opting into responsive typography.
+    const rule = `:root:not([data-typography-scale]) {\n  --ds-text-auto-rvw: calc(100vw / ${base});\n${declarations}\n}`;
+    return breakpoint ? `@media (width >= ${breakpoint}) {\n${rule}\n}` : rule;
+  });
+  const responsive = [...typographyRoles].sort().map((role) =>
+    `  .ds-text.ds-text--${role} {\n` +
+    `    --ds-text-size-n: var(--typo-${role}-size-n);\n` +
+    `    --ds-text-line-height-n: var(--typo-${role}-line-height-n);\n` +
+    `    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));\n` +
+    `    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));\n  }`);
+  // Keep automatic token values off :root so existing static classes stay unchanged.
+  const automatic = responsiveTokens.join('\n').replaceAll(':root:not([data-typography-scale])', ':root:not([data-typography-scale]) .ds-text');
+  const explicit = scales.map(({ name, base }) =>
+    `:root[data-typography-scale="${name}"] {\n  --ds-text-auto-rvw: calc(100vw / ${base});\n}`).join('\n');
   fs.writeFileSync(path.join(OUTPUT_DIR, 'typography.css'),
-    `/* Generated from typography tokens. Do not edit directly. */\n@layer components {\n${typography.join('\n\n')}\n}\n`);
+    `/* Generated from typography tokens. Do not edit directly. */\n` +
+    `@layer components {\n${automatic}\n${explicit}\n` +
+    `  .ds-text {\n    --ds-text-rpx: var(--rpx, 1px);\n    --ds-text-rvw: var(--rvw, var(--ds-text-auto-rvw, var(--ds-text-rpx)));\n    margin: 0;\n  }\n` +
+    `${typography.join('\n\n')}\n` +
+    `@supports (font-size: min(1px, 2px)) {\n${responsive.join('\n\n')}\n}\n}\n`);
   fs.writeFileSync(path.join(OUTPUT_DIR, 'manifest.json'), `${JSON.stringify({ files }, null, 2)}\n`);
   fs.rmSync(TEMP_DIR, { recursive: true, force: true });
   console.log(`Built ${files.length} token set(s) in dist/css.`);
