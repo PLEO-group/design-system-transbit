@@ -16,6 +16,8 @@
   --czerwien-sygnal: #d14958;
   --czerwien-ciemna: #a10000;
   --czerwien-blada: #da8e8e;
+  --czerwien-sygnal-ciemniejsza: #cd4456;
+  --czerwien-sygnal-najechanie: #c53f4e;
   --marka-czerwien: #d2091e;
   --marka-czern: #1d1d1b;
   --marka-szary-10: #ededed;
@@ -44,16 +46,21 @@
   --tekst-na-ciemnym-mocny: var(--szary-100);
   --tekst-na-ciemnym-wyciszony: var(--szary-61);
   --tekst-na-ciemnym-drugorzedny: var(--szary-70);
+  --tekst-odnosnik: var(--szary-84);
+  --tekst-wyrozniony: var(--szary-100);
+  --tekst-wyciszony-staly: var(--szary-61);
   --linia-podzial: var(--szary-34);
   --linia-obrys: var(--szary-34);
   --linia-na-ciemnym: var(--szary-34);
   --akcent-sygnal: var(--czerwien-sygnal);
   --akcent-ciemny: var(--czerwien-ciemna);
   --akcent-blady: var(--czerwien-blada);
+  --akcent-kafel: var(--czerwien-sygnal-ciemniejsza);
+  --akcent-kafel-najechanie: var(--czerwien-sygnal-najechanie);
   --przycisk-glowny: var(--szary-18);
   --przycisk-glowny-aktywny: var(--szary-0);
   --przycisk-na-ciemnym: var(--szary-18);
-  --przycisk-akcent: var(--czerwien-sygnal);
+  --przycisk-akcent: var(--czerwien-sygnal-ciemniejsza);
   --przycisk-akcent-aktywny: var(--czerwien-ciemna);
   --przycisk-tlo-drugorzedny: var(--szary-100);
   --przycisk-obrys: var(--szary-80);
@@ -96,16 +103,21 @@
   --tekst-na-ciemnym-mocny: var(--szary-100);
   --tekst-na-ciemnym-wyciszony: var(--szary-61);
   --tekst-na-ciemnym-drugorzedny: var(--szary-70);
+  --tekst-odnosnik: var(--marka-czerwien);
+  --tekst-wyrozniony: var(--szary-25);
+  --tekst-wyciszony-staly: var(--szary-61);
   --linia-podzial: var(--szary-84);
   --linia-obrys: var(--szary-80);
   --linia-na-ciemnym: var(--szary-34);
   --akcent-sygnal: var(--czerwien-sygnal);
   --akcent-ciemny: var(--czerwien-ciemna);
   --akcent-blady: var(--czerwien-blada);
+  --akcent-kafel: var(--czerwien-sygnal-ciemniejsza);
+  --akcent-kafel-najechanie: var(--czerwien-sygnal-najechanie);
   --przycisk-glowny: var(--szary-18);
   --przycisk-glowny-aktywny: var(--szary-0);
   --przycisk-na-ciemnym: var(--szary-18);
-  --przycisk-akcent: var(--czerwien-sygnal);
+  --przycisk-akcent: var(--czerwien-sygnal-ciemniejsza);
   --przycisk-akcent-aktywny: var(--czerwien-ciemna);
   --przycisk-tlo-drugorzedny: var(--szary-100);
   --przycisk-obrys: var(--szary-80);
@@ -154,6 +166,8 @@
   --przycisk-padding-dol: 11px;
   --przycisk-gniazdo-strzalki: 22px;
   --przycisk-odsuniecie-strzalki: 13px;
+  --przycisk-padding-pion-dotyk: 15px;
+  --przycisk-wysokosc-dotyk: 48px;
 }
 
 /* Generated from tokens/DS/Typografia-bazowa/Value.json. Do not edit directly. */
@@ -191,6 +205,7 @@
   --font-size-29: 29px;
   --font-size-30: 30px;
   --font-size-33: 33px;
+  --font-size-34: 34px;
   --font-size-36: 36px;
   --font-size-38: 38px;
   --font-size-39: 39px;
@@ -232,6 +247,7 @@
   --line-height-36: 36px;
   --line-height-37: 37px;
   --line-height-39: 39px;
+  --line-height-40: 40px;
   --line-height-42: 42px;
   --line-height-44: 44px;
   --line-height-46: 46px;
@@ -243,8 +259,10 @@
   --line-height-54: 54px;
   --line-height-59: 59px;
   --line-height-61: 61px;
+  --line-height-62: 62px;
   --line-height-67: 67px;
   --line-height-69: 69px;
+  --line-height-71: 71px;
   --line-height-72: 72px;
   --line-height-73: 73px;
   --line-height-74: 74px;
@@ -254,6 +272,7 @@
   --line-height-134: 134px;
   --letter-spacing-0: 0px;
   --letter-spacing-wide: 1.2px;
+  --letter-spacing-2-6: 2.6px;
 }
 
 /* Generated from tokens/DS/Typografia/Desktop.json. Do not edit directly. */
@@ -413,6 +432,16 @@
   --typo-mono-xl-size: var(--font-size-25);
   --typo-mono-xl-line-height: var(--line-height-33);
   --typo-mono-xl-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-family: var(--font-family-geist-mono);
+  --typo-haslo-size: var(--font-size-80);
+  --typo-haslo-line-height: var(--line-height-84);
+  --typo-haslo-weight: var(--font-weight-500);
+  --typo-haslo-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-opis-family: var(--font-family-geist);
+  --typo-haslo-opis-size: var(--font-size-20);
+  --typo-haslo-opis-line-height: var(--line-height-28);
+  --typo-haslo-opis-weight: var(--font-weight-300);
+  --typo-haslo-opis-letter-spacing: var(--letter-spacing-2-6);
 }
 
 /* Generated from tokens/DS/Typografia/Laptop.json. Do not edit directly. */
@@ -572,6 +601,16 @@
   --typo-mono-xl-size: var(--font-size-24);
   --typo-mono-xl-line-height: var(--line-height-32);
   --typo-mono-xl-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-family: var(--font-family-geist-mono);
+  --typo-haslo-size: var(--font-size-68);
+  --typo-haslo-line-height: var(--line-height-71);
+  --typo-haslo-weight: var(--font-weight-500);
+  --typo-haslo-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-opis-family: var(--font-family-geist);
+  --typo-haslo-opis-size: var(--font-size-20);
+  --typo-haslo-opis-line-height: var(--line-height-28);
+  --typo-haslo-opis-weight: var(--font-weight-300);
+  --typo-haslo-opis-letter-spacing: var(--letter-spacing-2-6);
 }
 
 /* Generated from tokens/DS/Typografia/Mobile.json. Do not edit directly. */
@@ -731,6 +770,16 @@
   --typo-mono-xl-size: var(--font-size-23);
   --typo-mono-xl-line-height: var(--line-height-31);
   --typo-mono-xl-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-family: var(--font-family-geist-mono);
+  --typo-haslo-size: var(--font-size-34);
+  --typo-haslo-line-height: var(--line-height-40);
+  --typo-haslo-weight: var(--font-weight-500);
+  --typo-haslo-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-opis-family: var(--font-family-geist);
+  --typo-haslo-opis-size: var(--font-size-14);
+  --typo-haslo-opis-line-height: var(--line-height-20);
+  --typo-haslo-opis-weight: var(--font-weight-400);
+  --typo-haslo-opis-letter-spacing: var(--letter-spacing-0);
 }
 
 /* Generated from tokens/DS/Typografia/Tablet.json. Do not edit directly. */
@@ -890,6 +939,16 @@
   --typo-mono-xl-size: var(--font-size-24);
   --typo-mono-xl-line-height: var(--line-height-32);
   --typo-mono-xl-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-family: var(--font-family-geist-mono);
+  --typo-haslo-size: var(--font-size-54);
+  --typo-haslo-line-height: var(--line-height-62);
+  --typo-haslo-weight: var(--font-weight-500);
+  --typo-haslo-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-opis-family: var(--font-family-geist);
+  --typo-haslo-opis-size: var(--font-size-18);
+  --typo-haslo-opis-line-height: var(--line-height-28);
+  --typo-haslo-opis-weight: var(--font-weight-400);
+  --typo-haslo-opis-letter-spacing: var(--letter-spacing-0);
 }
 
 /* Generated from tokens/Transbit/Facts-interaction/Value.json. Do not edit directly. */
