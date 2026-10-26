@@ -1,6 +1,10 @@
 {
   "name": "@pleodigital/design-system-transbit",
   "version": "1.0.10",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PLEO-group/design-system-transbit"
+  },
   "description": "Design tokens for Transbit, generated from Tokens Studio exports.",
   "style": "dist/css/tokens.css",
   "exports": {
@@ -12,7 +16,7 @@
     "./dist/*": "./dist/*"
   },
   "publishConfig": {
-    "access": "public",
+    "access": "restricted",
     "registry": "https://registry.npmjs.org/"
   },
   "files": [
