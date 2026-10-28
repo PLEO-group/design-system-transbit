@@ -362,6 +362,66 @@
       "$type": "color",
       "$value": "{szary.34}",
       "$description": "Linia podziału na ciemnej powierzchni (moduły ciemne w obu motywach), szary/34."
+    },
+    "pionowa-jasna": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.codeSyntax": {
+          "Web": "var(--linia-pionowa-jasna)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.100}",
+      "$description": "Pionowa linia osi sekcji, jasna (np. na banerze z mapą). Opcja koloru osi w module."
+    },
+    "pionowa-ciemna": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.codeSyntax": {
+          "Web": "var(--linia-pionowa-ciemna)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.42}",
+      "$description": "Pionowa linia osi sekcji, ciemna (np. na module Systemy). Opcja koloru osi w module."
+    },
+    "pionowa-szara": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.codeSyntax": {
+          "Web": "var(--linia-pionowa-szara)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.70}",
+      "$description": "Pionowa linia osi sekcji, szara (np. na białym module Zastosowania). Opcja koloru osi w module."
+    },
+    "pionowa-tlo": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.codeSyntax": {
+          "Web": "var(--linia-pionowa-tlo)"
+        }
+      },
+      "$type": "color",
+      "$value": "{szary.92}",
+      "$description": "Pionowa linia osi sekcji w kolorze tła strony; w trybie jasnym zlewa się z tłem (moduł Aktualności). Opcja koloru osi w module."
     }
   },
   "akcent": {
@@ -864,7 +924,10 @@
           "ALL_FILLS",
           "STROKE_COLOR"
         ],
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "var(--stale-ikona)"
+        }
       },
       "$type": "color",
       "$value": "{szary.42}",
