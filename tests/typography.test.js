@@ -63,3 +63,45 @@ test('responsive sizes have unitless aliases, automatic scales and guarded fallb
     assert.ok(css.includes(`--ds-text-line-height-n: var(--typo-${role}-line-height-n)`));
   }
 });
+
+test('automatic dimensions are continuous and match DS values at design widths', () => {
+  const { runInNewContext } = require('node:vm');
+  const css = fs.readFileSync('dist/css/typography.css', 'utf8');
+  const tokens = fs.readFileSync('dist/css/tokens.css', 'utf8');
+  const numbers = Object.fromEntries([...tokens.matchAll(/(--(?:font-size|line-height)-[\w-]+-n): (\d+(?:\.\d+)?);/g)]
+    .map(([, name, value]) => [name, Number(value)]));
+  const scales = ['mobile', 'tablet', 'desktop'].map((scale) =>
+    fs.readFileSync(`dist/css/ds.typografia.${scale}.css`, 'utf8'));
+  const rules = [...css.matchAll(/:where\(:root:not\(\[data-typography-scale\]\)\) \.ds-text\.ds-text--([\w-]+) \{([^}]+)\}/g)];
+  const roles = [...css.matchAll(/^  \.ds-text--([\w-]+) \{/gm)].map(([, role]) => role);
+  assert.deepEqual(rules.map(([, role]) => role), roles);
+  for (const [, role, body] of rules) {
+    assert.doesNotMatch(body, /var\(--rvw/);
+    for (const [property, dimension] of [['font-size', 'size'], ['line-height', 'line-height']]) {
+      const expression = body.match(new RegExp(`${property}: calc\\(([\\s\\S]*?)\\);`))[1];
+      const measure = (width) => {
+        const arithmetic = expression
+          .replace(/var\((--[\w-]+)\)/g, (_, name) => {
+            assert.ok(name === '--ds-text-rpx' || Object.hasOwn(numbers, name), name);
+            return name === '--ds-text-rpx' ? '1' : String(numbers[name]);
+          })
+          .replace(/calc\(/g, '(').replace(/100vw/g, String(width)).replace(/px/g, '');
+        return runInNewContext(arithmetic, {
+          min: Math.min,
+          clamp: (lower, value, upper) => Math.max(lower, Math.min(value, upper)),
+        });
+      };
+      for (const [index, width] of [402, 768, 1728].entries()) {
+        const alias = scales[index].match(new RegExp(`--typo-${role}-${dimension}-n: var\\(([^)]+)\\)`));
+        assert.ok(alias, `${role} ${dimension}`);
+        assert.equal(measure(width), numbers[alias[1]], `${role} ${property} at ${width}`);
+      }
+      assert.equal(measure(201), measure(402) / 2);
+      assert.equal(measure(2560), measure(1728));
+      for (const width of [402, 576, 768, 1024, 1280, 1728, 1920]) {
+        assert.ok(Math.abs(measure(width + 1) - measure(width - 1)) < 0.6,
+          `${role} ${property} jumps at ${width}`);
+      }
+    }
+  }
+});
