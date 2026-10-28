@@ -1755,6 +1755,18 @@
         "$value": "{letter-spacing.2_6}",
         "$description": "Hasło strony głównej, opis pod nagłówkiem. Desktop 1:1 z widoku (cienki, odstęp liter 13% = 2,6 px), Tablet i Mobile z makiet (zwykły, bez odstępu), Laptop wzorem DEC-17 (DEC-33)."
       }
+    },
+    "lead-luzny": {
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ]
+        },
+        "$type": "number",
+        "$value": "{line-height.28}",
+        "$description": "Interlinia luźnego leadu (styl „lead · interlinia 28”): 28 desktop i laptop, 26 tablet, 24 telefon."
+      }
     }
   }
 }
