@@ -7,6 +7,7 @@
   --typo-stat-line-height: var(--line-height-114);
   --typo-stat-line-height-n: var(--line-height-114-n);
   --typo-stat-letter-spacing: var(--letter-spacing-0);
+  --typo-stat-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-display-weight: var(--font-weight-500);
   --typo-display-family: var(--font-family-geist-mono);
   --typo-display-size: var(--font-size-68);
@@ -14,6 +15,7 @@
   --typo-display-line-height: var(--line-height-61);
   --typo-display-line-height-n: var(--line-height-61-n);
   --typo-display-letter-spacing: var(--letter-spacing-0);
+  --typo-display-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-h1-weight: var(--font-weight-600);
   --typo-h1-family: var(--font-family-geist-mono);
   --typo-h1-size: var(--font-size-54);
@@ -21,6 +23,7 @@
   --typo-h1-line-height: var(--line-height-44);
   --typo-h1-line-height-n: var(--line-height-44-n);
   --typo-h1-letter-spacing: var(--letter-spacing-0);
+  --typo-h1-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-h2-weight: var(--font-weight-400);
   --typo-h2-family: var(--font-family-geist-mono);
   --typo-h2-size: var(--font-size-38);
@@ -28,6 +31,7 @@
   --typo-h2-line-height: var(--line-height-49);
   --typo-h2-line-height-n: var(--line-height-49-n);
   --typo-h2-letter-spacing: var(--letter-spacing-0);
+  --typo-h2-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-h3-weight: var(--font-weight-500);
   --typo-h3-family: var(--font-family-geist-mono);
   --typo-h3-size: var(--font-size-29);
@@ -35,6 +39,7 @@
   --typo-h3-line-height: var(--line-height-35);
   --typo-h3-line-height-n: var(--line-height-35-n);
   --typo-h3-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-h4-weight: var(--font-weight-500);
   --typo-h4-family: var(--font-family-geist-mono);
   --typo-h4-size: var(--font-size-20);
@@ -42,6 +47,7 @@
   --typo-h4-line-height: var(--line-height-24);
   --typo-h4-line-height-n: var(--line-height-24-n);
   --typo-h4-letter-spacing: var(--letter-spacing-0);
+  --typo-h4-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-lead-weight: var(--font-weight-300);
   --typo-lead-family: var(--font-family-geist);
   --typo-lead-size: var(--font-size-18);
@@ -49,6 +55,7 @@
   --typo-lead-line-height: var(--line-height-22);
   --typo-lead-line-height-n: var(--line-height-22-n);
   --typo-lead-letter-spacing: var(--letter-spacing-0);
+  --typo-lead-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-body-weight: var(--font-weight-300);
   --typo-body-family: var(--font-family-geist);
   --typo-body-size: var(--font-size-16);
@@ -56,6 +63,7 @@
   --typo-body-line-height: var(--line-height-22);
   --typo-body-line-height-n: var(--line-height-22-n);
   --typo-body-letter-spacing: var(--letter-spacing-0);
+  --typo-body-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-body-sm-weight: var(--font-weight-400);
   --typo-body-sm-family: var(--font-family-geist);
   --typo-body-sm-size: var(--font-size-14);
@@ -63,6 +71,7 @@
   --typo-body-sm-line-height: var(--line-height-20);
   --typo-body-sm-line-height-n: var(--line-height-20-n);
   --typo-body-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-body-sm-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-caption-weight: var(--font-weight-400);
   --typo-caption-family: var(--font-family-geist);
   --typo-caption-size: var(--font-size-12);
@@ -70,6 +79,7 @@
   --typo-caption-line-height: var(--line-height-16);
   --typo-caption-line-height-n: var(--line-height-16-n);
   --typo-caption-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-overline-weight: var(--font-weight-700);
   --typo-overline-family: var(--font-family-geist);
   --typo-overline-size: var(--font-size-11);
@@ -77,6 +87,7 @@
   --typo-overline-line-height: var(--line-height-14);
   --typo-overline-line-height-n: var(--line-height-14-n);
   --typo-overline-letter-spacing: var(--letter-spacing-0);
+  --typo-overline-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-mono-lg-weight: var(--font-weight-400);
   --typo-mono-lg-family: var(--font-family-geist-mono);
   --typo-mono-lg-size: var(--font-size-17);
@@ -84,6 +95,7 @@
   --typo-mono-lg-line-height: var(--line-height-22);
   --typo-mono-lg-line-height-n: var(--line-height-22-n);
   --typo-mono-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-lg-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-mono-md-weight: var(--font-weight-400);
   --typo-mono-md-family: var(--font-family-geist-mono);
   --typo-mono-md-size: var(--font-size-14);
@@ -91,6 +103,7 @@
   --typo-mono-md-line-height: var(--line-height-18);
   --typo-mono-md-line-height-n: var(--line-height-18-n);
   --typo-mono-md-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-md-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-mono-sm-weight: var(--font-weight-400);
   --typo-mono-sm-family: var(--font-family-geist-mono);
   --typo-mono-sm-size: var(--font-size-12);
@@ -98,6 +111,7 @@
   --typo-mono-sm-line-height: var(--line-height-16);
   --typo-mono-sm-line-height-n: var(--line-height-16-n);
   --typo-mono-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-sm-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-mono-xs-weight: var(--font-weight-400);
   --typo-mono-xs-family: var(--font-family-geist-mono);
   --typo-mono-xs-size: var(--font-size-10);
@@ -105,6 +119,7 @@
   --typo-mono-xs-line-height: var(--line-height-13);
   --typo-mono-xs-line-height-n: var(--line-height-13-n);
   --typo-mono-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-xs-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-display-sm-weight: var(--font-weight-400);
   --typo-display-sm-family: var(--font-family-geist-mono);
   --typo-display-sm-size: var(--font-size-65);
@@ -112,6 +127,7 @@
   --typo-display-sm-line-height: var(--line-height-59);
   --typo-display-sm-line-height-n: var(--line-height-59-n);
   --typo-display-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-display-sm-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-h3-sm-weight: var(--font-weight-900);
   --typo-h3-sm-family: var(--font-family-geist-mono);
   --typo-h3-sm-size: var(--font-size-28);
@@ -119,6 +135,7 @@
   --typo-h3-sm-line-height: var(--line-height-33);
   --typo-h3-sm-line-height-n: var(--line-height-33-n);
   --typo-h3-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-sm-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-ikona-weight: var(--font-weight-400);
   --typo-ikona-family: var(--font-family-geist-mono);
   --typo-ikona-size: var(--font-size-22);
@@ -126,6 +143,7 @@
   --typo-ikona-line-height: var(--line-height-12);
   --typo-ikona-line-height-n: var(--line-height-12-n);
   --typo-ikona-letter-spacing: var(--letter-spacing-0);
+  --typo-ikona-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-nav-weight: var(--font-weight-400);
   --typo-nav-family: var(--font-family-geist-mono);
   --typo-nav-size: var(--font-size-15);
@@ -133,6 +151,7 @@
   --typo-nav-line-height: var(--line-height-20);
   --typo-nav-line-height-n: var(--line-height-20-n);
   --typo-nav-letter-spacing: var(--letter-spacing-0);
+  --typo-nav-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-mono-13-weight: var(--font-weight-400);
   --typo-mono-13-family: var(--font-family-geist-mono);
   --typo-mono-13-size: var(--font-size-13);
@@ -140,6 +159,7 @@
   --typo-mono-13-line-height: var(--line-height-17);
   --typo-mono-13-line-height-n: var(--line-height-17-n);
   --typo-mono-13-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-13-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-mono-11-weight: var(--font-weight-400);
   --typo-mono-11-family: var(--font-family-geist-mono);
   --typo-mono-11-size: var(--font-size-11);
@@ -147,6 +167,7 @@
   --typo-mono-11-line-height: var(--line-height-14);
   --typo-mono-11-line-height-n: var(--line-height-14-n);
   --typo-mono-11-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-11-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-mono-2xs-weight: var(--font-weight-400);
   --typo-mono-2xs-family: var(--font-family-geist-mono);
   --typo-mono-2xs-size: var(--font-size-9);
@@ -154,6 +175,7 @@
   --typo-mono-2xs-line-height: var(--line-height-12);
   --typo-mono-2xs-line-height-n: var(--line-height-12-n);
   --typo-mono-2xs-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-2xs-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-h2-geist-weight: var(--font-weight-700);
   --typo-h2-geist-family: var(--font-family-geist);
   --typo-h2-geist-size: var(--font-size-38);
@@ -161,6 +183,7 @@
   --typo-h2-geist-line-height: var(--line-height-51);
   --typo-h2-geist-line-height-n: var(--line-height-51-n);
   --typo-h2-geist-letter-spacing: var(--letter-spacing-0);
+  --typo-h2-geist-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-lead-lg-weight: var(--font-weight-300);
   --typo-lead-lg-family: var(--font-family-geist);
   --typo-lead-lg-size: var(--font-size-20);
@@ -168,6 +191,7 @@
   --typo-lead-lg-line-height: var(--line-height-73);
   --typo-lead-lg-line-height-n: var(--line-height-73-n);
   --typo-lead-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-lead-lg-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-body-lg-weight: var(--font-weight-400);
   --typo-body-lg-family: var(--font-family-geist);
   --typo-body-lg-size: var(--font-size-17);
@@ -175,6 +199,7 @@
   --typo-body-lg-line-height: var(--line-height-22);
   --typo-body-lg-line-height-n: var(--line-height-22-n);
   --typo-body-lg-letter-spacing: var(--letter-spacing-0);
+  --typo-body-lg-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-body-md-weight: var(--font-weight-600);
   --typo-body-md-family: var(--font-family-geist);
   --typo-body-md-size: var(--font-size-15);
@@ -182,6 +207,7 @@
   --typo-body-md-line-height: var(--line-height-20);
   --typo-body-md-line-height-n: var(--line-height-20-n);
   --typo-body-md-letter-spacing: var(--letter-spacing-0);
+  --typo-body-md-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-body-xs-weight: var(--font-weight-400);
   --typo-body-xs-family: var(--font-family-geist);
   --typo-body-xs-size: var(--font-size-13);
@@ -189,6 +215,7 @@
   --typo-body-xs-line-height: var(--line-height-17);
   --typo-body-xs-line-height-n: var(--line-height-17-n);
   --typo-body-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-body-xs-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-caption-sm-weight: var(--font-weight-400);
   --typo-caption-sm-family: var(--font-family-geist);
   --typo-caption-sm-size: var(--font-size-11);
@@ -196,6 +223,7 @@
   --typo-caption-sm-line-height: var(--line-height-15);
   --typo-caption-sm-line-height-n: var(--line-height-15-n);
   --typo-caption-sm-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-sm-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-caption-xs-weight: var(--font-weight-400);
   --typo-caption-xs-family: var(--font-family-geist);
   --typo-caption-xs-size: var(--font-size-9);
@@ -203,6 +231,7 @@
   --typo-caption-xs-line-height: var(--line-height-12);
   --typo-caption-xs-line-height-n: var(--line-height-12-n);
   --typo-caption-xs-letter-spacing: var(--letter-spacing-0);
+  --typo-caption-xs-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-h3-geist-weight: var(--font-weight-700);
   --typo-h3-geist-family: var(--font-family-geist);
   --typo-h3-geist-size: var(--font-size-24);
@@ -210,6 +239,7 @@
   --typo-h3-geist-line-height: var(--line-height-30);
   --typo-h3-geist-line-height-n: var(--line-height-30-n);
   --typo-h3-geist-letter-spacing: var(--letter-spacing-0);
+  --typo-h3-geist-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-mono-xl-weight: var(--font-weight-400);
   --typo-mono-xl-family: var(--font-family-geist-mono);
   --typo-mono-xl-size: var(--font-size-24);
@@ -217,6 +247,7 @@
   --typo-mono-xl-line-height: var(--line-height-32);
   --typo-mono-xl-line-height-n: var(--line-height-32-n);
   --typo-mono-xl-letter-spacing: var(--letter-spacing-0);
+  --typo-mono-xl-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-haslo-family: var(--font-family-geist-mono);
   --typo-haslo-size: var(--font-size-68);
   --typo-haslo-size-n: var(--font-size-68-n);
@@ -224,6 +255,7 @@
   --typo-haslo-line-height-n: var(--line-height-71-n);
   --typo-haslo-weight: var(--font-weight-500);
   --typo-haslo-letter-spacing: var(--letter-spacing-0);
+  --typo-haslo-letter-spacing-n: var(--letter-spacing-0-n);
   --typo-haslo-opis-family: var(--font-family-geist);
   --typo-haslo-opis-size: var(--font-size-20);
   --typo-haslo-opis-size-n: var(--font-size-20-n);
@@ -231,4 +263,7 @@
   --typo-haslo-opis-line-height-n: var(--line-height-28-n);
   --typo-haslo-opis-weight: var(--font-weight-300);
   --typo-haslo-opis-letter-spacing: var(--letter-spacing-2-6);
+  --typo-haslo-opis-letter-spacing-n: var(--letter-spacing-2-6-n);
+  --typo-lead-luzny-line-height: var(--line-height-28);
+  --typo-lead-luzny-line-height-n: var(--line-height-28-n);
 }

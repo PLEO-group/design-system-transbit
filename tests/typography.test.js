@@ -51,9 +51,10 @@ test('responsive sizes have unitless aliases, automatic scales and guarded fallb
   const css = fs.readFileSync('dist/css/typography.css', 'utf8');
   const tokens = fs.readFileSync('dist/css/tokens.css', 'utf8');
   assert.match(css, /@supports \(font-size: min\(1px, 2px\)\)/);
-  assert.match(css, /@media \(width >= 36rem\)/);
-  assert.match(css, /@media \(width >= 64rem\)/);
-  for (const base of [402, 768, 1728]) assert.ok(css.includes(`calc(100vw / ${base})`));
+  assert.match(css, /@media \(width >= 36rem\) and \(orientation: portrait\)/);
+  assert.match(css, /@media \(width >= 80rem\) and \(width < 120rem\)/);
+  assert.match(css, /@media \(width >= 120rem\)/);
+  for (const base of [402, 768, 1280, 1728]) assert.ok(css.includes(`calc(100vw / ${base})`));
   for (const [, name] of tokens.matchAll(/(--typo-[\w-]+-(?:size|line-height)):/g)) {
     assert.ok(tokens.includes(`${name}-n:`));
   }
@@ -64,44 +65,16 @@ test('responsive sizes have unitless aliases, automatic scales and guarded fallb
   }
 });
 
-test('automatic dimensions are continuous and match DS values at design widths', () => {
-  const { runInNewContext } = require('node:vm');
+test('responsive dimensions share the layout unit without independent caps or interpolation', () => {
   const css = fs.readFileSync('dist/css/typography.css', 'utf8');
   const tokens = fs.readFileSync('dist/css/tokens.css', 'utf8');
-  const numbers = Object.fromEntries([...tokens.matchAll(/(--(?:font-size|line-height)-[\w-]+-n): (\d+(?:\.\d+)?);/g)]
-    .map(([, name, value]) => [name, Number(value)]));
-  const scales = ['mobile', 'tablet', 'desktop'].map((scale) =>
-    fs.readFileSync(`dist/css/ds.typografia.${scale}.css`, 'utf8'));
-  const rules = [...css.matchAll(/:where\(:root:not\(\[data-typography-scale\]\)\) \.ds-text\.ds-text--([\w-]+) \{([^}]+)\}/g)];
-  const roles = [...css.matchAll(/^  \.ds-text--([\w-]+) \{/gm)].map(([, role]) => role);
-  assert.deepEqual(rules.map(([, role]) => role), roles);
-  for (const [, role, body] of rules) {
-    assert.doesNotMatch(body, /var\(--rvw/);
+  assert.match(css, /--ds-text-rvw: var\(--rvw, var\(--ds-text-auto-rvw, var\(--ds-text-rpx\)\)\)/);
+  assert.doesNotMatch(css, /clamp\(|\n\s+(?:font-size|line-height): min\(/);
+  for (const [, role, body] of css.matchAll(/^  \.ds-text\.ds-text--([\w-]+) \{([^}]+)\}/gm)) {
     for (const [property, dimension] of [['font-size', 'size'], ['line-height', 'line-height']]) {
-      const expression = body.match(new RegExp(`${property}: calc\\(([\\s\\S]*?)\\);`))[1];
-      const measure = (width) => {
-        const arithmetic = expression
-          .replace(/var\((--[\w-]+)\)/g, (_, name) => {
-            assert.ok(name === '--ds-text-rpx' || Object.hasOwn(numbers, name), name);
-            return name === '--ds-text-rpx' ? '1' : String(numbers[name]);
-          })
-          .replace(/calc\(/g, '(').replace(/100vw/g, String(width)).replace(/px/g, '');
-        return runInNewContext(arithmetic, {
-          min: Math.min,
-          clamp: (lower, value, upper) => Math.max(lower, Math.min(value, upper)),
-        });
-      };
-      for (const [index, width] of [402, 768, 1728].entries()) {
-        const alias = scales[index].match(new RegExp(`--typo-${role}-${dimension}-n: var\\(([^)]+)\\)`));
-        assert.ok(alias, `${role} ${dimension}`);
-        assert.equal(measure(width), numbers[alias[1]], `${role} ${property} at ${width}`);
-      }
-      assert.equal(measure(201), measure(402) / 2);
-      assert.equal(measure(2560), measure(1728));
-      for (const width of [402, 576, 768, 1024, 1280, 1728, 1920]) {
-        assert.ok(Math.abs(measure(width + 1) - measure(width - 1)) < 0.6,
-          `${role} ${property} jumps at ${width}`);
-      }
+      assert.ok(body.includes(`${property}: calc(var(--ds-text-${dimension}-n) * var(--ds-text-rvw));`));
     }
+    assert.ok(body.includes(`letter-spacing: calc(var(--typo-${role}-letter-spacing-n) * var(--ds-text-rvw));`));
+    assert.ok(tokens.includes(`--typo-${role}-letter-spacing-n:`));
   }
 });

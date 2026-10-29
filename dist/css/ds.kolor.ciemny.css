@@ -20,6 +20,10 @@
   --linia-podzial: var(--szary-34);
   --linia-obrys: var(--szary-34);
   --linia-na-ciemnym: var(--szary-34);
+  --linia-pionowa-jasna: var(--szary-34);
+  --linia-pionowa-ciemna: var(--szary-34);
+  --linia-pionowa-szara: var(--szary-34);
+  --linia-pionowa-tlo: var(--szary-34);
   --akcent-sygnal: var(--czerwien-sygnal);
   --akcent-ciemny: var(--czerwien-ciemna);
   --akcent-blady: var(--czerwien-blada);

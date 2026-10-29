@@ -102,25 +102,24 @@ font size and line height:
 </html>
 ```
 
-Without `data-typography-scale`, font size and line height interpolate continuously
-between Mobile tokens at 402px, Tablet tokens at 768px and Desktop tokens at
-1728px. Below 402px they shrink proportionally; above 1728px they stay capped.
-Identical token values stay constant between their design widths. Dimensions
-come from the existing token sources, including aliases. Automatic typography
-ignores the application's `--rvw`, so layout breakpoint changes cannot interrupt
-text scaling. Other properties still select Mobile tokens below `36rem`, Tablet
-from `36rem`, and Desktop from `64rem`.
+Without `data-typography-scale`, responsive elements use the same device ranges
+as Transbit WWW: Mobile by default, Tablet from `36rem` in portrait with a fine
+or coarse pointer, Laptop from `80rem` to below `120rem` in landscape with a fine
+pointer, and Desktop from `120rem` in landscape with a fine pointer. Their design
+widths are 402px, 768px, 1280px and 1728px respectively.
 
-Existing classes without `.ds-text` retain their static behavior. `.ds-text`
-also resets margin to zero.
+Font size, line height and letter spacing equal their unitless token multiplied
+by `--rvw`. They do not interpolate between device tokens or impose a separate
+pixel cap. The host must scale container widths, gutters and spacing with the
+same unit to preserve text wrapping within a device range. Device changes may
+change the composition and wrapping.
 
-An explicit `data-typography-scale="mobile"`, `"tablet"` or `"desktop"` locks
-the selected token set and design width and keeps capped proportional scaling.
-The existing `laptop` mode keeps its static dimensions because this responsive
-model defines no Laptop design width. Remove the attribute for fluid typography.
+Applications can override `--rvw` with their shared layout unit. Without it,
+typography uses viewport width divided by the active design width. An explicit
+`data-typography-scale="mobile"`, `"tablet"`, `"laptop"` or `"desktop"` locks the
+token set and fallback design width. Classes without `.ds-text` remain static;
+`.ds-text` also resets margin to zero. Tailwind utilities can override dimensions.
 
-Applications can override `--rpx` (default `1px`) for the dimension cap. Explicit
-scales also accept `--rvw` as a responsive pixel override.
 Static size and line-height declarations remain outside the `@supports`
 block; browsers without `min()` use these values. All typography rules stay
 in `components`, so Tailwind utilities can override them.
