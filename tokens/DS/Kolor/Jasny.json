@@ -74,6 +74,17 @@
       "$type": "color",
       "$value": "{marka.szary-50}",
       "$description": "Pantone Cool Gray 7 C."
+    },
+    "znak": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS",
+          "STROKE_COLOR"
+        ]
+      },
+      "$type": "color",
+      "$value": "{marka.czern}",
+      "$description": "Napis TRANSBIT w logo. Jasny: czerń marki; ciemny: biały (DEC-57)."
     }
   },
   "powierzchnia": {
@@ -315,6 +326,36 @@
       "$type": "color",
       "$value": "{szary.61}",
       "$description": "Wyciszona część dwukolorowego nagłówka; ten sam szary #9B9B9B w obu motywach. Para z tekst/wyrozniony."
+    },
+    "menu-mocny": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ]
+      },
+      "$type": "color",
+      "$value": "{szary.18}",
+      "$description": "Panel Systemy w menu: aktywna pozycja, aktywny numer i opis. W ciemnym biały (DEC-57 K1)."
+    },
+    "menu-wyciszony": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ]
+      },
+      "$type": "color",
+      "$value": "{szary.61}",
+      "$description": "Panel Systemy w menu: nazwy i podpisy pozycji. W ciemnym biały (DEC-57 K1)."
+    },
+    "menu-numer": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ]
+      },
+      "$type": "color",
+      "$value": "{szary.80}",
+      "$description": "Panel Systemy w menu: numery 01-06. W ciemnym biały (DEC-57 K1)."
     }
   },
   "linia": {
