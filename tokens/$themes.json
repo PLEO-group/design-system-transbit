@@ -1131,5 +1131,24 @@
     },
     "$figmaModeId": "1844:0",
     "$figmaCollectionId": "VariableCollectionId:1844:17363"
+  },
+  {
+    "id": "transbit/prototyp-stan-value",
+    "name": "Value",
+    "group": "Transbit/Prototyp-stan",
+    "selectedTokenSets": {
+      "Transbit/Prototyp-stan/Value": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "tryb-ciemny": "b0af9b52a5b231261caeb4896bcc074b51adc268",
+      "menu-systemy": "803292b6d843c3b6ab390ec4dd591fd5c91ca196",
+      "menu-zastosowania": "f4f29f886901b0f5ae503180c2e9706c58689666",
+      "menu-rozwiazania": "421f3fec0d939fd23495772c5137d473e232e8e2",
+      "menu-produkcja": "1078f48dafe7052fa1e9430e00759dfd3ea1b78c",
+      "menu-firma": "87788b1cb70b3e325c9cd1189fe20484ef53f64e"
+    },
+    "$figmaModeId": "2652:0",
+    "$figmaCollectionId": "VariableCollectionId:2652:14042"
   }
 ]

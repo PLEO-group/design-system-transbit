@@ -185,7 +185,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{font-size.36}"
+        "$value": "{font-size.30}"
       },
       "line-height": {
         "$extensions": {
@@ -195,7 +195,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{line-height.46}"
+        "$value": "{line-height.34}"
       },
       "letter-spacing": {
         "$extensions": {
@@ -341,7 +341,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{font-size.18}"
+        "$value": "{font-size.16}"
       },
       "line-height": {
         "$extensions": {
@@ -1173,7 +1173,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{font-size.36}"
+        "$value": "{font-size.30}"
       },
       "line-height": {
         "$extensions": {
@@ -1183,7 +1183,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{line-height.48}"
+        "$value": "{line-height.40}"
       },
       "letter-spacing": {
         "$extensions": {
@@ -1754,6 +1754,18 @@
         "$type": "number",
         "$value": "{letter-spacing.0}",
         "$description": "Hasło strony głównej, opis pod nagłówkiem. Desktop 1:1 z widoku (cienki, odstęp liter 13% = 2,6 px), Tablet i Mobile z makiet (zwykły, bez odstępu), Laptop wzorem DEC-17 (DEC-33)."
+      }
+    },
+    "lead-luzny": {
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ]
+        },
+        "$type": "number",
+        "$value": "{line-height.26}",
+        "$description": "Interlinia luźnego leadu (styl „lead · interlinia 28”): 28 desktop i laptop, 26 tablet, 24 telefon."
       }
     }
   }

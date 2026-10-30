@@ -190,9 +190,14 @@ function build() {
     { name: 'tablet', base: 768, breakpoint: '36rem' },
     { name: 'desktop', base: 1728, breakpoint: '64rem' },
   ];
+  const scaleDimensions = {};
   const responsiveTokens = scales.map(({ name, base, breakpoint }) => {
     const source = fs.readFileSync(path.join(OUTPUT_DIR, `ds.typografia.${name}.css`), 'utf8');
     const declarations = source.slice(source.indexOf('{') + 1, source.lastIndexOf('}')).trim();
+    scaleDimensions[name] = Object.fromEntries(
+      [...declarations.matchAll(/(--typo-[\w-]+-(?:size|line-height)-n): ([^;]+);/g)]
+        .map(([, name, value]) => [name, value])
+    );
     // Automatic scales apply only to elements opting into responsive typography.
     const rule = `:root:not([data-typography-scale]) {\n  --ds-text-auto-rvw: calc(100vw / ${base});\n${declarations}\n}`;
     return breakpoint ? `@media (width >= ${breakpoint}) {\n${rule}\n}` : rule;
@@ -203,6 +208,23 @@ function build() {
     `    --ds-text-line-height-n: var(--typo-${role}-line-height-n);\n` +
     `    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));\n` +
     `    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));\n  }`);
+  const [mobileWidth, tabletWidth, desktopWidth] = scales.map(({ base }) => base);
+  const fluid = [...typographyRoles].sort().map((role) => {
+    const declarations = ['size', 'line-height'].map((dimension) => {
+      const values = scales.map(({ name }) => scaleDimensions[name][`--typo-${role}-${dimension}-n`]);
+      if (values.some((value) => value === undefined)) {
+        throw new Error(`Missing responsive ${dimension} token for ${role}`);
+      }
+      const [mobile, tablet, desktop] = values;
+      const property = dimension === 'size' ? 'font-size' : dimension;
+      return `    ${property}: calc(\n` +
+        `      ${mobile} * min(calc(100vw / ${mobileWidth}), var(--ds-text-rpx)) +\n` +
+        `      (${tablet} - ${mobile}) * clamp(0px, calc((100vw - ${mobileWidth} * var(--ds-text-rpx)) / ${tabletWidth - mobileWidth}), var(--ds-text-rpx)) +\n` +
+        `      (${desktop} - ${tablet}) * clamp(0px, calc((100vw - ${tabletWidth} * var(--ds-text-rpx)) / ${desktopWidth - tabletWidth}), var(--ds-text-rpx))\n` +
+        `    );`;
+    });
+    return `  :where(:root:not([data-typography-scale])) .ds-text.ds-text--${role} {\n${declarations.join('\n')}\n  }`;
+  });
   // Keep automatic token values off :root so existing static classes stay unchanged.
   const automatic = responsiveTokens.join('\n').replaceAll(':root:not([data-typography-scale])', ':root:not([data-typography-scale]) .ds-text');
   const explicit = scales.map(({ name, base }) =>
@@ -212,7 +234,7 @@ function build() {
     `@layer components {\n${automatic}\n${explicit}\n` +
     `  .ds-text {\n    --ds-text-rpx: var(--rpx, 1px);\n    --ds-text-rvw: var(--rvw, var(--ds-text-auto-rvw, var(--ds-text-rpx)));\n    margin: 0;\n  }\n` +
     `${typography.join('\n\n')}\n` +
-    `@supports (font-size: min(1px, 2px)) {\n${responsive.join('\n\n')}\n}\n}\n`);
+    `@supports (font-size: min(1px, 2px)) {\n${responsive.join('\n\n')}\n${fluid.join('\n\n')}\n}\n}\n`);
   fs.writeFileSync(path.join(OUTPUT_DIR, 'manifest.json'), `${JSON.stringify({ files }, null, 2)}\n`);
   fs.rmSync(TEMP_DIR, { recursive: true, force: true });
   console.log(`Built ${files.length} token set(s) in dist/css.`);

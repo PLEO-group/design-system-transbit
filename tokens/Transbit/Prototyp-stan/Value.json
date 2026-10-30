@@ -1,0 +1,32 @@
+{
+  "tryb-ciemny": {
+    "$type": "boolean",
+    "$value": "false",
+    "$description": "Stan przełącznika trybu w menu mobile. Prawda = włączony tryb ciemny kolekcji Transbit/Mobile."
+  },
+  "menu-systemy": {
+    "$type": "text",
+    "$value": "Closed",
+    "$description": "Stan pozycji Systemy w menu mobile: Closed albo Open (wartości jak oś State akordeonu)."
+  },
+  "menu-zastosowania": {
+    "$type": "text",
+    "$value": "Closed",
+    "$description": "Stan pozycji w menu mobile: Closed albo Open."
+  },
+  "menu-rozwiazania": {
+    "$type": "text",
+    "$value": "Closed",
+    "$description": "Stan pozycji w menu mobile: Closed albo Open."
+  },
+  "menu-produkcja": {
+    "$type": "text",
+    "$value": "Closed",
+    "$description": "Stan pozycji w menu mobile: Closed albo Open."
+  },
+  "menu-firma": {
+    "$type": "text",
+    "$value": "Closed",
+    "$description": "Stan pozycji w menu mobile: Closed albo Open."
+  }
+}

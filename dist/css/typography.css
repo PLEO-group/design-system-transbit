@@ -25,10 +25,10 @@
   --typo-h1-letter-spacing: var(--letter-spacing-0);
   --typo-h2-weight: var(--font-weight-400);
   --typo-h2-family: var(--font-family-geist-mono);
-  --typo-h2-size: var(--font-size-33);
-  --typo-h2-size-n: var(--font-size-33-n);
-  --typo-h2-line-height: var(--line-height-42);
-  --typo-h2-line-height-n: var(--line-height-42-n);
+  --typo-h2-size: var(--font-size-26);
+  --typo-h2-size-n: var(--font-size-26-n);
+  --typo-h2-line-height: var(--line-height-30);
+  --typo-h2-line-height-n: var(--line-height-30-n);
   --typo-h2-letter-spacing: var(--letter-spacing-0);
   --typo-h3-weight: var(--font-weight-500);
   --typo-h3-family: var(--font-family-geist-mono);
@@ -46,8 +46,8 @@
   --typo-h4-letter-spacing: var(--letter-spacing-0);
   --typo-lead-weight: var(--font-weight-300);
   --typo-lead-family: var(--font-family-geist);
-  --typo-lead-size: var(--font-size-18);
-  --typo-lead-size-n: var(--font-size-18-n);
+  --typo-lead-size: var(--font-size-16);
+  --typo-lead-size-n: var(--font-size-16-n);
   --typo-lead-line-height: var(--line-height-22);
   --typo-lead-line-height-n: var(--line-height-22-n);
   --typo-lead-letter-spacing: var(--letter-spacing-0);
@@ -158,10 +158,10 @@
   --typo-mono-2xs-letter-spacing: var(--letter-spacing-0);
   --typo-h2-geist-weight: var(--font-weight-700);
   --typo-h2-geist-family: var(--font-family-geist);
-  --typo-h2-geist-size: var(--font-size-33);
-  --typo-h2-geist-size-n: var(--font-size-33-n);
-  --typo-h2-geist-line-height: var(--line-height-44);
-  --typo-h2-geist-line-height-n: var(--line-height-44-n);
+  --typo-h2-geist-size: var(--font-size-24);
+  --typo-h2-geist-size-n: var(--font-size-24-n);
+  --typo-h2-geist-line-height: var(--line-height-32);
+  --typo-h2-geist-line-height-n: var(--line-height-32-n);
   --typo-h2-geist-letter-spacing: var(--letter-spacing-0);
   --typo-lead-lg-weight: var(--font-weight-300);
   --typo-lead-lg-family: var(--font-family-geist);
@@ -233,6 +233,8 @@
   --typo-haslo-opis-line-height-n: var(--line-height-20-n);
   --typo-haslo-opis-weight: var(--font-weight-400);
   --typo-haslo-opis-letter-spacing: var(--letter-spacing-0);
+  --typo-lead-luzny-line-height: var(--line-height-24);
+  --typo-lead-luzny-line-height-n: var(--line-height-24-n);
 }
 @media (width >= 36rem) {
 :root:not([data-typography-scale]) .ds-text {
@@ -260,10 +262,10 @@
   --typo-h1-letter-spacing: var(--letter-spacing-0);
   --typo-h2-weight: var(--font-weight-400);
   --typo-h2-family: var(--font-family-geist-mono);
-  --typo-h2-size: var(--font-size-36);
-  --typo-h2-size-n: var(--font-size-36-n);
-  --typo-h2-line-height: var(--line-height-46);
-  --typo-h2-line-height-n: var(--line-height-46-n);
+  --typo-h2-size: var(--font-size-30);
+  --typo-h2-size-n: var(--font-size-30-n);
+  --typo-h2-line-height: var(--line-height-34);
+  --typo-h2-line-height-n: var(--line-height-34-n);
   --typo-h2-letter-spacing: var(--letter-spacing-0);
   --typo-h3-weight: var(--font-weight-500);
   --typo-h3-family: var(--font-family-geist-mono);
@@ -281,8 +283,8 @@
   --typo-h4-letter-spacing: var(--letter-spacing-0);
   --typo-lead-weight: var(--font-weight-300);
   --typo-lead-family: var(--font-family-geist);
-  --typo-lead-size: var(--font-size-18);
-  --typo-lead-size-n: var(--font-size-18-n);
+  --typo-lead-size: var(--font-size-16);
+  --typo-lead-size-n: var(--font-size-16-n);
   --typo-lead-line-height: var(--line-height-22);
   --typo-lead-line-height-n: var(--line-height-22-n);
   --typo-lead-letter-spacing: var(--letter-spacing-0);
@@ -393,10 +395,10 @@
   --typo-mono-2xs-letter-spacing: var(--letter-spacing-0);
   --typo-h2-geist-weight: var(--font-weight-700);
   --typo-h2-geist-family: var(--font-family-geist);
-  --typo-h2-geist-size: var(--font-size-36);
-  --typo-h2-geist-size-n: var(--font-size-36-n);
-  --typo-h2-geist-line-height: var(--line-height-48);
-  --typo-h2-geist-line-height-n: var(--line-height-48-n);
+  --typo-h2-geist-size: var(--font-size-30);
+  --typo-h2-geist-size-n: var(--font-size-30-n);
+  --typo-h2-geist-line-height: var(--line-height-40);
+  --typo-h2-geist-line-height-n: var(--line-height-40-n);
   --typo-h2-geist-letter-spacing: var(--letter-spacing-0);
   --typo-lead-lg-weight: var(--font-weight-300);
   --typo-lead-lg-family: var(--font-family-geist);
@@ -468,6 +470,8 @@
   --typo-haslo-opis-line-height-n: var(--line-height-28-n);
   --typo-haslo-opis-weight: var(--font-weight-400);
   --typo-haslo-opis-letter-spacing: var(--letter-spacing-0);
+  --typo-lead-luzny-line-height: var(--line-height-26);
+  --typo-lead-luzny-line-height-n: var(--line-height-26-n);
 }
 }
 @media (width >= 64rem) {
@@ -704,6 +708,8 @@
   --typo-haslo-opis-line-height-n: var(--line-height-28-n);
   --typo-haslo-opis-weight: var(--font-weight-300);
   --typo-haslo-opis-letter-spacing: var(--letter-spacing-2-6);
+  --typo-lead-luzny-line-height: var(--line-height-28);
+  --typo-lead-luzny-line-height-n: var(--line-height-28-n);
 }
 }
 :root[data-typography-scale="mobile"] {
@@ -1213,6 +1219,434 @@
     --ds-text-line-height-n: var(--typo-stat-line-height-n);
     font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));
     line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));
+  }
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--body {
+    font-size: calc(
+      var(--font-size-16-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-16-n) - var(--font-size-16-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-16-n) - var(--font-size-16-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-22-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-22-n) - var(--line-height-22-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-22-n) - var(--line-height-22-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--body-lg {
+    font-size: calc(
+      var(--font-size-17-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-17-n) - var(--font-size-17-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-17-n) - var(--font-size-17-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-22-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-22-n) - var(--line-height-22-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-22-n) - var(--line-height-22-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--body-md {
+    font-size: calc(
+      var(--font-size-15-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-15-n) - var(--font-size-15-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-15-n) - var(--font-size-15-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-20-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-20-n) - var(--line-height-20-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-20-n) - var(--line-height-20-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--body-sm {
+    font-size: calc(
+      var(--font-size-14-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-14-n) - var(--font-size-14-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-14-n) - var(--font-size-14-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-20-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-20-n) - var(--line-height-20-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-20-n) - var(--line-height-20-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--body-xs {
+    font-size: calc(
+      var(--font-size-13-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-13-n) - var(--font-size-13-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-13-n) - var(--font-size-13-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-17-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-17-n) - var(--line-height-17-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-17-n) - var(--line-height-17-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--caption {
+    font-size: calc(
+      var(--font-size-12-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-12-n) - var(--font-size-12-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-12-n) - var(--font-size-12-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-16-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-16-n) - var(--line-height-16-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-16-n) - var(--line-height-16-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--caption-sm {
+    font-size: calc(
+      var(--font-size-11-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-11-n) - var(--font-size-11-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-11-n) - var(--font-size-11-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-15-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-15-n) - var(--line-height-15-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-15-n) - var(--line-height-15-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--caption-xs {
+    font-size: calc(
+      var(--font-size-9-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-9-n) - var(--font-size-9-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-9-n) - var(--font-size-9-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-12-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-12-n) - var(--line-height-12-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-12-n) - var(--line-height-12-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--display {
+    font-size: calc(
+      var(--font-size-40-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-56-n) - var(--font-size-40-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-80-n) - var(--font-size-56-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-36-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-50-n) - var(--line-height-36-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-72-n) - var(--line-height-50-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--display-sm {
+    font-size: calc(
+      var(--font-size-40-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-55-n) - var(--font-size-40-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-76-n) - var(--font-size-55-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-37-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-50-n) - var(--line-height-37-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-69-n) - var(--line-height-50-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--h1 {
+    font-size: calc(
+      var(--font-size-39-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-48-n) - var(--font-size-39-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-60-n) - var(--font-size-48-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-32-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-39-n) - var(--line-height-32-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-49-n) - var(--line-height-39-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--h2 {
+    font-size: calc(
+      var(--font-size-26-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-30-n) - var(--font-size-26-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-40-n) - var(--font-size-30-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-30-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-34-n) - var(--line-height-30-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-52-n) - var(--line-height-34-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--h2-geist {
+    font-size: calc(
+      var(--font-size-24-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-30-n) - var(--font-size-24-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-40-n) - var(--font-size-30-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-32-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-40-n) - var(--line-height-32-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-54-n) - var(--line-height-40-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--h3 {
+    font-size: calc(
+      var(--font-size-27-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-28-n) - var(--font-size-27-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-30-n) - var(--font-size-28-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-32-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-34-n) - var(--line-height-32-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-36-n) - var(--line-height-34-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--h3-geist {
+    font-size: calc(
+      var(--font-size-23-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-23-n) - var(--font-size-23-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-24-n) - var(--font-size-23-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-29-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-30-n) - var(--line-height-29-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-31-n) - var(--line-height-30-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--h3-sm {
+    font-size: calc(
+      var(--font-size-26-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-27-n) - var(--font-size-26-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-29-n) - var(--font-size-27-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-31-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-32-n) - var(--line-height-31-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-34-n) - var(--line-height-32-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--h4 {
+    font-size: calc(
+      var(--font-size-19-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-20-n) - var(--font-size-19-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-20-n) - var(--font-size-20-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-23-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-24-n) - var(--line-height-23-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-24-n) - var(--line-height-24-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--haslo {
+    font-size: calc(
+      var(--font-size-34-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-54-n) - var(--font-size-34-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-80-n) - var(--font-size-54-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-40-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-62-n) - var(--line-height-40-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-84-n) - var(--line-height-62-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--haslo-opis {
+    font-size: calc(
+      var(--font-size-14-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-18-n) - var(--font-size-14-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-20-n) - var(--font-size-18-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-20-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-28-n) - var(--line-height-20-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-28-n) - var(--line-height-28-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--ikona {
+    font-size: calc(
+      var(--font-size-21-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-21-n) - var(--font-size-21-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-22-n) - var(--font-size-21-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-11-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-12-n) - var(--line-height-11-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-12-n) - var(--line-height-12-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--lead {
+    font-size: calc(
+      var(--font-size-16-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-16-n) - var(--font-size-16-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-18-n) - var(--font-size-16-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-22-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-22-n) - var(--line-height-22-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-22-n) - var(--line-height-22-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--lead-lg {
+    font-size: calc(
+      var(--font-size-19-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-20-n) - var(--font-size-19-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-20-n) - var(--font-size-20-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-72-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-73-n) - var(--line-height-72-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-74-n) - var(--line-height-73-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--mono-11 {
+    font-size: calc(
+      var(--font-size-11-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-11-n) - var(--font-size-11-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-11-n) - var(--font-size-11-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-14-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-14-n) - var(--line-height-14-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-14-n) - var(--line-height-14-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--mono-13 {
+    font-size: calc(
+      var(--font-size-13-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-13-n) - var(--font-size-13-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-13-n) - var(--font-size-13-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-17-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-17-n) - var(--line-height-17-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-17-n) - var(--line-height-17-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--mono-2xs {
+    font-size: calc(
+      var(--font-size-9-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-9-n) - var(--font-size-9-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-9-n) - var(--font-size-9-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-12-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-12-n) - var(--line-height-12-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-12-n) - var(--line-height-12-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--mono-lg {
+    font-size: calc(
+      var(--font-size-17-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-17-n) - var(--font-size-17-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-17-n) - var(--font-size-17-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-22-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-22-n) - var(--line-height-22-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-22-n) - var(--line-height-22-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--mono-md {
+    font-size: calc(
+      var(--font-size-14-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-14-n) - var(--font-size-14-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-14-n) - var(--font-size-14-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-18-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-18-n) - var(--line-height-18-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-18-n) - var(--line-height-18-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--mono-sm {
+    font-size: calc(
+      var(--font-size-12-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-12-n) - var(--font-size-12-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-12-n) - var(--font-size-12-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-16-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-16-n) - var(--line-height-16-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-16-n) - var(--line-height-16-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--mono-xl {
+    font-size: calc(
+      var(--font-size-23-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-24-n) - var(--font-size-23-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-25-n) - var(--font-size-24-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-31-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-32-n) - var(--line-height-31-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-33-n) - var(--line-height-32-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--mono-xs {
+    font-size: calc(
+      var(--font-size-10-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-10-n) - var(--font-size-10-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-10-n) - var(--font-size-10-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-13-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-13-n) - var(--line-height-13-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-13-n) - var(--line-height-13-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--nav {
+    font-size: calc(
+      var(--font-size-15-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-15-n) - var(--font-size-15-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-15-n) - var(--font-size-15-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-20-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-20-n) - var(--line-height-20-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-20-n) - var(--line-height-20-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--overline {
+    font-size: calc(
+      var(--font-size-11-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-11-n) - var(--font-size-11-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-11-n) - var(--font-size-11-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-14-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-14-n) - var(--line-height-14-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-14-n) - var(--line-height-14-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+  }
+
+  :where(:root:not([data-typography-scale])) .ds-text.ds-text--stat {
+    font-size: calc(
+      var(--font-size-52-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--font-size-72-n) - var(--font-size-52-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--font-size-103-n) - var(--font-size-72-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
+    line-height: calc(
+      var(--line-height-67-n) * min(calc(100vw / 402), var(--ds-text-rpx)) +
+      (var(--line-height-94-n) - var(--line-height-67-n)) * clamp(0px, calc((100vw - 402 * var(--ds-text-rpx)) / 366), var(--ds-text-rpx)) +
+      (var(--line-height-134-n) - var(--line-height-94-n)) * clamp(0px, calc((100vw - 768 * var(--ds-text-rpx)) / 960), var(--ds-text-rpx))
+    );
   }
 }
 }
