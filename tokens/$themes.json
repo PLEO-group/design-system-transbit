@@ -1150,5 +1150,29 @@
     },
     "$figmaModeId": "2652:0",
     "$figmaCollectionId": "VariableCollectionId:2652:14042"
+  },
+  {
+    "id": "prototyp/centrum-prasowe-filtry-value",
+    "name": "Value",
+    "group": "Prototyp/Centrum-prasowe-filtry",
+    "selectedTokenSets": {
+      "Prototyp/Centrum-prasowe-filtry/Value": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "filtr.rodzaj.wszystkie": "5bb7e0f9b56c023a28bf4b631cb86d60b6ff27fa",
+      "filtr.rodzaj.artykuly": "1fd69798922546efc6d797988f5ddfe5d34a229c",
+      "filtr.rodzaj.wywiady": "63f2c0d08f70fba6ef7be811e93bc422491df149",
+      "filtr.rodzaj.wideo-i-tv": "f2b27ccb4cd42ad15388b7e2273b549953fa3702",
+      "filtr.rodzaj.podcasty": "ce9547633065f2196e2dbb0b960ed914d14f46c0",
+      "filtr.rok.wszystkie": "b34fbcddbcba5b9daeab28f3ce840fe8fbbfe4f8",
+      "filtr.rok.2026": "fb35dff7fe90985184d466297c391b4dff2b4508",
+      "filtr.rok.2025": "f40bb767c9bdb67e6b03ee17c39ae2bf50beb9ed",
+      "filtr.rok.2024": "d8030ca7ec3b122f3a730d3c7923fceee89fe3c4",
+      "filtr.wydawca.wybrany": "29c81e24924ebce2a10be8f7a7372eef4f38875e",
+      "filtr.wydawca.lista-otwarta": "12b1c2e3ec6233cf1792cab1f54a0765178754e9"
+    },
+    "$figmaModeId": "4561:0",
+    "$figmaCollectionId": "VariableCollectionId:4561:24354"
   }
 ]
