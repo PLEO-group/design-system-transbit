@@ -162,6 +162,17 @@
       "$type": "color",
       "$value": "{szary.18}",
       "$description": "Moduł o ciemnym tle w obu motywach (systemy, fakty, stopka)."
+    },
+    "pas-tabeli": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ]
+      },
+      "$type": "color",
+      "$value": "{szary.96}",
+      "$description": "Pas co drugiego wiersza w tabeli we wpisie (DEC-69 A2); tabela bez linii między wierszami."
     }
   },
   "tekst": {

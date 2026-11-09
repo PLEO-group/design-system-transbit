@@ -1,0 +1,54 @@
+{
+  "filtr": {
+    "rodzaj": {
+      "wszystkie": {
+        "$type": "boolean",
+        "$value": "true"
+      },
+      "artykuly": {
+        "$type": "boolean",
+        "$value": "false"
+      },
+      "wywiady": {
+        "$type": "boolean",
+        "$value": "false"
+      },
+      "wideo-i-tv": {
+        "$type": "boolean",
+        "$value": "false"
+      },
+      "podcasty": {
+        "$type": "boolean",
+        "$value": "false"
+      }
+    },
+    "wydawca": {
+      "lista-otwarta": {
+        "$type": "boolean",
+        "$value": "false"
+      },
+      "wybrany": {
+        "$type": "text",
+        "$value": "Wszyscy"
+      }
+    },
+    "rok": {
+      "2024": {
+        "$type": "text",
+        "$value": "Obrys"
+      },
+      "2025": {
+        "$type": "text",
+        "$value": "Obrys"
+      },
+      "2026": {
+        "$type": "text",
+        "$value": "Obrys"
+      },
+      "wszystkie": {
+        "$type": "text",
+        "$value": "Wypełniona"
+      }
+    }
+  }
+}
