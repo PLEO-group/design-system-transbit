@@ -1767,6 +1767,18 @@
         "$value": "{line-height.28}",
         "$description": "Interlinia luźnego leadu (styl „lead · interlinia 28”): 28 desktop i laptop, 26 tablet, 24 telefon."
       }
+    },
+    "display-luzny": {
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ]
+        },
+        "$type": "number",
+        "$value": "{line-height.84}",
+        "$description": "Interlinia tytułu strony (styl „display · interlinia 84”): desktop 84, mniejsze ekrany proporcjonalnie do rozmiaru display."
+      }
     }
   }
 }

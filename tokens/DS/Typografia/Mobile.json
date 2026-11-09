@@ -237,7 +237,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{font-size.27}"
+        "$value": "{font-size.22}"
       },
       "line-height": {
         "$extensions": {
@@ -247,7 +247,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{line-height.32}"
+        "$value": "{line-height.28}"
       },
       "letter-spacing": {
         "$extensions": {
@@ -1766,6 +1766,18 @@
         "$type": "number",
         "$value": "{line-height.24}",
         "$description": "Interlinia luźnego leadu (styl „lead · interlinia 28”): 28 desktop i laptop, 26 tablet, 24 telefon."
+      }
+    },
+    "display-luzny": {
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ]
+        },
+        "$type": "number",
+        "$value": "{line-height.42}",
+        "$description": "Interlinia tytułu strony (styl „display · interlinia 84”): desktop 84, mniejsze ekrany proporcjonalnie do rozmiaru display."
       }
     }
   }
