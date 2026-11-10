@@ -90,5 +90,11 @@
   "filtr-rok": {
     "$type": "text",
     "$value": "Rok: wszystkie"
+  },
+  "zarzad": {
+    "osoba": {
+      "$type": "text",
+      "$value": "Soporek"
+    }
   }
 }
