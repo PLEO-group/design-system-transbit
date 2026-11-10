@@ -1174,5 +1174,23 @@
     },
     "$figmaModeId": "4561:0",
     "$figmaCollectionId": "VariableCollectionId:4561:24354"
+  },
+  {
+    "id": "prototyp/certyfikaty-podglad-mode 1",
+    "name": "Mode 1",
+    "group": "Prototyp/Certyfikaty-podglad",
+    "selectedTokenSets": {
+      "Prototyp/Certyfikaty-podglad/Mode 1": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "podglad-01": "4c28473029e2458f565372c76801af62208c8c68",
+      "podglad-02": "3241edaac89576008aa99f75a465aeb125f4617e",
+      "podglad-03": "e4a8f7542966743884acf1b9cd16fda022f74fa1",
+      "podglad-04": "a898ad3d9c9dcc999c67abea6007453a28cbeb3f",
+      "podglad-05": "7bbce2b6ef2b178d801b0d25ec32a68b2d31b1e3"
+    },
+    "$figmaModeId": "5017:0",
+    "$figmaCollectionId": "VariableCollectionId:5017:15243"
   }
 ]

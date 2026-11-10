@@ -270,6 +270,11 @@
       "$type": "number",
       "$value": 40
     },
+    "45": {
+      "$type": "number",
+      "$value": 45,
+      "$description": "Nazwa systemu na karcie, laptop (DEC-101)."
+    },
     "48": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false

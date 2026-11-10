@@ -1779,6 +1779,140 @@
         "$value": "{line-height.84}",
         "$description": "Interlinia tytułu strony (styl „display · interlinia 84”): desktop 84, mniejsze ekrany proporcjonalnie do rozmiaru display."
       }
+    },
+    "karta-tytul": {
+      "family": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_FAMILY"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-karta-tytul-family)"
+          }
+        },
+        "$type": "text",
+        "$value": "{font-family.geist-mono}",
+        "$description": "Karta systemu, nazwa systemu. Desktop 55/54 i Laptop 45/44 z kart desktop i laptop, Tablet i Mobile 26/32 z makiet (DEC-101, 2a)."
+      },
+      "size": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_SIZE"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-karta-tytul-size)"
+          }
+        },
+        "$type": "number",
+        "$value": "{font-size.55}",
+        "$description": "Karta systemu, nazwa systemu. Desktop 55/54 i Laptop 45/44 z kart desktop i laptop, Tablet i Mobile 26/32 z makiet (DEC-101, 2a)."
+      },
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-karta-tytul-line-height)"
+          }
+        },
+        "$type": "number",
+        "$value": "{line-height.54}",
+        "$description": "Karta systemu, nazwa systemu. Desktop 55/54 i Laptop 45/44 z kart desktop i laptop, Tablet i Mobile 26/32 z makiet (DEC-101, 2a)."
+      },
+      "weight": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_WEIGHT"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-karta-tytul-weight)"
+          }
+        },
+        "$type": "fontWeights",
+        "$value": "{font-weight.400}",
+        "$description": "Karta systemu, nazwa systemu. Desktop 55/54 i Laptop 45/44 z kart desktop i laptop, Tablet i Mobile 26/32 z makiet (DEC-101, 2a)."
+      },
+      "letter-spacing": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LETTER_SPACING"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-karta-tytul-letter-spacing)"
+          }
+        },
+        "$type": "number",
+        "$value": "{letter-spacing.0}",
+        "$description": "Karta systemu, nazwa systemu. Desktop 55/54 i Laptop 45/44 z kart desktop i laptop, Tablet i Mobile 26/32 z makiet (DEC-101, 2a)."
+      }
+    },
+    "karta-opis": {
+      "family": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_FAMILY"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-karta-opis-family)"
+          }
+        },
+        "$type": "text",
+        "$value": "{font-family.geist}",
+        "$description": "Karta systemu, opis systemu. Desktop i Laptop cienki 14/18, Tablet i Mobile zwykły 14/20, wartości z kart i makiet (DEC-101, 3c)."
+      },
+      "size": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_SIZE"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-karta-opis-size)"
+          }
+        },
+        "$type": "number",
+        "$value": "{font-size.14}",
+        "$description": "Karta systemu, opis systemu. Desktop i Laptop cienki 14/18, Tablet i Mobile zwykły 14/20, wartości z kart i makiet (DEC-101, 3c)."
+      },
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-karta-opis-line-height)"
+          }
+        },
+        "$type": "number",
+        "$value": "{line-height.18}",
+        "$description": "Karta systemu, opis systemu. Desktop i Laptop cienki 14/18, Tablet i Mobile zwykły 14/20, wartości z kart i makiet (DEC-101, 3c)."
+      },
+      "weight": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_WEIGHT"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-karta-opis-weight)"
+          }
+        },
+        "$type": "fontWeights",
+        "$value": "{font-weight.300}",
+        "$description": "Karta systemu, opis systemu. Desktop i Laptop cienki 14/18, Tablet i Mobile zwykły 14/20, wartości z kart i makiet (DEC-101, 3c)."
+      },
+      "letter-spacing": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LETTER_SPACING"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-karta-opis-letter-spacing)"
+          }
+        },
+        "$type": "number",
+        "$value": "{letter-spacing.0}",
+        "$description": "Karta systemu, opis systemu. Desktop i Laptop cienki 14/18, Tablet i Mobile zwykły 14/20, wartości z kart i makiet (DEC-101, 3c)."
+      }
     }
   }
 }
