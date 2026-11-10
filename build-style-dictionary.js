@@ -15,8 +15,8 @@ function walkJsonFiles(directory) {
   });
 }
 
-function normalise(node) {
-  if (Array.isArray(node)) return node.map(normalise);
+function normalise(node, includeTypography) {
+  if (Array.isArray(node)) return node.map((value) => normalise(value, includeTypography));
   if (!node || typeof node !== 'object') return node;
 
   if (Object.prototype.hasOwnProperty.call(node, '$value') || Object.prototype.hasOwnProperty.call(node, 'value')) {
@@ -36,7 +36,8 @@ function normalise(node) {
   return Object.fromEntries(
     Object.entries(node)
       .filter(([key]) => !key.startsWith('$'))
-      .map(([key, value]) => [key, normalise(value)])
+      .filter(([, value]) => includeTypography || (value?.$type || value?.type) !== 'typography')
+      .map(([key, value]) => [key, normalise(value, includeTypography)])
   );
 }
 
@@ -112,7 +113,8 @@ function build() {
     const relativeSource = path.relative(TOKENS_DIR, absoluteSource);
     const temporaryName = `${sourceKey(relativeSource)}.json`;
     const temporaryPath = path.join(TEMP_DIR, temporaryName);
-    fs.writeFileSync(temporaryPath, `${JSON.stringify(normalise(JSON.parse(fs.readFileSync(absoluteSource, 'utf8'))), null, 2)}\n`);
+    const includeTypography = /^DS\/(Typografia|Typografia-bazowa)\//.test(relativeSource.replace(/\\/g, '/'));
+    fs.writeFileSync(temporaryPath, `${JSON.stringify(normalise(JSON.parse(fs.readFileSync(absoluteSource, 'utf8')), includeTypography), null, 2)}\n`);
     return { relativeSource, temporaryPath };
   });
 
