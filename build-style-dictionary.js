@@ -15,8 +15,8 @@ function walkJsonFiles(directory) {
   });
 }
 
-function normalise(node) {
-  if (Array.isArray(node)) return node.map(normalise);
+function normalise(node, includeTypography) {
+  if (Array.isArray(node)) return node.map((value) => normalise(value, includeTypography));
   if (!node || typeof node !== 'object') return node;
 
   if (Object.prototype.hasOwnProperty.call(node, '$value') || Object.prototype.hasOwnProperty.call(node, 'value')) {
@@ -36,7 +36,8 @@ function normalise(node) {
   return Object.fromEntries(
     Object.entries(node)
       .filter(([key]) => !key.startsWith('$'))
-      .map(([key, value]) => [key, normalise(value)])
+      .filter(([, value]) => includeTypography || (value?.$type || value?.type) !== 'typography')
+      .map(([key, value]) => [key, normalise(value, includeTypography)])
   );
 }
 
@@ -112,13 +113,32 @@ function build() {
     const relativeSource = path.relative(TOKENS_DIR, absoluteSource);
     const temporaryName = `${sourceKey(relativeSource)}.json`;
     const temporaryPath = path.join(TEMP_DIR, temporaryName);
-    fs.writeFileSync(temporaryPath, `${JSON.stringify(normalise(JSON.parse(fs.readFileSync(absoluteSource, 'utf8'))), null, 2)}\n`);
+    const includeTypography = /^DS\/(Typografia|Typografia-bazowa)\//.test(relativeSource.replace(/\\/g, '/'));
+    fs.writeFileSync(temporaryPath, `${JSON.stringify(normalise(JSON.parse(fs.readFileSync(absoluteSource, 'utf8')), includeTypography), null, 2)}\n`);
     return { relativeSource, temporaryPath };
   });
+
+  const typographyRoles = new Set();
+  const typographyProperties = {
+    'font-family': 'family',
+    'font-size': 'size',
+    'font-weight': 'weight',
+    'line-height': 'line-height',
+    'letter-spacing': 'letter-spacing',
+  };
 
   StyleDictionary.registerFormat({
     name: 'transbit/css-variables',
     formatter: ({ dictionary, options }) => {
+      const names = new Set(dictionary.allProperties.map((token) => variableName(token.path)));
+      dictionary.allProperties
+        .filter((token) => token.path[0] === 'typo' && token.path.length === 3)
+        .forEach((token) => {
+          const role = kebab(token.path[1]);
+          if (Object.values(typographyProperties).every((property) => names.has(`--typo-${role}-${property}`))) {
+            typographyRoles.add(role);
+          }
+        });
       const declarations = dictionary.allProperties
         // An alias from a themed token to the same CSS variable would become
         // self-referential. Omitting it correctly inherits the base token.
@@ -126,7 +146,16 @@ function build() {
           const reference = token.original && token.original.reference;
           return !reference || variableName(token.path) !== variableName(reference.split('.'));
         })
-        .map((token) => `  ${variableName(token.path)}: ${formatValue(token)};`);
+        .flatMap((token) => {
+          const name = variableName(token.path);
+          const declarations = [`  ${name}: ${formatValue(token)};`];
+          if (['font-size', 'line-height'].includes(token.path[0]) ||
+              (token.path[0] === 'typo' && ['size', 'line-height'].includes(token.path.at(-1)))) {
+            const reference = token.original && token.original.reference;
+            declarations.push(`  ${name}-n: ${reference ? `var(${variableName(reference.split('.'))}-n)` : token.value};`);
+          }
+          return declarations;
+        });
       return `/* Generated from tokens/${options.relativeSource}. Do not edit directly. */\n${options.selector} {\n${declarations.join('\n')}\n}\n`;
     },
   });
@@ -153,6 +182,61 @@ function build() {
   const files = entries.map(({ relativeSource }) => `${sourceKey(relativeSource)}.css`);
   const bundle = files.map((file) => fs.readFileSync(path.join(OUTPUT_DIR, file), 'utf8').trim()).join('\n\n');
   fs.writeFileSync(path.join(OUTPUT_DIR, 'tokens.css'), `${bundle}\n`);
+  const typography = [...typographyRoles].sort().map((role) => {
+    const declarations = Object.entries(typographyProperties)
+      .map(([property, token]) => `    ${property}: var(--typo-${role}-${token});`);
+    return `  .ds-text--${role} {\n${declarations.join('\n')}\n  }`;
+  });
+  const scales = [
+    { name: 'mobile', base: 402 },
+    { name: 'tablet', base: 768, breakpoint: '36rem' },
+    { name: 'desktop', base: 1728, breakpoint: '64rem' },
+  ];
+  const scaleDimensions = {};
+  const responsiveTokens = scales.map(({ name, base, breakpoint }) => {
+    const source = fs.readFileSync(path.join(OUTPUT_DIR, `ds.typografia.${name}.css`), 'utf8');
+    const declarations = source.slice(source.indexOf('{') + 1, source.lastIndexOf('}')).trim();
+    scaleDimensions[name] = Object.fromEntries(
+      [...declarations.matchAll(/(--typo-[\w-]+-(?:size|line-height)-n): ([^;]+);/g)]
+        .map(([, name, value]) => [name, value])
+    );
+    // Automatic scales apply only to elements opting into responsive typography.
+    const rule = `:root:not([data-typography-scale]) {\n  --ds-text-auto-rvw: calc(100vw / ${base});\n${declarations}\n}`;
+    return breakpoint ? `@media (width >= ${breakpoint}) {\n${rule}\n}` : rule;
+  });
+  const responsive = [...typographyRoles].sort().map((role) =>
+    `  .ds-text.ds-text--${role} {\n` +
+    `    --ds-text-size-n: var(--typo-${role}-size-n);\n` +
+    `    --ds-text-line-height-n: var(--typo-${role}-line-height-n);\n` +
+    `    font-size: min(calc(var(--ds-text-size-n) * var(--ds-text-rvw)), calc(var(--ds-text-size-n) * var(--ds-text-rpx)));\n` +
+    `    line-height: min(calc(var(--ds-text-line-height-n) * var(--ds-text-rvw)), calc(var(--ds-text-line-height-n) * var(--ds-text-rpx)));\n  }`);
+  const [mobileWidth, tabletWidth, desktopWidth] = scales.map(({ base }) => base);
+  const fluid = [...typographyRoles].sort().map((role) => {
+    const declarations = ['size', 'line-height'].map((dimension) => {
+      const values = scales.map(({ name }) => scaleDimensions[name][`--typo-${role}-${dimension}-n`]);
+      if (values.some((value) => value === undefined)) {
+        throw new Error(`Missing responsive ${dimension} token for ${role}`);
+      }
+      const [mobile, tablet, desktop] = values;
+      const property = dimension === 'size' ? 'font-size' : dimension;
+      return `    ${property}: calc(\n` +
+        `      ${mobile} * min(calc(100vw / ${mobileWidth}), var(--ds-text-rpx)) +\n` +
+        `      (${tablet} - ${mobile}) * clamp(0px, calc((100vw - ${mobileWidth} * var(--ds-text-rpx)) / ${tabletWidth - mobileWidth}), var(--ds-text-rpx)) +\n` +
+        `      (${desktop} - ${tablet}) * clamp(0px, calc((100vw - ${tabletWidth} * var(--ds-text-rpx)) / ${desktopWidth - tabletWidth}), var(--ds-text-rpx))\n` +
+        `    );`;
+    });
+    return `  :where(:root:not([data-typography-scale])) .ds-text.ds-text--${role} {\n${declarations.join('\n')}\n  }`;
+  });
+  // Keep automatic token values off :root so existing static classes stay unchanged.
+  const automatic = responsiveTokens.join('\n').replaceAll(':root:not([data-typography-scale])', ':root:not([data-typography-scale]) .ds-text');
+  const explicit = scales.map(({ name, base }) =>
+    `:root[data-typography-scale="${name}"] {\n  --ds-text-auto-rvw: calc(100vw / ${base});\n}`).join('\n');
+  fs.writeFileSync(path.join(OUTPUT_DIR, 'typography.css'),
+    `/* Generated from typography tokens. Do not edit directly. */\n` +
+    `@layer components {\n${automatic}\n${explicit}\n` +
+    `  .ds-text {\n    --ds-text-rpx: var(--rpx, 1px);\n    --ds-text-rvw: var(--rvw, var(--ds-text-auto-rvw, var(--ds-text-rpx)));\n    margin: 0;\n  }\n` +
+    `${typography.join('\n\n')}\n` +
+    `@supports (font-size: min(1px, 2px)) {\n${responsive.join('\n\n')}\n${fluid.join('\n\n')}\n}\n}\n`);
   fs.writeFileSync(path.join(OUTPUT_DIR, 'manifest.json'), `${JSON.stringify({ files }, null, 2)}\n`);
   fs.rmSync(TEMP_DIR, { recursive: true, force: true });
   console.log(`Built ${files.length} token set(s) in dist/css.`);

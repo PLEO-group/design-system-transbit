@@ -1,15 +1,22 @@
 {
   "name": "@pleodigital/design-system-transbit",
-  "version": "1.0.2",
+  "version": "1.0.25",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PLEO-group/design-system-transbit"
+  },
   "description": "Design tokens for Transbit, generated from Tokens Studio exports.",
   "style": "dist/css/tokens.css",
   "exports": {
     ".": "./dist/css/tokens.css",
     "./css/tokens.css": "./dist/css/tokens.css",
-    "./css/*": "./dist/css/*"
+    "./css/typography.css": "./dist/css/typography.css",
+    "./css/*": "./dist/css/*",
+    "./icons": "./dist/assets/react/icons/index.ts",
+    "./dist/*": "./dist/*"
   },
   "publishConfig": {
-    "access": "public",
+    "access": "restricted",
     "registry": "https://registry.npmjs.org/"
   },
   "files": [
@@ -18,10 +25,13 @@
   "author": "",
   "license": "ISC",
   "scripts": {
+    "test": "npm run build && node --test tests/*.test.js",
     "build:tokens": "node build-style-dictionary.js",
     "transform:icons": "npx @svgr/cli assets/icons --out-dir dist/assets/react/icons --jsx-runtime classic --typescript --config-file .svgrrc-icons.json",
     "transform:illustrations": "npx @svgr/cli assets/illustrations --out-dir dist/assets/react/illustrations --jsx-runtime classic --typescript --config-file .svgrrc-illustrations.json",
-    "build": "npm run build:tokens && npm run transform:icons && npm run transform:illustrations",
+    "copy:icons": "cpx 'assets/icons/*.svg' dist/assets/angular/svg-raw/icons",
+    "build": "npm run build:tokens && npm run transform:icons && npm run transform:illustrations && npm run copy:icons",
+    "prepublishOnly": "npm run build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "npm run build && storybook build"
   },
