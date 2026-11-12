@@ -96,5 +96,12 @@
       "$type": "text",
       "$value": "Soporek"
     }
+  },
+  "kontakt": {
+    "stan": {
+      "$type": "text",
+      "$value": "Telefon · Sekretariat",
+      "$description": "Prototyp widoku Kontakt (telefon, tablet): wybrany kanał i dział; spina listę kanałów z mapą."
+    }
   }
 }
