@@ -182,6 +182,20 @@
       "$type": "number",
       "$value": 40
     },
+    "48": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT",
+          "GAP"
+        ],
+        "com.figma.codeSyntax": {
+          "Web": "var(--odstep-48)"
+        }
+      },
+      "$type": "number",
+      "$value": 48,
+      "$description": "Odstęp 48 px (marginesy tabletu, dół sekcji na telefonie). Dodany 2026-11-16 przy module Kariera."
+    },
     "64": {
       "$extensions": {
         "com.figma.scopes": [
