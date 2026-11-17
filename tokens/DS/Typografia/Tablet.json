@@ -1913,6 +1913,192 @@
         "$value": "{letter-spacing.0}",
         "$description": "Karta systemu, opis systemu. Desktop i Laptop cienki 14/18, Tablet i Mobile zwykły 14/20, wartości z kart i makiet (DEC-101, 3c)."
       }
+    },
+    "kontakt-wartosc": {
+      "family": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_FAMILY"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-kontakt-wartosc-family)"
+          }
+        },
+        "$type": "text",
+        "$value": "{font-family.geist-mono}",
+        "$description": "Wartość kanału kontaktu (numer, e-mail, adres, GPS) w liście kanałów; desktop 18/36, laptop 18/32, tablet 16/28, telefon 15/24."
+      },
+      "size": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_SIZE"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-kontakt-wartosc-size)"
+          }
+        },
+        "$type": "number",
+        "$value": "{font-size.16}",
+        "$description": "Wartość kanału kontaktu (numer, e-mail, adres, GPS) w liście kanałów; desktop 18/36, laptop 18/32, tablet 16/28, telefon 15/24."
+      },
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-kontakt-wartosc-line-height)"
+          }
+        },
+        "$type": "number",
+        "$value": "{line-height.28}",
+        "$description": "Wartość kanału kontaktu (numer, e-mail, adres, GPS) w liście kanałów; desktop 18/36, laptop 18/32, tablet 16/28, telefon 15/24."
+      },
+      "weight": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_WEIGHT"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-kontakt-wartosc-weight)"
+          }
+        },
+        "$type": "fontWeights",
+        "$value": "{font-weight.500}",
+        "$description": "Wartość kanału kontaktu (numer, e-mail, adres, GPS) w liście kanałów; desktop 18/36, laptop 18/32, tablet 16/28, telefon 15/24."
+      },
+      "letter-spacing": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LETTER_SPACING"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-kontakt-wartosc-letter-spacing)"
+          }
+        },
+        "$type": "number",
+        "$value": "{letter-spacing.0}",
+        "$description": "Wartość kanału kontaktu (numer, e-mail, adres, GPS) w liście kanałów; desktop 18/36, laptop 18/32, tablet 16/28, telefon 15/24."
+      }
+    },
+    "kontakt-opis": {
+      "family": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_FAMILY"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-kontakt-opis-family)"
+          }
+        },
+        "$type": "text",
+        "$value": "{typo.body-sm.family}",
+        "$description": "Opis kanału i działu oraz dane rejestrowe w liście kanałów kontaktu; desktop 14/20, laptop 14/20, tablet 13/18, telefon 13/18."
+      },
+      "size": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_SIZE"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-kontakt-opis-size)"
+          }
+        },
+        "$type": "number",
+        "$value": "{font-size.13}",
+        "$description": "Opis kanału i działu oraz dane rejestrowe w liście kanałów kontaktu; desktop 14/20, laptop 14/20, tablet 13/18, telefon 13/18."
+      },
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-kontakt-opis-line-height)"
+          }
+        },
+        "$type": "number",
+        "$value": "{line-height.18}",
+        "$description": "Opis kanału i działu oraz dane rejestrowe w liście kanałów kontaktu; desktop 14/20, laptop 14/20, tablet 13/18, telefon 13/18."
+      },
+      "weight": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_WEIGHT"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-kontakt-opis-weight)"
+          }
+        },
+        "$type": "fontWeights",
+        "$value": "{typo.body-sm.weight}",
+        "$description": "Opis kanału i działu oraz dane rejestrowe w liście kanałów kontaktu; desktop 14/20, laptop 14/20, tablet 13/18, telefon 13/18."
+      },
+      "letter-spacing": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LETTER_SPACING"
+          ],
+          "com.figma.codeSyntax": {
+            "Web": "var(--typo-kontakt-opis-letter-spacing)"
+          }
+        },
+        "$type": "number",
+        "$value": "{typo.body-sm.letter-spacing}",
+        "$description": "Opis kanału i działu oraz dane rejestrowe w liście kanałów kontaktu; desktop 14/20, laptop 14/20, tablet 13/18, telefon 13/18."
+      }
+    },
+    "cytat": {
+      "family": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_FAMILY"
+          ]
+        },
+        "$type": "text",
+        "$value": "{font-family.geist-mono}",
+        "$description": "Cytat członka zarządu w module Zarząd | Karuzela osób"
+      },
+      "size": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_SIZE"
+          ]
+        },
+        "$type": "number",
+        "$value": "{font-size.16}",
+        "$description": "Cytat członka zarządu w module Zarząd | Karuzela osób"
+      },
+      "weight": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FONT_WEIGHT"
+          ]
+        },
+        "$type": "fontWeights",
+        "$value": "{font-weight.400}",
+        "$description": "Cytat członka zarządu w module Zarząd | Karuzela osób"
+      },
+      "letter-spacing": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LETTER_SPACING"
+          ]
+        },
+        "$type": "number",
+        "$value": "{letter-spacing.0}",
+        "$description": "Cytat członka zarządu w module Zarząd | Karuzela osób"
+      },
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ]
+        },
+        "$type": "number",
+        "$value": "{line-height.24}",
+        "$description": "Cytat członka zarządu w module Zarząd | Karuzela osób"
+      }
     }
   }
 }

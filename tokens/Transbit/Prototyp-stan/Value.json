@@ -100,8 +100,95 @@
   "kontakt": {
     "stan": {
       "$type": "text",
-      "$value": "Telefon · Sekretariat",
+      "$value": "Sekretariat",
       "$description": "Prototyp widoku Kontakt (telefon, tablet): wybrany kanał i dział; spina listę kanałów z mapą."
+    },
+    "najechanie-kanalu-01": {
+      "$type": "color",
+      "$value": "{tekst.wyciszony}",
+      "$description": "Kolor numeru i strzałki nagłówka „Sekretariat” w liście kanałów; najechanie ustawia akcent/sygnal, zjechanie i kliknięcie wraca do tekst/wyciszony."
+    },
+    "najechanie-kanalu-02": {
+      "$type": "color",
+      "$value": "{tekst.wyciszony}",
+      "$description": "Kolor numeru i strzałki nagłówka „Logistyka” w liście kanałów; najechanie ustawia akcent/sygnal, zjechanie i kliknięcie wraca do tekst/wyciszony."
+    },
+    "najechanie-kanalu-03": {
+      "$type": "color",
+      "$value": "{tekst.wyciszony}",
+      "$description": "Kolor numeru i strzałki nagłówka „Serwis” w liście kanałów; najechanie ustawia akcent/sygnal, zjechanie i kliknięcie wraca do tekst/wyciszony."
+    },
+    "najechanie-kanalu-04": {
+      "$type": "color",
+      "$value": "{tekst.wyciszony}",
+      "$description": "Kolor numeru i strzałki nagłówka „Dla mediów” w liście kanałów; najechanie ustawia akcent/sygnal, zjechanie i kliknięcie wraca do tekst/wyciszony."
+    },
+    "najechanie-kanalu-05": {
+      "$type": "color",
+      "$value": "{tekst.wyciszony}",
+      "$description": "Kolor numeru i strzałki nagłówka „Dojazd” w liście kanałów; najechanie ustawia akcent/sygnal, zjechanie i kliknięcie wraca do tekst/wyciszony."
+    }
+  },
+  "Typografia": {
+    "kontakt-wartosc": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.geist-mono}",
+        "fontWeight": "{fontWeights.geist-mono-0}",
+        "lineHeight": "{lineHeights.1}",
+        "fontSize": "{fontSize.9}",
+        "letterSpacing": "{letterSpacing.1}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "$description": "Wartość kanału kontaktu: numer telefonu, e-mail, adres, GPS. Rola typo/kontakt-wartosc."
+    },
+    "kontakt-opis": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.geist}",
+        "fontWeight": "{fontWeights.geist-mono-1}",
+        "lineHeight": "{lineHeights.4}",
+        "fontSize": "{fontSize.5}",
+        "letterSpacing": "{letterSpacing.1}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "$description": "Opis kanału i działu oraz dane rejestrowe w liście kanałów kontaktu. Rola typo/kontakt-opis."
+    },
+    "cytat": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.geist-mono}",
+        "fontWeight": "{fontWeights.geist-mono-1}",
+        "lineHeight": "{lineHeights.2}",
+        "fontSize": "{fontSize.7}",
+        "letterSpacing": "{letterSpacing.1}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "$description": "Cytat członka zarządu w module Zarząd | Karuzela osób"
+    },
+    "body · interlinia 24": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.geist}",
+        "fontWeight": "{fontWeights.geist-7}",
+        "lineHeight": "{lineHeights.3}",
+        "fontSize": "{fontSize.7}",
+        "letterSpacing": "{letterSpacing.1}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "$description": "Wstęp na podstronie Certyfikaty (body Light 16 z interlinią 24 z projektu desktopu)."
     }
   }
 }
