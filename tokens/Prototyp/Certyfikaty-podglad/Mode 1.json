@@ -1,0 +1,75 @@
+{
+  "podglad-01": {
+    "$type": "boolean",
+    "$value": "false"
+  },
+  "podglad-02": {
+    "$type": "boolean",
+    "$value": "false"
+  },
+  "podglad-03": {
+    "$type": "boolean",
+    "$value": "false"
+  },
+  "podglad-04": {
+    "$type": "boolean",
+    "$value": "false"
+  },
+  "podglad-05": {
+    "$type": "boolean",
+    "$value": "false"
+  },
+  "fontSize": {
+    "23": {
+      "$type": "fontSizes",
+      "$value": 103
+    }
+  },
+  "Typografia": {
+    "karta-tytul": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.geist-mono}",
+        "fontWeight": "{fontWeights.geist-mono-1}",
+        "lineHeight": "{typo.karta-tytul.line-height}",
+        "fontSize": "{fontSize.19}",
+        "letterSpacing": "{letterSpacing.1}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "$description": "Karta systemu, nazwa systemu. Rola typo/karta-tytul/* w 4 trybach DS/Typografia (DEC-101)."
+    },
+    "karta-opis": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.geist}",
+        "fontWeight": "{fontWeights.geist-7}",
+        "lineHeight": "{line-height.18}",
+        "fontSize": "{fontSize.5}",
+        "letterSpacing": "{letterSpacing.1}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "$description": "Karta systemu, opis systemu. Rola typo/karta-opis/* w 4 trybach DS/Typografia (DEC-101)."
+    },
+    "mono-11 · interlinia 16": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.geist-mono}",
+        "fontWeight": "{fontWeights.geist-mono-1}",
+        "lineHeight": "{lineHeights.5}",
+        "fontSize": "{fontSize.2}",
+        "letterSpacing": "{letterSpacing.1}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "$description": "Numery i podpisy na telefonie i tablecie. Rozmiar, krój i grubość z roli typo/mono-11, interlinia 16 (DEC-101, 1a)."
+    }
+  }
+}

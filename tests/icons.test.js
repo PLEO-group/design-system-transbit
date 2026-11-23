@@ -12,7 +12,7 @@ test('every source icon has an exported, resizable currentColor component and un
     const component = fs.readFileSync(`dist/assets/react/icons/${name}.tsx`, 'utf8');
     assert.ok(index.includes(`export { default as ${name} } from "./${name}";`));
     assert.match(component, /viewBox="[^"]+"/);
-    assert.match(component, /fill="currentColor"/);
+    assert.match(component, /\b(?:fill|stroke)="currentColor"/);
     assert.match(component, /\{\.\.\.props\}/);
     assert.doesNotMatch(component, /\b(?:width|height)="/);
     assert.doesNotMatch(component, /#[\da-f]{3,8}\b/i);

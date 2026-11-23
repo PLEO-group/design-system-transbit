@@ -11,6 +11,13 @@ const properties = {
   'letter-spacing': 'letter-spacing',
 };
 
+test('component sets omit composite typography and retain other tokens', () => {
+  const css = fs.readFileSync('dist/css/transbit.facts-interaction.value.css', 'utf8');
+  assert.doesNotMatch(css, /--typografia-/);
+  assert.doesNotMatch(css, /\[object Object\]/);
+  assert.match(css, /--primitive-white: #ffffff;/);
+});
+
 test('every complete typography role uses exactly five existing variables', () => {
   const roles = new Set();
   for (const file of fs.readdirSync('tokens/DS/Typografia')) {
