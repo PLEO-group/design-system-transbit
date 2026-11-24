@@ -341,7 +341,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{font-size.18}"
+        "$value": "{font-size.16}"
       },
       "line-height": {
         "$extensions": {
@@ -757,7 +757,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{font-size.10}"
+        "$value": "{font-size.9}"
       },
       "line-height": {
         "$extensions": {
@@ -1764,7 +1764,7 @@
           ]
         },
         "$type": "number",
-        "$value": "{line-height.28}",
+        "$value": "{line-height.26}",
         "$description": "Interlinia luźnego leadu (styl „lead · interlinia 28”): 28 desktop i laptop, 26 tablet, 24 telefon."
       }
     },
@@ -2066,7 +2066,7 @@
           ]
         },
         "$type": "number",
-        "$value": "{font-size.16}",
+        "$value": "{font-size.14}",
         "$description": "Cytat członka zarządu w module Zarząd | Karuzela osób"
       },
       "weight": {
@@ -2096,8 +2096,20 @@
           ]
         },
         "$type": "number",
-        "$value": "{line-height.26}",
+        "$value": "{line-height.22}",
         "$description": "Cytat członka zarządu w module Zarząd | Karuzela osób"
+      }
+    },
+    "h1-luzny": {
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ]
+        },
+        "$type": "number",
+        "$value": "{line-height.57}",
+        "$description": "Interlinia tytułu wpisu i komunikatu (styl „h1 · interlinia 63”): 105% rozmiaru h1, desktop 63, laptop 57, tablet 50, telefon 41."
       }
     }
   }

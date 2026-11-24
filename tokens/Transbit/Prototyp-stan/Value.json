@@ -95,12 +95,27 @@
     "osoba": {
       "$type": "text",
       "$value": "Soporek"
+    },
+    "stan-01": {
+      "$type": "text",
+      "$value": "Zamknięty",
+      "$description": "Stan osoby 01 na podstronie Zarząd (Zamknięty, Otwarty); spina właściwość Stan w kopiach komponentu Zarząd / Osoba na desktopie, tablecie i telefonie."
+    },
+    "stan-02": {
+      "$type": "text",
+      "$value": "Zamknięty",
+      "$description": "Stan osoby 02 na podstronie Zarząd (Zamknięty, Otwarty); spina właściwość Stan w kopiach komponentu Zarząd / Osoba na desktopie, tablecie i telefonie."
+    },
+    "stan-03": {
+      "$type": "text",
+      "$value": "Zamknięty",
+      "$description": "Stan osoby 03 na podstronie Zarząd (Zamknięty, Otwarty); spina właściwość Stan w kopiach komponentu Zarząd / Osoba na desktopie, tablecie i telefonie."
     }
   },
   "kontakt": {
     "stan": {
       "$type": "text",
-      "$value": "Sekretariat",
+      "$value": "Brak",
       "$description": "Prototyp widoku Kontakt (telefon, tablet): wybrany kanał i dział; spina listę kanałów z mapą."
     },
     "najechanie-kanalu-01": {
@@ -129,7 +144,100 @@
       "$description": "Kolor numeru i strzałki nagłówka „Dojazd” w liście kanałów; najechanie ustawia akcent/sygnal, zjechanie i kliknięcie wraca do tekst/wyciszony."
     }
   },
+  "cookies": {
+    "baner-widoczny": {
+      "$type": "boolean",
+      "$value": "true"
+    },
+    "szczegoly-01": {
+      "$type": "boolean",
+      "$value": "false"
+    },
+    "szczegoly-02": {
+      "$type": "boolean",
+      "$value": "false"
+    },
+    "szczegoly-03": {
+      "$type": "boolean",
+      "$value": "false"
+    },
+    "zakladka-ogolne": {
+      "$type": "boolean",
+      "$value": "true"
+    },
+    "zakladka-konfiguracja": {
+      "$type": "boolean",
+      "$value": "false"
+    },
+    "analityczne": {
+      "$type": "text",
+      "$value": "Wyłączony"
+    },
+    "marketingowe": {
+      "$type": "text",
+      "$value": "Wyłączony"
+    },
+    "analityczne-robocze": {
+      "$type": "text",
+      "$value": "Wyłączony"
+    },
+    "marketingowe-robocze": {
+      "$type": "text",
+      "$value": "Wyłączony"
+    },
+    "etykieta-szczegolow-01": {
+      "$type": "text",
+      "$value": "Szczegóły ↓"
+    },
+    "etykieta-szczegolow-02": {
+      "$type": "text",
+      "$value": "Szczegóły ↓"
+    },
+    "etykieta-szczegolow-03": {
+      "$type": "text",
+      "$value": "Szczegóły ↓"
+    },
+    "zakladka-ogolne-stan": {
+      "$type": "text",
+      "$value": "Aktywna"
+    },
+    "zakladka-konfiguracja-stan": {
+      "$type": "text",
+      "$value": "Nieaktywna"
+    }
+  },
+  "polityka": {
+    "spis-otwarty": {
+      "$type": "boolean",
+      "$value": "false"
+    }
+  },
+  "onas": {
+    "historia-rok": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": true
+      },
+      "$type": "text",
+      "$value": "01",
+      "$description": "O nas: rok widoczny w historii (01-13). Ustawiają go kafle banera; warianty Widoczny przepisują go po zakończeniu przejścia."
+    }
+  },
   "Typografia": {
+    "h1 · interlinia 63": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.geist-mono}",
+        "fontWeight": "{fontWeights.geist-mono-4}",
+        "lineHeight": "{typo.h1-luzny.line-height}",
+        "fontSize": "{fontSize.20}",
+        "letterSpacing": "{letterSpacing.1}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "$description": "Tytuł wpisu aktualności i komunikatu (zwykle w kilku wierszach). Wymiary h1, interlinia 105%: 63 / 57 / 50 / 41."
+    },
     "kontakt-wartosc": {
       "$type": "typography",
       "$value": {
