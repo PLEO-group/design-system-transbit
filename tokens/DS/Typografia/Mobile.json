@@ -2066,7 +2066,7 @@
           ]
         },
         "$type": "number",
-        "$value": "{font-size.16}",
+        "$value": "{font-size.15}",
         "$description": "Cytat członka zarządu w module Zarząd | Karuzela osób"
       },
       "weight": {
@@ -2096,8 +2096,20 @@
           ]
         },
         "$type": "number",
-        "$value": "{line-height.24}",
+        "$value": "{line-height.22}",
         "$description": "Cytat członka zarządu w module Zarząd | Karuzela osób"
+      }
+    },
+    "h1-luzny": {
+      "line-height": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "LINE_HEIGHT"
+          ]
+        },
+        "$type": "number",
+        "$value": "{line-height.41}",
+        "$description": "Interlinia tytułu wpisu i komunikatu (styl „h1 · interlinia 63”): 105% rozmiaru h1, desktop 63, laptop 57, tablet 50, telefon 41."
       }
     }
   }
