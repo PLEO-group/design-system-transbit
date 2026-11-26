@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Ikona / Komunikat prasowy">
+<path id="Kartka" d="M3.5 3.5H11.5L15 7V20.5H3.5V3.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#2E2E2E"/>
+<path id="Zagi&#196;&#153;cie" d="M11.5 3.5V7H15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#2E2E2E"/>
+<path id="Linie tekstu" d="M6.5 11H12M6.5 14H12M6.5 17H10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#2E2E2E"/>
+<path id="Fala bliska" d="M17.6 11.1C18.0965 11.4038 18.5066 11.8301 18.7912 12.3378C19.0757 12.8456 19.2252 13.4179 19.2252 14C19.2252 14.5821 19.0757 15.1544 18.7912 15.6622C18.5066 16.1699 18.0965 16.5962 17.6 16.9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#2E2E2E"/>
+<path id="Fala daleka" d="M19.9 8.6C20.7666 9.20896 21.4738 10.0175 21.9621 10.9574C22.4504 11.8973 22.7053 12.9409 22.7053 14C22.7053 15.0591 22.4504 16.1027 21.9621 17.0426C21.4738 17.9825 20.7666 18.791 19.9 19.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#2E2E2E"/>
+</g>
+</svg>
