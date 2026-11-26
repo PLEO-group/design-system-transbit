@@ -543,6 +543,10 @@
       "$type": "number",
       "$value": 40
     },
+    "41": {
+      "$type": "number",
+      "$value": 41
+    },
     "42": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
@@ -606,6 +610,10 @@
       "$type": "number",
       "$value": 54
     },
+    "57": {
+      "$type": "number",
+      "$value": 57
+    },
     "59": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
@@ -626,6 +634,10 @@
       },
       "$type": "number",
       "$value": 62
+    },
+    "63": {
+      "$type": "number",
+      "$value": 63
     },
     "67": {
       "$extensions": {
